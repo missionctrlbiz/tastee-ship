@@ -9,87 +9,125 @@
 <body>
   <header>
     <div class="brand">
-      <span class="logo">☕</span>
+      <svg class="logo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="29" height="29" rx="8.5" fill="var(--accent-soft)" stroke="var(--accent)" stroke-opacity="0.5" stroke-width="1.5"/>
+        <text x="16" y="21" text-anchor="middle" font-size="12.5" font-weight="750" fill="var(--accent)" letter-spacing="0.4">TS</text>
+      </svg>
       <div>
         <h1>tasteeship</h1>
-        <p class="sub">recurring code-change harness · user-injected taste · outputs_max gate · out-of-band kill</p>
+        <p class="sub">Recurring code-change harness · hard output gate · out-of-band stop</p>
       </div>
     </div>
     <div class="head-right">
-      <label class="project-pick">
-        project
-        <input id="project" placeholder="." spellcheck="false" />
+      <label class="project-pick" for="project">
+        <span class="project-pick__label">Project path</span>
+        <input id="project" placeholder="." spellcheck="false" autocomplete="off" />
       </label>
-      <div id="gate-chip" class="chip idle" role="status" aria-live="polite">IDLE</div>
-      <button id="kill" class="kill" title="Halt the run and roll back to the last good checkpoint"
-              aria-label="Kill the run: abort in-flight agent calls and roll the repository back to the last good checkpoint">⏻ KILL</button>
+      <span id="connection-status" class="connection-status" role="status" aria-live="polite" data-state="connecting">
+        <span class="connection-status__dot" aria-hidden="true"></span>
+        <span id="connection-label">Connecting</span>
+      </span>
+      <div id="gate-chip" class="gate-chip gate-chip--idle" role="status" aria-live="polite">Idle</div>
+      <button id="kill" class="button button--danger" title="Halt the run and roll back to the last good checkpoint"
+              aria-label="Stop the run: abort in-flight agent calls and roll the repository back to the last good checkpoint">Stop run</button>
     </div>
   </header>
 
-  <section id="statbar">
-    <div class="stat"><span class="k">run</span><span id="st-run" class="v">—</span></div>
-    <div class="stat"><span class="k">round</span><span id="st-round" class="v">—</span></div>
-    <div class="stat"><span class="k">gate</span>
-      <span class="v gate-v"><span id="st-outputs">—</span><span id="gate-bar"><i></i></span></span>
+  <section id="statbar" aria-label="Run statistics">
+    <div class="stat">
+      <span class="k">Run</span>
+      <span id="st-run" class="v">—</span>
     </div>
-    <div class="stat"><span class="k">loc</span><span id="st-loc" class="v">—</span></div>
-    <div class="stat"><span class="k">cost</span><span id="st-cost" class="v">—</span></div>
-    <div class="stat"><span class="k">calls</span><span id="st-calls" class="v">—</span></div>
-    <div class="stat"><span class="k">updated</span><span id="st-updated" class="v">—</span></div>
+    <div class="stat">
+      <span class="k">Current round</span>
+      <span id="st-round" class="v">—</span>
+    </div>
+    <div class="stat">
+      <span class="k">Output budget</span>
+      <span class="v gate-v">
+        <span id="st-outputs">—</span>
+        <span id="gate-bar"><i></i></span>
+      </span>
+    </div>
+    <div class="stat">
+      <span class="k">Lines of code</span>
+      <span id="st-loc" class="v">—</span>
+    </div>
+    <div class="stat">
+      <span class="k">Total spend</span>
+      <span id="st-cost" class="v">—</span>
+    </div>
+    <div class="stat">
+      <span class="k">Provider calls</span>
+      <span id="st-calls" class="v">—</span>
+    </div>
+    <div class="stat">
+      <span class="k">Last updated</span>
+      <span id="st-updated" class="v">—</span>
+    </div>
   </section>
 
   <main>
-    <section class="panel" id="panel-milestones">
-      <h2>Milestones</h2>
-      <div id="milestones" class="milestones"><span class="empty">none yet</span></div>
-    </section>
-
     <section class="panel" id="panel-trends">
-      <h2>Trends <span class="hint">LOC per round · cumulative cost · ⛔ = halt</span></h2>
+      <h2>Trends <span class="hint">LOC per round · cumulative spend · dashed line = halt</span></h2>
       <div class="charts">
-        <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
-        <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
+        <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="LOC per round chart"></svg></figure>
+        <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="Cumulative spend chart"></svg></figure>
       </div>
       <div id="chart-tip" class="chart-tip" hidden></div>
     </section>
 
-    <section class="panel" id="panel-scrub">
-      <h2>Site preview <span class="hint">scrub through every shipped round (sandboxed)</span></h2>
-      <div class="scrub-controls">
-        <input id="scrub" type="range" min="0" max="0" value="0" />
-        <span id="scrub-label" class="scrub-label" aria-live="polite">—</span>
-      </div>
-      <div class="frame-wrap"><iframe id="preview" title="site preview at round" sandbox="allow-scripts allow-forms"></iframe></div>
+    <section class="panel" id="panel-milestones">
+      <h2>Milestones</h2>
+      <div id="milestones" class="milestones"><span class="empty">No milestones yet</span></div>
     </section>
 
     <section class="panel" id="panel-rounds">
-      <h2>Rounds <span class="hint">click a row for its git diff</span></h2>
+      <h2>Rounds <span class="hint">Select a row to inspect its git diff</span></h2>
       <div class="table-scroll">
         <table id="rounds">
-          <thead><tr><th>#</th><th>att</th><th>loc</th><th>Δ</th><th>$</th><th>verdict</th><th>summary</th></tr></thead>
+          <thead><tr><th>Round</th><th>Attempts</th><th>LOC</th><th>Δ LOC</th><th>Spend</th><th>Verdict</th><th>Summary</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
       <div id="diff-drawer" class="diff-drawer" hidden>
         <div class="diff-head">
-          <strong id="diff-title">diff</strong>
-          <button id="diff-close" aria-label="Close diff drawer">✕</button>
+          <div class="diff-heading">
+            <strong id="diff-title">Diff</strong>
+            <span id="diff-meta" class="hint"></span>
+          </div>
+          <button id="diff-close" class="button button--secondary button--small" aria-label="Close diff drawer">Close</button>
         </div>
         <table id="diff-stat" class="diff-stat"></table>
-        <pre id="diff-patch"></pre>
+        <pre id="diff-patch" tabindex="0"></pre>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-scrub">
+      <h2>Site preview <span class="hint">Scrub through every shipped round — sandboxed</span></h2>
+      <div class="scrub-controls">
+        <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Snapshot timeline" />
+        <span id="scrub-label" class="scrub-label" aria-live="polite">—</span>
+      </div>
+      <div class="frame-wrap">
+        <iframe id="preview" title="Site preview at the selected round" sandbox="allow-scripts allow-forms"></iframe>
+        <div class="preview-loading" aria-hidden="true"><span>Loading snapshot…</span></div>
       </div>
     </section>
 
     <section class="panel" id="panel-log">
-      <h2>Gate log <span class="hint">from the append-only event log — decisions the model never sees</span></h2>
+      <h2>Gate log <span class="hint" id="log-count">Decisions the model never sees</span></h2>
       <fieldset id="log-filters" aria-label="Filter gate log by event type">
         <span id="log-type-chips"></span>
-        <label class="tail-pick">tail
+        <label class="tail-pick">Tail
           <select id="log-tail" aria-label="Number of events shown">
-            <option>50</option><option selected>150</option><option>500</option><option value="all">all</option>
+            <option>50</option><option selected>150</option><option>500</option><option value="all">All</option>
           </select>
         </label>
-        <a id="export-link" href="#" download>export ⭳</a>
+        <a id="export-link" class="button button--secondary button--small" href="#" download>
+          Export
+          <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </fieldset>
       <ul id="log"></ul>
     </section>
