@@ -94,3 +94,40 @@ Costs use the configurable `costs` table in `.tasteeship/config.json`
 per-call token counts are plausible simulations — treat the *ratios* (opus ≈ 8×
 sonnet spend for the same 50 rounds, ≈ 29× LOC) as the finding, not the dollar
 figures. With live keys the same accounting uses real provider usage data.
+
+---
+
+# Full test on the owner's own AI models (live)
+
+`npm run validate:live` reruns the case study on **the owner's own models**
+(attached with their own keys through the standard `.env.local` injection):
+
+| slot | model | provider |
+| --- | --- | --- |
+| light ("Sonnet" analog) | `zai-org/GLM-5.3-Flash` | RIVER (`api.river.ai`) |
+| heavy ("Opus" analog) | `IFM/K2-Horizon-375B-A23B` (375B MoE) | IFM (`api.ifm.ai`) |
+
+Each run: coffee-shop fixture, `outputs_max = 4`, gate = halt, real provider
+tokens accounted per call. Costs are placeholder estimates — both models are
+plan-included for the owner — so **tokens are the honest usage metric**.
+
+## What the full test caught (v1, `docs/evidence/live-v1-*.json`)
+
+The first live run halted **both** models at the gate — heavy at round 23,
+light at round 16 — and the gate log showed why: not over-build, not
+regression, but `protocol-error`s. The models emitted file contents with
+**unescaped quotes and newlines inside JSON strings** (`"content": "html\n<div
+id="order-form">…"`), which no strict JSON parser can read. Four unparbable
+outputs later the outputs_max gate correctly stopped and reported instead of
+forcing another change.
+
+That is the kill-shot finding of a full test: **the harness bug surfaced as a
+gate halt, not a crash or a silent bad ship.** The fix was made in the harness,
+not the prompt — the change protocol now uses a line-based `SUMMARY:`/`FILE:`
+block format (which cannot break JSON escaping) with JSON kept as a fallback,
+and the parser got a two-stage implementation with unit tests.
+
+## Live run 2 (fixed parser)
+
+Results are appended here when the run completes; raw evidence lands in
+`docs/evidence/live-*.json` and `docs/evidence/live-output.txt`.

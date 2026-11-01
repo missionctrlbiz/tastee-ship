@@ -12,6 +12,7 @@
   "scripts": {
     "smoke": "node test/smoke.js",
     "validate": "node test/run-validation.js",
+    "live": "node test/run-live.js",
     "dashboard": "node bin/tship.js dashboard"
   },
   "keywords": [
