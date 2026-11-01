@@ -4,8 +4,12 @@
 loop — with your taste, a hard stop condition, and a dashboard with the kill
 button the reference video didn't have.**
 
-Inspired by Nate Herk, *"I Told Claude to 'Make it better' 100 Times"*
-([watch the video](https://www.youtube.com/watch?v=DByAR5Su1Yw)): give a coding
+[![I Told Claude to "Make it better" 100 Times — Nate Herk](docs/assets/launch-video-thumbnail.jpg)](https://www.youtube.com/watch?v=DByAR5Su1Yw)
+
+Inspired by Nate Herk, *"I Told Claude to 'Make it better' 100 Times (It Went
+Too Far)"* ([watch the video](https://www.youtube.com/watch?v=DByAR5Su1Yw) ·
+[metadata](docs/assets/launch-video.json) · thumbnail © Nate Herk, used as a
+reference thumbnail): give a coding
 agent an ugly coffee-shop site and the prompt *"look at the site, innovate,
 make one bold change that improves conversions, you must ship a change every
 time"* — 100 rounds. The loop works, but *"must ship a change"* forces
