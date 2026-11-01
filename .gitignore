@@ -1,0 +1,6 @@
+node_modules/
+.env.local
+.tasteeship/
+*.log
+.DS_Store
+tmp/

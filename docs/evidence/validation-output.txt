@@ -1,0 +1,82 @@
+tasteeship — coffee-shop case-study validation
+reference: "I Told Claude to 'Make it better' 100 Times" (https://www.youtube.com/watch?v=DByAR5Su1Yw)
+NOTE: no model API keys are present in this environment, so the runs use the
+deterministic mock provider (mock-sonnet / mock-opus) calibrated to the video's
+findings. Re-run with `tship keys add anthropic` + `--provider anthropic` for live models.
+
+
+— run 1 — mock-sonnet · 50 rounds · outputs_max 4 · gate = halt
+  model:       mock/mock-sonnet
+  status:      completed
+  rounds:      50/50 attempted · 50 clean · 0 flagged over-build
+  gate:        COMPLETED
+  agent calls: 51 · tokens 174.0k in / 32.2k out
+  cost:        $1.01
+  good-enough horizon (clean-ship streak): round 50
+  milestones:
+    · Comic Sans removed @ round 1
+    · First responsive layout @ round 2
+    · Order form works @ round 3
+  [PASS] status: completed (never halted, never killed)
+  [PASS] 50/50 rounds shipped
+  [PASS] milestone comic-sans-gone @ r1
+  [PASS] milestone first-responsive @ r2
+  [PASS] milestone form-works @ r3
+  [PASS] milestone first-image @ r5
+  [PASS] milestone first-video @ r12
+  [PASS] milestone first-canvas @ r18
+  [PASS] usage accumulated: 51 calls, $1.01
+  [PASS] every round stayed under the LOC-delta cap
+
+— run 2 — mock-opus · 50 rounds attempted · gate = halt (over-build)
+  model:       mock/mock-opus
+  status:      halted (overbuild)
+  rounds:      12/50 attempted · 12 clean · 0 flagged over-build
+  gate:        TRIPPED — over-build (overbuild)
+  agent calls: 13 · tokens 63.7k in / 12.9k out
+  cost:        $1.92
+  good-enough horizon (clean-ship streak): round 12
+  milestones:
+    · First responsive layout @ round 2
+    · Order form works @ round 3
+    · First image @ round 4
+  [PASS] gate halted the run: over-build
+  [PASS] halted after round 12 — round 13 (pumpkin-carving configurator) rejected
+  [PASS] over-build feature rolled back — not in the shipped tree
+  [PASS] usage accumulated before the halt: $1.92
+  [PASS] repo clean after the halt (rollback to last good checkpoint)
+
+— run 3 — mock-opus · 50 rounds · gate = flag over-build (watch it drift)
+  model:       mock/mock-opus
+  status:      completed
+  rounds:      50/50 attempted · 12 clean · 38 flagged over-build
+  gate:        COMPLETED
+  agent calls: 52 · tokens 269.4k in / 54.7k out
+  cost:        $8.14
+  good-enough horizon (clean-ship streak): round 12
+  milestones:
+    · First responsive layout @ round 2
+    · Order form works @ round 3
+    · First image @ round 4
+  [PASS] 50/50 rounds shipped (flag mode)
+  [PASS] 38/50 rounds flagged over-build
+  [PASS] first over-build flag @ r13 (pumpkin-carving configurator)
+  [PASS] r30: broken language toggle rejected by gate, retry shipped
+  [PASS] r38: order-form id rename rejected by gate, retry shipped
+  [PASS] cost: opus $8.14 vs sonnet $1.01 (>3x)
+  [PASS] LOC: opus 12290 vs sonnet 425 (>4x)
+  [PASS] opus milestones fired (image @4, canvas @16)
+
+— run 4 — kill-switch drill: stop mid-run, verify rollback, resume
+  [PASS] killed at round 21: status=killed, reason=user-rejection
+  [PASS] repo HEAD == last good checkpoint cd0ee5ff (rolled back)
+  [PASS] working tree clean — in-flight attempt discarded
+  [PASS] resumed from checkpoint → completed all 50 rounds
+  [PASS] usage continued across the kill (22 → 51 calls, $0.42 → $1.01)
+
+— keys: stored in .env.local, chmod 600, never committed
+  [PASS] .env.local written
+  [PASS] permissions: 600
+  [PASS] .gitignore contains .env.local
+  [PASS] keys list masks the value
+  [PASS] .env.local is NOT tracked by git

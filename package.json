@@ -1,0 +1,27 @@
+{
+  "name": "tasteeship",
+  "version": "0.1.0",
+  "description": "Local Node CLI harness: a recurring make-it-better code-change loop with user-injected taste (rules.md), a hard per-step outputs_max gate, out-of-band kill/rollback, and a local dashboard.",
+  "type": "module",
+  "bin": {
+    "tship": "bin/tship.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "smoke": "node test/smoke.js",
+    "validate": "node test/run-validation.js",
+    "dashboard": "node bin/tship.js dashboard"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "harness",
+    "cli",
+    "kill-switch",
+    "guardrails"
+  ],
+  "license": "MIT",
+  "private": true
+}

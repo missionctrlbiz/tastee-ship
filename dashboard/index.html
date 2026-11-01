@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tasteeship — make-it-better harness</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="logo">☕</span>
+      <div>
+        <h1>tasteeship</h1>
+        <p class="sub">recurring code-change harness · user-injected taste · outputs_max gate · out-of-band kill</p>
+      </div>
+    </div>
+    <div class="head-right">
+      <label class="project-pick">
+        project
+        <input id="project" placeholder="." spellcheck="false" />
+      </label>
+      <div id="gate-chip" class="chip idle">IDLE</div>
+      <button id="kill" class="kill" title="Halt the run and roll back to the last good checkpoint">⏻ KILL</button>
+    </div>
+  </header>
+
+  <section id="statbar">
+    <div class="stat"><span class="k">run</span><span id="st-run" class="v">—</span></div>
+    <div class="stat"><span class="k">round</span><span id="st-round" class="v">—</span></div>
+    <div class="stat"><span class="k">gate</span>
+      <span class="v gate-v"><span id="st-outputs">—</span><span id="gate-bar"><i></i></span></span>
+    </div>
+    <div class="stat"><span class="k">loc</span><span id="st-loc" class="v">—</span></div>
+    <div class="stat"><span class="k">cost</span><span id="st-cost" class="v">—</span></div>
+    <div class="stat"><span class="k">calls</span><span id="st-calls" class="v">—</span></div>
+  </section>
+
+  <main>
+    <section class="panel" id="panel-milestones">
+      <h2>Milestones</h2>
+      <div id="milestones" class="milestones"><span class="empty">none yet</span></div>
+    </section>
+
+    <section class="panel" id="panel-trends">
+      <h2>Trends <span class="hint">LOC per round · cumulative cost</span></h2>
+      <div class="charts">
+        <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
+        <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-scrub">
+      <h2>Site preview <span class="hint">scrub through every shipped round</span></h2>
+      <div class="scrub-controls">
+        <input id="scrub" type="range" min="0" max="0" value="0" />
+        <span id="scrub-label" class="scrub-label">—</span>
+      </div>
+      <div class="frame-wrap"><iframe id="preview" title="site preview at round"></iframe></div>
+    </section>
+
+    <section class="panel" id="panel-rounds">
+      <h2>Rounds</h2>
+      <table id="rounds">
+        <thead><tr><th>#</th><th>att</th><th>loc</th><th>Δ</th><th>$</th><th>verdict</th><th>summary</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="panel-log">
+      <h2>Gate log <span class="hint">decisions the model never sees</span></h2>
+      <ul id="log"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Reference case study: <a href="https://www.youtube.com/watch?v=DByAR5Su1Yw">“I Told Claude to ‘Make it better’ 100 Times”</a> — this dashboard keeps his rounds/milestones/scrubber and adds the stop button he lacked.</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

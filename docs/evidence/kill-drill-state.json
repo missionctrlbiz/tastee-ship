@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-01T17:58:36.182Z",
+  "updatedAt": "2026-11-01T17:58:42.254Z",
+  "project": "proj",
+  "status": "killed",
+  "haltReason": "user-rejection",
+  "run": {
+    "id": "run-mvy4vtzr-18j2qi",
+    "provider": "mock",
+    "model": "mock-sonnet",
+    "outputsMax": 4,
+    "roundsMax": 50,
+    "roundIndex": 21,
+    "attemptsThisRound": 0,
+    "lastGoodCommit": "cd0ee5ff7433c45f7589ac5f6ebb3c3530df8d93",
+    "overbuildAction": "halt",
+    "startedAt": "2026-11-01T17:58:36.183Z"
+  },
+  "usage": {
+    "calls": 22,
+    "inputTokens": 72816,
+    "outputTokens": 13324,
+    "usd": 0.41830800000000007
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 184,
+      "locDelta": 23,
+      "tokens": 3790,
+      "usd": 0.018354,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Drop Comic Sans for a proper type stack and add color tokens.",
+      "commit": "a9b03001f3335db4cd1e0f5c3f91a7fde8c8303e"
+    },
+    {
+      "round": 2,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 196,
+      "locDelta": 12,
+      "tokens": 3800,
+      "usd": 0.018408,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Mobile-first breakpoints so the site stops breaking on phones.",
+      "commit": "1eb5daf3313fb2d4fe4421cf9b27f1bcb0cd984c"
+    },
+    {
+      "round": 3,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 211,
+      "locDelta": 15,
+      "tokens": 3810,
+      "usd": 0.018462,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Fix the order form: correct DOM ids and a working submit handler.",
+      "commit": "e746abdf7c1f47be9f15fe931b458256e7e3d032"
+    },
+    {
+      "round": 4,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 237,
+      "locDelta": 26,
+      "tokens": 3820,
+      "usd": 0.018516,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Conversion-focused button styles with visible focus states.",
+      "commit": "d7f368d4441c0d0a29d3cdb6c73eb5fb04ffca4f"
+    },
+    {
+      "round": 5,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 241,
+      "locDelta": 4,
+      "tokens": 3830,
+      "usd": 0.01857,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a hero image above the fold — the strongest visual anchor we have.",
+      "commit": "7db8db517e66e7c0c7ec444cbbe8c507657c23b8"
+    },
+    {
+      "round": 6,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 268,
+      "locDelta": 27,
+      "tokens": 3840,
+      "usd": 0.018624,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Menu as a scannable grid — the page customers actually came for.",
+      "commit": "d5f9ac4ff4e7a461472a3af0852345ba51cff031"
+    },
+    {
+      "round": 7,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 274,
+      "locDelta": 6,
+      "tokens": 3850,
+      "usd": 0.018678,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Social proof: testimonials section near the order form.",
+      "commit": "52ea6fca52927b7e186997714446835a21f314f2"
+    },
+    {
+      "round": 8,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 272,
+      "locDelta": -2,
+      "tokens": 3860,
+      "usd": 0.018732,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Order form UX: labels, hints, and an inline status region.",
+      "commit": "4e4ed4580502665fe12f0a75f515e4990cd6203f"
+    },
+    {
+      "round": 9,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 277,
+      "locDelta": 5,
+      "tokens": 3870,
+      "usd": 0.018786,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Hours and location in the footer — removes pre-visit friction.",
+      "commit": "6cd7a092edcdbc327d7f73500703da2b7e779076"
+    },
+    {
+      "round": 10,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 296,
+      "locDelta": 19,
+      "tokens": 3880,
+      "usd": 0.01884,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Sticky nav so the order button is always one tap away.",
+      "commit": "5c606c2938ed0227bcabbcd74b10eb72e784c850"
+    },
+    {
+      "round": 11,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 301,
+      "locDelta": 5,
+      "tokens": 3890,
+      "usd": 0.018894,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Gallery with three drink photos (local SVGs, zero external requests).",
+      "commit": "92f8c202084ae704776406b49d7a6df8fbf1e61f"
+    },
+    {
+      "round": 12,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 307,
+      "locDelta": 6,
+      "tokens": 3900,
+      "usd": 0.018948,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Autoplay-free teaser video with poster — motion without annoyance.",
+      "commit": "907bb393a1e3cdcc78d055fa46bc4ce0a1c072eb"
+    },
+    {
+      "round": 13,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 316,
+      "locDelta": 9,
+      "tokens": 3910,
+      "usd": 0.019002,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Prices table with sizes so customers stop guessing.",
+      "commit": "39f89efcf7d66f18e22227489d709b168f975521"
+    },
+    {
+      "round": 14,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 316,
+      "locDelta": 0,
+      "tokens": 3920,
+      "usd": 0.019056,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Rewrite the hero copy around the first order, not the building.",
+      "commit": "174ff2e7aee35905c405b44e618553258eaf7c18"
+    },
+    {
+      "round": 15,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 322,
+      "locDelta": 6,
+      "tokens": 3930,
+      "usd": 0.01911,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Loyalty signup form — the second conversion path.",
+      "commit": "0acab245da544485986bc855a96365fc49ebb48b"
+    },
+    {
+      "round": 16,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 340,
+      "locDelta": 18,
+      "tokens": 3940,
+      "usd": 0.019164,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Accessibility pass: skip link and reduced-motion guard.",
+      "commit": "88740e97ce6e605d9cd9c2e6ac752a106782aeb9"
+    },
+    {
+      "round": 17,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 341,
+      "locDelta": 1,
+      "tokens": 3950,
+      "usd": 0.019218,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Preload the hero image — faster first paint, more scrolls.",
+      "commit": "006d53204e2af78c13614068b28096d5e851a18d"
+    },
+    {
+      "round": 18,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 365,
+      "locDelta": 24,
+      "tokens": 3960,
+      "usd": 0.019272,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Interactive brew-ratio canvas — engagement for the coffee-curious.",
+      "commit": "4eba5af4b32ebe3c20c98f64184ebb6394301577"
+    },
+    {
+      "round": 19,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 374,
+      "locDelta": 9,
+      "tokens": 3970,
+      "usd": 0.019326,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Seasonal banner driven by one CSS variable — easy to retire.",
+      "commit": "e589f3b983e54199026438b019754dddbb3a97de"
+    },
+    {
+      "round": 20,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 378,
+      "locDelta": 4,
+      "tokens": 3980,
+      "usd": 0.01938,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Spacing rhythm pass — consistent gaps lift scan-reading.",
+      "commit": "250885ef6b1dd7c07a711473b11ec12b08eb160f"
+    },
+    {
+      "round": 21,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 380,
+      "locDelta": 2,
+      "tokens": 4450,
+      "usd": 0.021534,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Tighten the footer into two columns, landmarks intact.",
+      "commit": "cd0ee5ff7433c45f7589ac5f6ebb3c3530df8d93"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "comic-sans-gone",
+      "label": "Comic Sans removed",
+      "round": 1,
+      "ts": "2026-11-01T17:58:36.938Z"
+    },
+    {
+      "id": "first-responsive",
+      "label": "First responsive layout",
+      "round": 2,
+      "ts": "2026-11-01T17:58:37.189Z"
+    },
+    {
+      "id": "form-works",
+      "label": "Order form works",
+      "round": 3,
+      "ts": "2026-11-01T17:58:37.441Z"
+    },
+    {
+      "id": "first-image",
+      "label": "First image",
+      "round": 5,
+      "ts": "2026-11-01T17:58:38.054Z"
+    },
+    {
+      "id": "first-video",
+      "label": "First video",
+      "round": 12,
+      "ts": "2026-11-01T17:58:39.700Z"
+    },
+    {
+      "id": "first-canvas",
+      "label": "First canvas",
+      "round": 18,
+      "ts": "2026-11-01T17:58:41.340Z"
+    }
+  ],
+  "gateEvents": [
+    {
+      "type": "baseline-commit",
+      "round": 0,
+      "message": "committed user working tree as bff49b9e"
+    },
+    {
+      "type": "run-start",
+      "round": 0,
+      "message": "mock/mock-sonnet · rounds≤50 · outputs_max=4"
+    },
+    {
+      "type": "milestone",
+      "round": 1,
+      "message": "comic-sans-gone"
+    },
+    {
+      "type": "milestone",
+      "round": 2,
+      "message": "first-responsive"
+    },
+    {
+      "type": "milestone",
+      "round": 3,
+      "message": "form-works"
+    },
+    {
+      "type": "milestone",
+      "round": 5,
+      "message": "first-image"
+    },
+    {
+      "type": "milestone",
+      "round": 12,
+      "message": "first-video"
+    },
+    {
+      "type": "milestone",
+      "round": 18,
+      "message": "first-canvas"
+    },
+    {
+      "type": "attempt-rejected",
+      "round": 21,
+      "message": "[regression] missing required selectors: footer"
+    },
+    {
+      "type": "killed",
+      "round": 22,
+      "message": "kill switch engaged — rolled back to cd0ee5ff"
+    }
+  ],
+  "latched": {
+    "checks": {
+      "required-selectors": true,
+      "critical-selectors": true,
+      "loc-cap": true,
+      "max-files": true,
+      "forbidden-strings": true,
+      "js-refs-resolve": true
+    },
+    "forbiddenAbsent": {
+      "pumpkin": true,
+      "comic sans": true
+    }
+  },
+  "baseline": {
+    "loc": 161,
+    "files": 3,
+    "comicSans": true,
+    "hasForm": true,
+    "green": [
+      "required-selectors",
+      "critical-selectors",
+      "loc-cap",
+      "max-files"
+    ],
+    "forbiddenPresent": [
+      "Comic Sans",
+      "marquee"
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-01T17:58:16.473Z",
+  "updatedAt": "2026-11-01T17:58:20.117Z",
+  "project": "proj",
+  "status": "halted",
+  "haltReason": "overbuild",
+  "run": {
+    "id": "run-mvy4vesb-23167m",
+    "provider": "mock",
+    "model": "mock-opus",
+    "outputsMax": 4,
+    "roundsMax": 50,
+    "roundIndex": 12,
+    "attemptsThisRound": 1,
+    "lastGoodCommit": "be61f7ce2e6d4044a5006ef438ef62315a0c6d45",
+    "overbuildAction": "halt",
+    "startedAt": "2026-11-01T17:58:16.475Z"
+  },
+  "usage": {
+    "calls": 13,
+    "inputTokens": 63674,
+    "outputTokens": 12883,
+    "usd": 1.921335
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 263,
+      "locDelta": 102,
+      "tokens": 5787,
+      "usd": 0.145185,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Full visual redesign: design language, shadows, spacing, type.",
+      "commit": "3be763c97881b15251f1fb6ce62631d13d931713"
+    },
+    {
+      "round": 2,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 334,
+      "locDelta": 71,
+      "tokens": 5804,
+      "usd": 0.14562,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Restructure the page into semantic sections and go responsive.",
+      "commit": "aa8825d680b12fb86795d02af9411c60d519839a"
+    },
+    {
+      "round": 3,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 357,
+      "locDelta": 23,
+      "tokens": 5821,
+      "usd": 0.146055,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Rebuild the order form on a validation framework with inline errors.",
+      "commit": "8070d14f2ef595fbcc43812f515e67e7194abce4"
+    },
+    {
+      "round": 4,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 361,
+      "locDelta": 4,
+      "tokens": 5838,
+      "usd": 0.14649,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Cinematic hero image with gradient overlay.",
+      "commit": "ff3847e64a48abbfa2eb526b0e49fb4e9a9de75f"
+    },
+    {
+      "round": 5,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 628,
+      "locDelta": 267,
+      "tokens": 5855,
+      "usd": 0.146925,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Motion framework: scroll reveals, hover states, transitions.",
+      "commit": "4d447cca21471b50c88d41b3a5a30d5dc7b8a2df"
+    },
+    {
+      "round": 6,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 939,
+      "locDelta": 311,
+      "tokens": 5872,
+      "usd": 0.14736,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Ship a UI component library (buttons, cards, chips, modals).",
+      "commit": "a9a844ddf4f9ed183884d2ad207b17769ef67c56"
+    },
+    {
+      "round": 7,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1281,
+      "locDelta": 342,
+      "tokens": 5889,
+      "usd": 0.147795,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "A tiny state manager so widgets share one source of truth.",
+      "commit": "31ad64bb7ba13c6bebd9dd12cebc22f80a109fd3"
+    },
+    {
+      "round": 8,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1548,
+      "locDelta": 267,
+      "tokens": 5906,
+      "usd": 0.14823,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Theming system with runtime theme switching.",
+      "commit": "fa403d46c5c3beadd0bf65b70982c1d5f3f88a6e"
+    },
+    {
+      "round": 9,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1549,
+      "locDelta": 1,
+      "tokens": 5923,
+      "usd": 0.148665,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Full-bleed video hero with sound-off poster frame.",
+      "commit": "d9954203c2a87cf138921d900989ee0aeb5e9c31"
+    },
+    {
+      "round": 10,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1875,
+      "locDelta": 326,
+      "tokens": 5940,
+      "usd": 0.1491,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Micro-interactions everywhere: magnetic buttons, ripples, toasts.",
+      "commit": "1b8ec2866c8260b6751fd7950fcf72f71b01ad0d"
+    },
+    {
+      "round": 11,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1891,
+      "locDelta": 16,
+      "tokens": 5957,
+      "usd": 0.149535,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "PWA: manifest + service worker for offline menu browsing.",
+      "commit": "df7afb96fb616b60a29f861953768f88ec08d2b1"
+    },
+    {
+      "round": 12,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 2173,
+      "locDelta": 282,
+      "tokens": 5974,
+      "usd": 0.14997,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "First-party analytics module with funnel events.",
+      "commit": "be61f7ce2e6d4044a5006ef438ef62315a0c6d45"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "first-responsive",
+      "label": "First responsive layout",
+      "round": 2,
+      "ts": "2026-11-01T17:58:17.464Z"
+    },
+    {
+      "id": "form-works",
+      "label": "Order form works",
+      "round": 3,
+      "ts": "2026-11-01T17:58:17.690Z"
+    },
+    {
+      "id": "first-image",
+      "label": "First image",
+      "round": 4,
+      "ts": "2026-11-01T17:58:17.922Z"
+    },
+    {
+      "id": "first-video",
+      "label": "First video",
+      "round": 9,
+      "ts": "2026-11-01T17:58:19.073Z"
+    }
+  ],
+  "gateEvents": [
+    {
+      "type": "baseline-commit",
+      "round": 0,
+      "message": "committed user working tree as d96065f0"
+    },
+    {
+      "type": "run-start",
+      "round": 0,
+      "message": "mock/mock-opus · rounds≤50 · outputs_max=4"
+    },
+    {
+      "type": "milestone",
+      "round": 2,
+      "message": "first-responsive"
+    },
+    {
+      "type": "milestone",
+      "round": 3,
+      "message": "form-works"
+    },
+    {
+      "type": "milestone",
+      "round": 4,
+      "message": "first-image"
+    },
+    {
+      "type": "milestone",
+      "round": 9,
+      "message": "first-video"
+    },
+    {
+      "type": "attempt-rejected",
+      "round": 13,
+      "message": "[overbuild] forbidden content present: pumpkin"
+    },
+    {
+      "type": "halt",
+      "round": 13,
+      "message": "overbuild"
+    }
+  ],
+  "latched": {
+    "checks": {
+      "required-selectors": true,
+      "critical-selectors": true,
+      "loc-cap": true,
+      "max-files": true,
+      "forbidden-strings": true,
+      "js-refs-resolve": true
+    },
+    "forbiddenAbsent": {
+      "pumpkin": true
+    }
+  },
+  "baseline": {
+    "loc": 161,
+    "files": 3,
+    "comicSans": true,
+    "hasForm": true,
+    "green": [
+      "required-selectors",
+      "critical-selectors",
+      "loc-cap",
+      "max-files"
+    ],
+    "forbiddenPresent": [
+      "Comic Sans",
+      "marquee"
+    ]
+  }
+}

@@ -1,0 +1,1107 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-01T17:58:20.606Z",
+  "updatedAt": "2026-11-01T17:58:35.688Z",
+  "project": "proj",
+  "status": "completed",
+  "haltReason": null,
+  "run": {
+    "id": "run-mvy4vhz4-mzvu9w",
+    "provider": "mock",
+    "model": "mock-opus",
+    "outputsMax": 4,
+    "roundsMax": 50,
+    "roundIndex": 50,
+    "attemptsThisRound": 0,
+    "lastGoodCommit": "960c78d0cd8bb735c41e8c668c16fed471dc3724",
+    "overbuildAction": "flag",
+    "startedAt": "2026-11-01T17:58:20.608Z"
+  },
+  "usage": {
+    "calls": 52,
+    "inputTokens": 269402,
+    "outputTokens": 54709,
+    "usd": 8.144205
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 263,
+      "locDelta": 102,
+      "tokens": 5787,
+      "usd": 0.145185,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Full visual redesign: design language, shadows, spacing, type.",
+      "commit": "dad3d26fdc35551010298c8027ede711e957f4a6"
+    },
+    {
+      "round": 2,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 334,
+      "locDelta": 71,
+      "tokens": 5804,
+      "usd": 0.14562,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Restructure the page into semantic sections and go responsive.",
+      "commit": "6a6d71449db45f18a77cde7706109198ee962871"
+    },
+    {
+      "round": 3,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 357,
+      "locDelta": 23,
+      "tokens": 5821,
+      "usd": 0.146055,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Rebuild the order form on a validation framework with inline errors.",
+      "commit": "0e89bc5e78e80b603aad4255c68cd32c1bb0ea3a"
+    },
+    {
+      "round": 4,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 361,
+      "locDelta": 4,
+      "tokens": 5838,
+      "usd": 0.14649,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Cinematic hero image with gradient overlay.",
+      "commit": "a3fbdb612ab2774aa2e9587c5df10ea60c54c7ac"
+    },
+    {
+      "round": 5,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 628,
+      "locDelta": 267,
+      "tokens": 5855,
+      "usd": 0.146925,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Motion framework: scroll reveals, hover states, transitions.",
+      "commit": "deca16f6febcd6667caef323e56b13faf8c1afd5"
+    },
+    {
+      "round": 6,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 939,
+      "locDelta": 311,
+      "tokens": 5872,
+      "usd": 0.14736,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Ship a UI component library (buttons, cards, chips, modals).",
+      "commit": "82df3df7aa7204160ad8d1ac6ec958a5a3c65b91"
+    },
+    {
+      "round": 7,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1281,
+      "locDelta": 342,
+      "tokens": 5889,
+      "usd": 0.147795,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "A tiny state manager so widgets share one source of truth.",
+      "commit": "2ca994a27fb5f4229f06f9b4f9d7f6958331e82d"
+    },
+    {
+      "round": 8,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1548,
+      "locDelta": 267,
+      "tokens": 5906,
+      "usd": 0.14823,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Theming system with runtime theme switching.",
+      "commit": "c0960762b339658187ce6e8a7c3a7ea139499214"
+    },
+    {
+      "round": 9,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1549,
+      "locDelta": 1,
+      "tokens": 5923,
+      "usd": 0.148665,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Full-bleed video hero with sound-off poster frame.",
+      "commit": "62d7d6490a5cc19a27ca8444aec3d18ebea6b214"
+    },
+    {
+      "round": 10,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1875,
+      "locDelta": 326,
+      "tokens": 5940,
+      "usd": 0.1491,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Micro-interactions everywhere: magnetic buttons, ripples, toasts.",
+      "commit": "356d72b5151dd7bc8fb4a4b95f0db686a31b6b88"
+    },
+    {
+      "round": 11,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1891,
+      "locDelta": 16,
+      "tokens": 5957,
+      "usd": 0.149535,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "PWA: manifest + service worker for offline menu browsing.",
+      "commit": "8d416ceeca66fce1a6fe0fd57335382dd9a30989"
+    },
+    {
+      "round": 12,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 2173,
+      "locDelta": 282,
+      "tokens": 5974,
+      "usd": 0.14997,
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "First-party analytics module with funnel events.",
+      "commit": "001ed6f344f7b5d424fd1c3f370109056a06b6de"
+    },
+    {
+      "round": 13,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 2392,
+      "locDelta": 219,
+      "tokens": 5991,
+      "usd": 0.150405,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Bold differentiator: an interactive pumpkin-carving configurator for the season.",
+      "commit": "c2af440e1c86596cbf616bd9732e21b9e74182b3"
+    },
+    {
+      "round": 14,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 2702,
+      "locDelta": 310,
+      "tokens": 6008,
+      "usd": 0.15084,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Design tokens extracted to their own layer.",
+      "commit": "ac1606c26b8eb697afa51e2b7b8af5931022e414"
+    },
+    {
+      "round": 15,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 3027,
+      "locDelta": 325,
+      "tokens": 6025,
+      "usd": 0.151275,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "i18n scaffold with message catalogs.",
+      "commit": "3d6ddb2a54baba00d97ad22191a4d61a6420e031"
+    },
+    {
+      "round": 16,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 3226,
+      "locDelta": 199,
+      "tokens": 6042,
+      "usd": 0.15171,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Canvas-based order visualiser.",
+      "commit": "58961c23493a836daf634b85bdb625d2e5e12f6a"
+    },
+    {
+      "round": 17,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 3569,
+      "locDelta": 343,
+      "tokens": 6059,
+      "usd": 0.152145,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Live order board (websocket stub with graceful fallback).",
+      "commit": "2aaf352806bfcdee9841b08f1177672131631ea4"
+    },
+    {
+      "round": 18,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 3879,
+      "locDelta": 310,
+      "tokens": 6076,
+      "usd": 0.15258,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "ML-style drink recommender (rules-based stand-in).",
+      "commit": "3162c09100d8687fea59dd54a0c61efa20a71f79"
+    },
+    {
+      "round": 19,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 4238,
+      "locDelta": 359,
+      "tokens": 6093,
+      "usd": 0.153015,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Blog engine with markdown-ish parsing.",
+      "commit": "a4622a99770ec492bf23b71dccfde76924fc0996"
+    },
+    {
+      "round": 20,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 4532,
+      "locDelta": 294,
+      "tokens": 6110,
+      "usd": 0.15345,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Admin dashboard page for staff.",
+      "commit": "aee2c41b78c567ee60197e9bff95afed99f1f64a"
+    },
+    {
+      "round": 21,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 4766,
+      "locDelta": 234,
+      "tokens": 6127,
+      "usd": 0.153885,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Dark mode.",
+      "commit": "aa735e2dcf6b4dd95e7dcb3b41cbcc43339f5f2e"
+    },
+    {
+      "round": 22,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 4957,
+      "locDelta": 191,
+      "tokens": 6144,
+      "usd": 0.15432,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Print stylesheet for the menu.",
+      "commit": "b77a46a20acf15a39799a75779515222aa2ac2f4"
+    },
+    {
+      "round": 23,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 5341,
+      "locDelta": 384,
+      "tokens": 6161,
+      "usd": 0.154755,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "In-repo test harness for the form validators.",
+      "commit": "e9035c17e1bb20ec8d85a5ad7d6fe4490a034071"
+    },
+    {
+      "round": 24,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 5620,
+      "locDelta": 279,
+      "tokens": 6178,
+      "usd": 0.15519,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Content layer: menu data in JSON with a loader.",
+      "commit": "e371c4cb66c22a5642e40149b1d15d51d2014387"
+    },
+    {
+      "round": 25,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 5930,
+      "locDelta": 310,
+      "tokens": 6195,
+      "usd": 0.155625,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Account UI stub with sign-in sheet.",
+      "commit": "ddadb9c56e0ff35e2aad7a61a46549c27ea60caf"
+    },
+    {
+      "round": 26,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 6145,
+      "locDelta": 215,
+      "tokens": 6212,
+      "usd": 0.15606,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Charts on canvas for weekly orders.",
+      "commit": "21d842edb6642a3df63a97da84a52118e4b451ab"
+    },
+    {
+      "round": 27,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 6427,
+      "locDelta": 282,
+      "tokens": 6229,
+      "usd": 0.156495,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Notification center with toasts.",
+      "commit": "68d7293c3d61b9fa7ebf948fa9d70b823de59fb0"
+    },
+    {
+      "round": 28,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 6694,
+      "locDelta": 267,
+      "tokens": 6246,
+      "usd": 0.15693,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Review aggregator widget.",
+      "commit": "22b91ee36d7cc8948e2c3f740295fc18ad9eb3ea"
+    },
+    {
+      "round": 29,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 7004,
+      "locDelta": 310,
+      "tokens": 6263,
+      "usd": 0.157365,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Gift card purchase flow.",
+      "commit": "09e4bd3d79857f711c52ba88b85687b864acd6c3"
+    },
+    {
+      "round": 30,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 7006,
+      "locDelta": 2,
+      "tokens": 6900,
+      "usd": 0.1743,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Language toggle, now wired to a real control in the nav.",
+      "commit": "3482b94fd74ab9ec19f9d4628b6be8f1dd81d7a3"
+    },
+    {
+      "round": 31,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 7333,
+      "locDelta": 327,
+      "tokens": 6297,
+      "usd": 0.158235,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Booking system for the tasting room.",
+      "commit": "2fbc6bc8fca8a26601b9843267b097f7f1324646"
+    },
+    {
+      "round": 32,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 7617,
+      "locDelta": 284,
+      "tokens": 6314,
+      "usd": 0.15867,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Events calendar.",
+      "commit": "829fed7f7d988085f80b2979f260e3fdad7775f0"
+    },
+    {
+      "round": 33,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 7960,
+      "locDelta": 343,
+      "tokens": 6331,
+      "usd": 0.159105,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Merch store with cart.",
+      "commit": "873890b712b0f34d2b863d76d7c12d89de4342c8"
+    },
+    {
+      "round": 34,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 8270,
+      "locDelta": 310,
+      "tokens": 6348,
+      "usd": 0.15954,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Loyalty plus: tiers and stamps.",
+      "commit": "5776543cc87f0cf73f8fcb59ccf8dc42d74964f4"
+    },
+    {
+      "round": 35,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 8537,
+      "locDelta": 267,
+      "tokens": 6365,
+      "usd": 0.159975,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Gift registry.",
+      "commit": "99248c3037a59e7203348f2c1a6253076931fe20"
+    },
+    {
+      "round": 36,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 8864,
+      "locDelta": 327,
+      "tokens": 6382,
+      "usd": 0.16041,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Catering quote builder.",
+      "commit": "9f85765be1e7480196ab56f1e0626ba80e3e947e"
+    },
+    {
+      "round": 37,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 9131,
+      "locDelta": 267,
+      "tokens": 6399,
+      "usd": 0.160845,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Blog comments with moderation queue stub.",
+      "commit": "d921b0af0172ef5fb59633a6395d516083a87983"
+    },
+    {
+      "round": 38,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 9134,
+      "locDelta": 3,
+      "tokens": 7036,
+      "usd": 0.17778,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Keep the stable order-form id; alias it in JS instead.",
+      "commit": "94670fda505030aa8cab7032dc96c0c47a7a36b6"
+    },
+    {
+      "round": 39,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 9444,
+      "locDelta": 310,
+      "tokens": 6433,
+      "usd": 0.161715,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Search index over menu + blog.",
+      "commit": "006f38fdba342e2948635ad94a87f2cdde89911f"
+    },
+    {
+      "round": 40,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 9678,
+      "locDelta": 234,
+      "tokens": 6450,
+      "usd": 0.16215,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Responsive images with srcset scaffolding.",
+      "commit": "ba6ffb0d3d53890f0941c12d4dedd6bfe78c3587"
+    },
+    {
+      "round": 41,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 9928,
+      "locDelta": 250,
+      "tokens": 6467,
+      "usd": 0.162585,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Cookie banner module.",
+      "commit": "b9baaab0c82cabfb392fa9960072716b12f888df"
+    },
+    {
+      "round": 42,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 10195,
+      "locDelta": 267,
+      "tokens": 6484,
+      "usd": 0.16302,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Waitlist for limited roasts.",
+      "commit": "411025e936af2af8deb239de8bb5a182e0c2b423"
+    },
+    {
+      "round": 43,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 10522,
+      "locDelta": 327,
+      "tokens": 6501,
+      "usd": 0.163455,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Subscription coffee plan.",
+      "commit": "120126f2761b44615296b73911238b18e97ae54b"
+    },
+    {
+      "round": 44,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 10805,
+      "locDelta": 283,
+      "tokens": 6518,
+      "usd": 0.16389,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "A11y audit page with findings.",
+      "commit": "94590f433b848cf0334f10aa126fa1e4a2ea7ff0"
+    },
+    {
+      "round": 45,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 11071,
+      "locDelta": 266,
+      "tokens": 6535,
+      "usd": 0.164325,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Perf budget tracker.",
+      "commit": "277e3d45738ccd04523d56e5645de8c6584b89f8"
+    },
+    {
+      "round": 46,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 11382,
+      "locDelta": 311,
+      "tokens": 6552,
+      "usd": 0.16476,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Order status page with timeline.",
+      "commit": "5fbab0387d7e7b752e2e1f302b2b5837d46b764a"
+    },
+    {
+      "round": 47,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 11616,
+      "locDelta": 234,
+      "tokens": 6569,
+      "usd": 0.165195,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Staff tips split calculator.",
+      "commit": "fcd7942a25f71437c86a9b03cec0177937e29195"
+    },
+    {
+      "round": 48,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 11899,
+      "locDelta": 283,
+      "tokens": 6586,
+      "usd": 0.16563,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Seasonal campaign scheduler.",
+      "commit": "9881e8ff1d0fcb8a784ab4545d8b4cad280896e5"
+    },
+    {
+      "round": 49,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 12166,
+      "locDelta": 267,
+      "tokens": 6603,
+      "usd": 0.166065,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Barista leaderboard.",
+      "commit": "359596098f2f0410704e99c739da6e0eae2a98f4"
+    },
+    {
+      "round": 50,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 12290,
+      "locDelta": 124,
+      "tokens": 6620,
+      "usd": 0.1665,
+      "verdict": "shipped-flagged",
+      "flags": [
+        "forbidden content present: pumpkin"
+      ],
+      "failures": [],
+      "summary": "Grand unification stylesheet pass.",
+      "commit": "960c78d0cd8bb735c41e8c668c16fed471dc3724"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "first-responsive",
+      "label": "First responsive layout",
+      "round": 2,
+      "ts": "2026-11-01T17:58:21.499Z"
+    },
+    {
+      "id": "form-works",
+      "label": "Order form works",
+      "round": 3,
+      "ts": "2026-11-01T17:58:21.749Z"
+    },
+    {
+      "id": "first-image",
+      "label": "First image",
+      "round": 4,
+      "ts": "2026-11-01T17:58:21.967Z"
+    },
+    {
+      "id": "first-video",
+      "label": "First video",
+      "round": 9,
+      "ts": "2026-11-01T17:58:23.136Z"
+    },
+    {
+      "id": "first-canvas",
+      "label": "First canvas",
+      "round": 16,
+      "ts": "2026-11-01T17:58:25.225Z"
+    }
+  ],
+  "gateEvents": [
+    {
+      "type": "baseline-commit",
+      "round": 0,
+      "message": "committed user working tree as c10b934e"
+    },
+    {
+      "type": "run-start",
+      "round": 0,
+      "message": "mock/mock-opus · rounds≤50 · outputs_max=4"
+    },
+    {
+      "type": "milestone",
+      "round": 2,
+      "message": "first-responsive"
+    },
+    {
+      "type": "milestone",
+      "round": 3,
+      "message": "form-works"
+    },
+    {
+      "type": "milestone",
+      "round": 4,
+      "message": "first-image"
+    },
+    {
+      "type": "milestone",
+      "round": 9,
+      "message": "first-video"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 13,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 14,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 15,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 16,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "milestone",
+      "round": 16,
+      "message": "first-canvas"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 17,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 18,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 19,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 20,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 21,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 22,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 23,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 24,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 25,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 26,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 27,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 28,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 29,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "attempt-rejected",
+      "round": 30,
+      "message": "[overbuild] forbidden content present: pumpkin; [regression] JS references missing DOM ids: js/lang.js:#lang-select, js/lang.js:#i18n-panel"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 30,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 31,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 32,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 33,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 34,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 35,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 36,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 37,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "attempt-rejected",
+      "round": 38,
+      "message": "[regression] critical selector(s) removed: #order-form; [overbuild] forbidden content present: pumpkin; [regression] JS references missing DOM ids: js/form.js:#order-form"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 38,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 39,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 40,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 41,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 42,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 43,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 44,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 45,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 46,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 47,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 48,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 49,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "overbuild-flag",
+      "round": 50,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "type": "completed",
+      "round": 50,
+      "message": "all 50 rounds shipped"
+    }
+  ],
+  "latched": {
+    "checks": {
+      "required-selectors": true,
+      "critical-selectors": true,
+      "loc-cap": true,
+      "max-files": true,
+      "forbidden-strings": true,
+      "js-refs-resolve": true
+    },
+    "forbiddenAbsent": {
+      "pumpkin": true
+    }
+  },
+  "baseline": {
+    "loc": 161,
+    "files": 3,
+    "comicSans": true,
+    "hasForm": true,
+    "green": [
+      "required-selectors",
+      "critical-selectors",
+      "loc-cap",
+      "max-files"
+    ],
+    "forbiddenPresent": [
+      "Comic Sans",
+      "marquee"
+    ]
+  }
+}
