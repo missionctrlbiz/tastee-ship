@@ -127,7 +127,43 @@ not the prompt — the change protocol now uses a line-based `SUMMARY:`/`FILE:`
 block format (which cannot break JSON escaping) with JSON kept as a fallback,
 and the parser got a two-stage implementation with unit tests.
 
-## Live run 2 (fixed parser)
+## Live run 2 (fixed parser) — GLM-5.3-Flash vs K2-375B
 
-Results are appended here when the run completes; raw evidence lands in
-`docs/evidence/live-*.json` and `docs/evidence/live-output.txt`.
+Both models then **completed 50/50 rounds** under the full gate (evidence:
+`docs/evidence/live-*.json`, v1 halts preserved as `live-v1-*.json`). The gate
+caught real regressions on real models: phantom DOM ids (form JS referencing
+ids that don't exist — the exact "language toggle that didn't work" failure
+mode) and landmark removals, each rejected, rolled back, and shipped correctly
+on retry within `outputs_max`.
+
+## Live run 3 — owner-chosen models (current): DeepSeek-V4.1-Flash-1017 vs agnes-3.0-flash
+
+`npm run live` with the owner's chosen pairing, after the CODEX-review
+hardening (manifests, causal events, per-round usage, symlink-proof proposal
+writes, dirty-resume guard). 50 rounds each, `outputs_max = 4`, gate = halt.
+
+| | light — `deepseek-ai/DeepSeek-V4.1-Flash-1017` | heavy — `agnes-3.0-flash` |
+| --- | --- | --- |
+| status | **completed 50/50** | **completed 50/50** |
+| agent calls | 57 (7 gate rejections) | 64 (14 gate rejections) |
+| tokens (real, from providers) | 335k in / 455k out | 465k in / 398k out |
+| final LOC | ~1.6k | ~1.2k |
+| milestones | form-works @ r1, first-responsive @ r1 | form-works @ r1, first-responsive @ r2 |
+| what the gate caught | footer removal ×2; phantom ids `#order-bar-total`, `#sticky-muffin`, `#sticky-usual`, `#addon-muffin` | footer removal **×8**; phantom ids `#muffin-btn`, `#mini-cart`, `#mini-cart-name`, … |
+| cost (placeholder rates) | ~$0.65 | ~$0.51 |
+
+Findings:
+
+- **The heavy model was the messy one.** agnes-3.0-flash tried to remove the
+  footer landmark in 8 separate rounds and invented DOM ids its own JS then
+  referenced — 14 gate rejections to deepseek's 7. That is the case study's
+  thesis on real models: the bolder generator needs the gate more, and the
+  gate (not the model) decides what actually ships. Every rejection was rolled
+  back and the retry shipped inside the 4-output budget — the loop never
+  forced a change past it.
+- **Per-round usage now reconciles**: `Σ rounds[i].usage.usd = state.usage.usd`
+  exactly (the pre-review accounting counted only the shipping attempt).
+- Every rejection is reconstructible: `check-run` + `gate-verdict` events share
+  the `causalityId` that is also embedded in the checkpoint commit message.
+- Raw evidence: `docs/evidence/live-*.json` (final states, kill drill) and
+  `docs/evidence/live-output.txt` (full log).

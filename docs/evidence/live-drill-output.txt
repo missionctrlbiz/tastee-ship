@@ -1,0 +1,28 @@
+=== kill half (test/drill-live.js) ===
+[drill] project ready: /var/folders/rq/zptpmd_55v7g7wl29jmckg140000gn/T/tship-drill-UinJGu/proj
+  [PASS] live run reached round 8 before the kill
+  [PASS] runner exited cleanly (code 0)
+  [PASS] killed at round 9: killed/user-rejection
+  [PASS] repo rolled back to the last good checkpoint c6bc95a7
+  [PASS] working tree clean — in-flight attempt discarded
+file:///Users/oyinkansolaarchibong/Desktop/tastee-ship/test/drill-live.js:77
+const killEvents = readEvents(dir).filter((e) => e.type === 'killed' || e.type === 'halt');
+                   ^
+
+ReferenceError: readEvents is not defined
+    at file:///Users/oyinkansolaarchibong/Desktop/tastee-ship/test/drill-live.js:77:20
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v20.16.0
+
+=== resume half (test/drill-resume.js) ===
+
+— live kill drill — resume from checkpoint
+  [PASS] killed event present in the append-only log
+  [PASS] resumed from checkpoint → completed at round 50/50
+  [PASS] usage accumulated across the kill (8 → 67 calls, $0.0334 → $0.7435)
+  [PASS] manifest preserved through resume with resumedAt
+  [PASS] per-round usage reconciles with the global counter
+[drill] final: 50/50 rounds, 67 calls, $0.7435
+
+live kill drill (resume half): all assertions passed

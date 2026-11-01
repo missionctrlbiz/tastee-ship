@@ -135,7 +135,7 @@ for (const [k, dir] of [['light', lightDir], ['heavy', heavyDir]]) {
 }
 
 // ---- assertions --------------------------------------------------------------
-section('results — light (glm-5.3-flash)');
+section(`results — light (${MODELS.light.label})`);
 {
   const s = results.light;
   const spec = MODELS.light;
@@ -151,7 +151,7 @@ section('results — light (glm-5.3-flash)');
   for (const e of gateEvents.slice(0, 8)) console.log(`   · [${e.type}] r${e.round} ${(e.message || '').slice(0, 100)}`);
 }
 
-section('results — heavy (k2-horizon-375b)');
+section(`results — heavy (${MODELS.heavy.label})`);
 {
   const s = results.heavy;
   ok(s.usage.calls >= 10, `meaningful run: ${s.usage.calls} agent calls, ${s.usage.inputTokens} in / ${s.usage.outputTokens} out tokens`);
@@ -164,7 +164,7 @@ section('results — heavy (k2-horizon-375b)');
 }
 
 // ---- phase 2: kill-switch drill on the live light model ----------------------
-section('phase 2 — kill-switch drill on the live glm-5.3-flash run');
+section(`phase 2 — kill-switch drill on the live ${MODELS.light.label} run`);
 {
   const dir = setupProject('live-kill', MODELS.light);
   const child = spawn('node', [CLI, 'run', '--rounds', '50', '--outputs-max', '4'], { cwd: dir, stdio: 'ignore' });
