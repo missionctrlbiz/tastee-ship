@@ -1,0 +1,2120 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-01T20:25:14.121Z",
+  "updatedAt": "2026-11-01T20:56:42.122Z",
+  "project": "proj",
+  "status": "completed",
+  "haltReason": null,
+  "run": {
+    "id": "run-mvya4eiy-tuh7h0",
+    "provider": "openai-compat",
+    "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "outputsMax": 4,
+    "roundsMax": 50,
+    "roundIndex": 50,
+    "attemptsThisRound": 0,
+    "lastGoodCommit": "0b578b06e8642e64432956747f7143db9bf37ce6",
+    "overbuildAction": "halt",
+    "startedAt": "2026-11-01T20:25:14.123Z"
+  },
+  "usage": {
+    "calls": 57,
+    "inputTokens": 335114,
+    "outputTokens": 454572,
+    "usd": 0.6460199999999998
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 209,
+      "locDelta": 48,
+      "tokens": 3124,
+      "usd": 0.002311,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 1597,
+        "outputTokens": 1527,
+        "usd": 0.002311
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Fix the broken order form wiring and make it actually confirm orders inline, so the primary conversion action stops silently failing.",
+      "commit": "359e803fea5f22a20d0831a7e512d16fc49bec07"
+    },
+    {
+      "round": 2,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 217,
+      "locDelta": 8,
+      "tokens": 2936,
+      "usd": 0.0018,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 1915,
+        "outputTokens": 1021,
+        "usd": 0.0018
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the free-text drink field with a required menu-item select (with prices) so orders are unambiguous and the form can't be submitted with an off-menu drink, cutting failed orders.",
+      "commit": "77b7489ef3a9c2b9f18114a59281442c3dd954f0"
+    },
+    {
+      "round": 3,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 263,
+      "locDelta": 46,
+      "tokens": 3982,
+      "usd": 0.002973,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 2006,
+        "outputTokens": 1976,
+        "usd": 0.002973
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the Comic Sans/neon styling with a clean, mobile-first coffee-shop look and moved the order form above the fold so the conversion path is the first thing a visitor sees.",
+      "commit": "691096e060bb790395539cf08188fb94fca98495"
+    },
+    {
+      "round": 4,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 298,
+      "locDelta": 35,
+      "tokens": 4679,
+      "usd": 0.003502,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 2348,
+        "outputTokens": 2331,
+        "usd": 0.003502
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a live order total to the form so customers see the price of their drink and size as they choose, removing price uncertainty at the moment of commitment.",
+      "commit": "7968e04d2905da715c71b228e5aa3d2bbe2a7e87"
+    },
+    {
+      "round": 5,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 338,
+      "locDelta": 40,
+      "tokens": 5353,
+      "usd": 0.003984,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 2711,
+        "outputTokens": 2642,
+        "usd": 0.003984
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a sticky mobile order bar that scrolls to the order form and shows the live total, so the primary conversion action is always one tap away on 375px screens.",
+      "commit": "367379915f7192a326a8f877a2eac97660380f24"
+    },
+    {
+      "round": 6,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 418,
+      "locDelta": 80,
+      "tokens": 6236,
+      "usd": 0.004767,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3018,
+        "outputTokens": 3218,
+        "usd": 0.004767
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the plain-text menu list with tappable drink cards that pre-select the drink in the order form and scroll to it, cutting the steps between browsing and ordering.",
+      "commit": "923395c1e0c347183016f951cc3d05172a2845f1"
+    },
+    {
+      "round": 7,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 485,
+      "locDelta": 67,
+      "tokens": 7399,
+      "usd": 0.005644,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3594,
+        "outputTokens": 3805,
+        "usd": 0.005644
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add to order\" quick-pick row of drink chips directly above the form's submit button so mobile users can choose a drink without opening the select, cutting the main drop-off point in the order flow.",
+      "commit": "98b283ef95793d1f4bf742cbeefb185b0523f737"
+    },
+    {
+      "round": 8,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 529,
+      "locDelta": 44,
+      "tokens": 8362,
+      "usd": 0.006282,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4169,
+        "outputTokens": 4193,
+        "usd": 0.006282
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a name field prompt and a \"Pickup name\" hint plus a one-tap \"Add a muffin\" upsell checkbox that updates the live total, driving higher average order value without touching the working order flow.",
+      "commit": "81000a53e7d850a2398a59d09b67e64becb83f33"
+    },
+    {
+      "round": 9,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 529,
+      "locDelta": 0,
+      "tokens": 8749,
+      "usd": 0.006395,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4560,
+        "outputTokens": 4189,
+        "usd": 0.006395
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add a muffin\" upsell chip row directly under the quick-pick chips so the discounted add-on is visible without scrolling to the checkbox, lifting attach rate on mobile.",
+      "commit": "81000a53e7d850a2398a59d09b67e64becb83f33"
+    },
+    {
+      "round": 10,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 585,
+      "locDelta": 56,
+      "tokens": 9138,
+      "usd": 0.006862,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4560,
+        "outputTokens": 4578,
+        "usd": 0.006862
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Most popular\" pre-selected default drink with a one-tap \"Order the usual\" button above the form so mobile visitors can convert in a single tap without choosing anything.",
+      "commit": "495bda17a776102aec801cf382fdb92187d9b968"
+    },
+    {
+      "round": 11,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 604,
+      "locDelta": 19,
+      "tokens": 9681,
+      "usd": 0.007161,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4951,
+        "outputTokens": 4730,
+        "usd": 0.007161
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replace the plain \"Order now\" submit button with a sticky, always-visible order summary that shows the live total and a clear \"Place order\" call-to-action, so the price and next step stay in view on mobile and reduce drop-off at the final step.",
+      "commit": "f11af654a2239bc2a6f37551e88655b1fdf80efa"
+    },
+    {
+      "round": 12,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 670,
+      "locDelta": 66,
+      "tokens": 10275,
+      "usd": 0.007752,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 5087,
+        "outputTokens": 5188,
+        "usd": 0.007752
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a visible \"Order the usual\" shortcut inside the sticky bottom bar so returning visitors can convert with one tap from anywhere on the page, not just the top.",
+      "commit": "999c23d79f4f0d17f139db99c1e5c666c8cc6439"
+    },
+    {
+      "round": 13,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 689,
+      "locDelta": 19,
+      "tokens": 8281,
+      "usd": 0.00504,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 5441,
+        "outputTokens": 2840,
+        "usd": 0.00504
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Pickup time\" select to the order form so customers choose when they'll collect, reducing abandoned orders from people unsure about wait times and giving the counter a heads-up.",
+      "commit": "f347a0fc196a9e0c0a69bbbd25af4784dfd9b452"
+    },
+    {
+      "round": 14,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 760,
+      "locDelta": 71,
+      "tokens": 11548,
+      "usd": 0.008771,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 5652,
+        "outputTokens": 5896,
+        "usd": 0.008771
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the plain \"Add a muffin\" checkbox with a paired one-tap upsell row that shows the discounted price inline and toggles a clear \"Added\" state, making the add-on more discoverable and easier to accept at the point of decision.",
+      "commit": "40b8e3e4b548f445fcd9ba92bed1bd4ed1f39d87"
+    },
+    {
+      "round": 15,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 781,
+      "locDelta": 21,
+      "tokens": 11785,
+      "usd": 0.008946,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 5773,
+        "outputTokens": 6012,
+        "usd": 0.008946
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Most ordered\" social-proof badge to the top-selling Big Coffee menu card and quick-pick chip, nudging first-time visitors toward the highest-margin drink.",
+      "commit": "ed711fba6f545f7bdea396b6a8363d9fb67e3a89"
+    },
+    {
+      "round": 16,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 819,
+      "locDelta": 38,
+      "tokens": 12222,
+      "usd": 0.009417,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 5833,
+        "outputTokens": 6389,
+        "usd": 0.009417
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a live \"ready by\" clock time next to the pickup select so customers see a concrete collection time, making the order feel real and reducing pickup hesitation.",
+      "commit": "9686e9af9d6d8896ea56d044b8c9ee802c672b09"
+    },
+    {
+      "round": 17,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 870,
+      "locDelta": 51,
+      "tokens": 12914,
+      "usd": 0.009966,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6145,
+        "outputTokens": 6769,
+        "usd": 0.009966
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Skip the line — pay at pickup\" trust line with a live order-count badge under the submit button, reducing last-step hesitation by making the transaction feel safe and social.",
+      "commit": "8f0ee27d9721a54f6194750614ef7960e7b5baa4"
+    },
+    {
+      "round": 18,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 884,
+      "locDelta": 14,
+      "tokens": 10032,
+      "usd": 0.006331,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6342,
+        "outputTokens": 3690,
+        "usd": 0.006331
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Name\" field prompt that turns the anonymous order into a personal one by showing the typed name live in the submit button (\"Place order for Sam\"), making the final tap feel like a commitment to a real person and lifting submit rates.",
+      "commit": "8c0a7b2092ad9181e8dfbe47c50a4b50fc736fcc"
+    },
+    {
+      "round": 19,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 915,
+      "locDelta": 31,
+      "tokens": 13601,
+      "usd": 0.010578,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6381,
+        "outputTokens": 7220,
+        "usd": 0.010578
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Added a \"Skip the line\" pickup-time reassurance chip next to the live total so customers see the concrete ready-by time at the exact moment they decide to submit, reducing last-second hesitation.",
+      "commit": "18705577588fd361dbbed4e4c4ba6fe89a38da89"
+    },
+    {
+      "round": 20,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1009,
+      "locDelta": 94,
+      "tokens": 14564,
+      "usd": 0.011649,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6475,
+        "outputTokens": 8089,
+        "usd": 0.011649
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add a muffin\" upsell button directly inside the sticky bottom order bar so the discounted add-on is reachable from anywhere on the page, lifting attach rate without adding a new field to the form.",
+      "commit": "f2f3179162c4effb3e1b73b1e8566f9e5c9eac5c"
+    },
+    {
+      "round": 21,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1016,
+      "locDelta": 7,
+      "tokens": 14672,
+      "usd": 0.011702,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6560,
+        "outputTokens": 8112,
+        "usd": 0.011702
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a \"Your usual\" one-tap reorder card that remembers the visitor's last order in localStorage, so returning customers convert in a single tap instead of re-filling the form.",
+      "commit": "617f8e0a037c3cf7cddfb3eac2df5513ab2bb43d"
+    },
+    {
+      "round": 22,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1074,
+      "locDelta": 58,
+      "tokens": 15007,
+      "usd": 0.012081,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6586,
+        "outputTokens": 8421,
+        "usd": 0.012081
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a one-tap \"Add a muffin\" upsell directly inside the sticky order bar's total area so the discounted add-on is visible at the moment of decision, lifting attach rate without adding fields.",
+      "commit": "4507db993b7093e41498fd7ff5987339ef7976f9"
+    },
+    {
+      "round": 23,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1132,
+      "locDelta": 58,
+      "tokens": 15596,
+      "usd": 0.012788,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6586,
+        "outputTokens": 9010,
+        "usd": 0.012788
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Most ordered\" social-proof badge plus a live \"X people are ordering right now\" line near the submit button, nudging hesitant visitors to complete the order.",
+      "commit": "27470af06040584b118fb094742d9d94e722af21"
+    },
+    {
+      "round": 24,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1188,
+      "locDelta": 56,
+      "tokens": 15960,
+      "usd": 0.013173,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6643,
+        "outputTokens": 9317,
+        "usd": 0.013173
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replace the passive \"Welcome\" filler paragraph with a compact three-item \"Why Bean Street\" trust strip (skip-the-line, real baristas, pay at pickup) placed right under the order form, so hesitant first-time visitors get concrete reasons to commit at the moment of decision.",
+      "commit": "0af72f9f5b31c24c6f1853ed826330910da9e2b5"
+    },
+    {
+      "round": 25,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1217,
+      "locDelta": 29,
+      "tokens": 16311,
+      "usd": 0.013501,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6747,
+        "outputTokens": 9564,
+        "usd": 0.013501
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add a muffin\" upsell chip directly under the total/submit row so the discounted add-on is visible at the exact moment of decision, lifting attach rate without adding a new field.",
+      "commit": "73095f52e35b9eb212830cefc4df2550913767f4"
+    },
+    {
+      "round": 26,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 1218,
+      "locDelta": 1,
+      "tokens": 9973,
+      "usd": 0.005912,
+      "usage": {
+        "calls": 2,
+        "inputTokens": 13418,
+        "outputTokens": 12958,
+        "usd": 0.019575
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Removed the dead `#order-bar-total` reference in js/form.js by guarding the sticky-bar total lookup so the script no longer targets a missing DOM id, keeping the live total and one-tap order paths intact.",
+      "commit": "5b283a0070af8416ba398a133072a47b99e73260"
+    },
+    {
+      "round": 27,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1182,
+      "locDelta": -36,
+      "tokens": 16303,
+      "usd": 0.013531,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6703,
+        "outputTokens": 9600,
+        "usd": 0.013531
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a compact \"order summary\" receipt line above the submit button that lists the chosen drink, size, and muffin with the running total, so customers see exactly what they're committing to before the final tap.",
+      "commit": "7ea88b09bccfabda351f5473b327b8a8681b44e9"
+    },
+    {
+      "round": 28,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1267,
+      "locDelta": 85,
+      "tokens": 16776,
+      "usd": 0.014128,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6670,
+        "outputTokens": 10106,
+        "usd": 0.014128
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Added a compact \"Most ordered\" social-proof badge row above the quick picks showing what other customers are buying today, nudging first-time visitors toward the highest-margin Big Coffee without adding a new field or step.",
+      "commit": "27a92b5ef886786405ebe132b2d12b08e4f970e3"
+    },
+    {
+      "round": 29,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1351,
+      "locDelta": 84,
+      "tokens": 17234,
+      "usd": 0.014663,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6686,
+        "outputTokens": 10548,
+        "usd": 0.014663
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a single-tap \"Add a muffin\" nudge directly inside the order summary row next to the total and submit button, so the discounted upsell is visible at the exact moment of decision on mobile without scrolling.",
+      "commit": "c4c6d2352b25ff66de4e0c4d3d12ca5acd104baa"
+    },
+    {
+      "round": 30,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 1389,
+      "locDelta": 38,
+      "tokens": 17724,
+      "usd": 0.015242,
+      "usage": {
+        "calls": 2,
+        "inputTokens": 13362,
+        "outputTokens": 21826,
+        "usd": 0.030199
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Restored the missing footer element with hours, address, and a repeat \"Order\" call-to-action so the page ends on a conversion path and satisfies the required-selector check.",
+      "commit": "922d41aa12a75ad4a7714262116be8071fd5b2e2"
+    },
+    {
+      "round": 31,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1356,
+      "locDelta": -33,
+      "tokens": 12829,
+      "usd": 0.00941,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6650,
+        "outputTokens": 6179,
+        "usd": 0.00941
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"Most ordered\" default pre-selection to the drink picker so the form arrives with Big Coffee already chosen, cutting the first decision and letting one tap place the highest-margin order.",
+      "commit": "c3a257f4ea1d755288fbe23d0b3ddb9600c09c7c"
+    },
+    {
+      "round": 32,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1462,
+      "locDelta": 106,
+      "tokens": 18453,
+      "usd": 0.016181,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6625,
+        "outputTokens": 11828,
+        "usd": 0.016181
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Added a \"Popular\" pre-selected Big Coffee default and a one-tap \"Order the usual\" path already exist, so this round adds a visible \"Ready in ~X min\" live queue estimate next to the submit button that updates with pickup choice — giving hesitant customers a concrete time-to-coffee signal at the exact moment of decision.",
+      "commit": "9019c3b32092517f190410de4a5646f499c65eb5"
+    },
+    {
+      "round": 33,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1434,
+      "locDelta": -28,
+      "tokens": 10574,
+      "usd": 0.006739,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6611,
+        "outputTokens": 3963,
+        "usd": 0.006739
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a \"ready by\" time promise directly inside the submit button label (e.g. \"Place order — ready by 9:42\") so the final tap carries a concrete, time-bound commitment at the exact moment of decision.",
+      "commit": "436bdcaa94894b2d55b3a7ce8150202496dda041"
+    },
+    {
+      "round": 34,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1427,
+      "locDelta": -7,
+      "tokens": 17991,
+      "usd": 0.015659,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6589,
+        "outputTokens": 11402,
+        "usd": 0.015659
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the passive \"Today only: 50¢ off muffins\" promo banner with a tappable deal banner that adds the discounted muffin to the order in one tap, turning a static announcement into a conversion path at the top of the page.",
+      "commit": "239523d213ef2f0757c6520321cba1818d459587"
+    },
+    {
+      "round": 35,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1470,
+      "locDelta": 43,
+      "tokens": 18475,
+      "usd": 0.016219,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6612,
+        "outputTokens": 11863,
+        "usd": 0.016219
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add a muffin\" upsell directly inside the \"Your order\" receipt line so the discounted add-on is visible at the exact moment of commitment, lifting attach rate without a new field.",
+      "commit": "e0511b30f5f99d2285be23bc6af5a6f2d02c8e31"
+    },
+    {
+      "round": 36,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1434,
+      "locDelta": -36,
+      "tokens": 18366,
+      "usd": 0.016073,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6629,
+        "outputTokens": 11737,
+        "usd": 0.016073
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a live \"Your total so far\" mini-bar pinned inside the form's summary row that shows the running price and a one-tap \"Place order\" shortcut on mobile, so the price and the action stay paired at the point of decision.",
+      "commit": "d94a26905dae33fee9321208de4713c7a3c1de01"
+    },
+    {
+      "round": 37,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1533,
+      "locDelta": 99,
+      "tokens": 19107,
+      "usd": 0.016962,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6629,
+        "outputTokens": 12478,
+        "usd": 0.016962
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a compact \"Order again\" strip at the very top of the page for returning visitors — reading the last saved order from localStorage and re-submitting it in one tap — so the highest-intent cohort converts before scrolling past the header.",
+      "commit": "e073c6eb4128903f68641df6d5957821ec581f25"
+    },
+    {
+      "round": 38,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1563,
+      "locDelta": 30,
+      "tokens": 19421,
+      "usd": 0.017315,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6656,
+        "outputTokens": 12765,
+        "usd": 0.017315
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replace the passive \"Today's crowd favorite\" text line with a tappable one-tap button that pre-selects the top-selling Big Coffee and scrolls to the form, turning social proof into a direct conversion path.",
+      "commit": "75179458159ba205907505a6c00e64b0436496f2"
+    },
+    {
+      "round": 39,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 1547,
+      "locDelta": -16,
+      "tokens": 18969,
+      "usd": 0.016733,
+      "usage": {
+        "calls": 2,
+        "inputTokens": 13370,
+        "outputTokens": 24012,
+        "usd": 0.032826
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Restored the missing footer element (hours, address, and a repeat \"Order ahead\" CTA) so the page ends with a conversion path instead of a dead end, satisfying the required footer selector.",
+      "commit": "09184d99d229fca02693fab31b1511d0c05660a6"
+    },
+    {
+      "round": 40,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 1528,
+      "locDelta": -19,
+      "tokens": 11125,
+      "usd": 0.007312,
+      "usage": {
+        "calls": 2,
+        "inputTokens": 13379,
+        "outputTokens": 10666,
+        "usd": 0.016813
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Removed the stale `#sticky-muffin` reference in js/form.js so the sticky-bar muffin toggle no longer targets a missing DOM id, fixing the regression while keeping the one-tap muffin upsell intact.",
+      "commit": "9e185663e52df987a6bc453eb6ccc59de859265e"
+    },
+    {
+      "round": 41,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1649,
+      "locDelta": 121,
+      "tokens": 20003,
+      "usd": 0.018001,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6670,
+        "outputTokens": 13333,
+        "usd": 0.018001
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a one-tap \"Add a muffin\" upsell button directly inside the live order receipt line so the discounted add-on is offered at the moment of commitment, lifting attach rate without new fields.",
+      "commit": "bb2f8c496be761c69d9696f56bf8e61db2409681"
+    },
+    {
+      "round": 42,
+      "attempts": 3,
+      "shipped": true,
+      "loc": 1645,
+      "locDelta": -4,
+      "tokens": 9414,
+      "usd": 0.005251,
+      "usage": {
+        "calls": 3,
+        "inputTokens": 20088,
+        "outputTokens": 20276,
+        "usd": 0.030357999999999996
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Added the missing sticky-bar DOM ids (`#sticky-muffin`, `#sticky-usual`) to index.html so the existing JS references resolve, restoring the sticky one-tap order and muffin paths on mobile.",
+      "commit": "80305d18b810b58ca934d6430cfbae6a79cceabe"
+    },
+    {
+      "round": 43,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1609,
+      "locDelta": -36,
+      "tokens": 19477,
+      "usd": 0.017369,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6670,
+        "outputTokens": 12807,
+        "usd": 0.017369
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Adds a one-tap \"Add a coffee for a friend\" gift toggle inside the summary row that adds a second drink at full price to the order, lifting average order value at the exact moment of decision without adding a new field.",
+      "commit": "d74891b174105c1ea4610ab4dd11c020fb837a75"
+    },
+    {
+      "round": 44,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1558,
+      "locDelta": -51,
+      "tokens": 19256,
+      "usd": 0.017101,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6674,
+        "outputTokens": 12582,
+        "usd": 0.017101
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the passive \"Today's crowd favorite\" stat with a live, tappable \"Most ordered today\" strip that names the top drink with a concrete order count and one-tap pre-select, turning social proof into a direct conversion path at the top of the form.",
+      "commit": "0adfea64a7a195e3a5305385517972a927fb6374"
+    },
+    {
+      "round": 45,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1694,
+      "locDelta": 136,
+      "tokens": 20723,
+      "usd": 0.018863,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6672,
+        "outputTokens": 14051,
+        "usd": 0.018863
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Add a pastry\" bundle toggle to the summary row that pairs the discounted muffin with the chosen drink at a combined price, lifting attach rate at the moment of commitment on mobile.",
+      "commit": "44b968db2de1f93310d72322a355ffcb3dd5bc85"
+    },
+    {
+      "round": 46,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1560,
+      "locDelta": -134,
+      "tokens": 19522,
+      "usd": 0.017422,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6672,
+        "outputTokens": 12850,
+        "usd": 0.017422
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Replaced the passive \"Why Bean Street\" strip with a single bold, tappable \"Order the usual — Medium Coffee $3.00, ready in 4 min\" hero button placed directly above the form, giving first-time visitors a one-tap conversion path at the top of the decision funnel.",
+      "commit": "c693852edc2c59daa8a5b10f4b46860b4635397c"
+    },
+    {
+      "round": 47,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1684,
+      "locDelta": 124,
+      "tokens": 20299,
+      "usd": 0.018354,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6672,
+        "outputTokens": 13627,
+        "usd": 0.018354
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Added a compact \"Order again\" recall strip directly under the header that re-submits the last saved order in one tap, so returning visitors convert before scrolling past the fold.",
+      "commit": "ccdd2c42eb410dadf116b79263853931971c0d7b"
+    },
+    {
+      "round": 48,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1589,
+      "locDelta": -95,
+      "tokens": 19631,
+      "usd": 0.017552,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6672,
+        "outputTokens": 12959,
+        "usd": 0.017552
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a one-tap \"Order the usual\" shortcut inside the sticky bottom bar so the fastest conversion path is reachable from anywhere on the page, not just the top.",
+      "commit": "ef3da525e297ebd6fc5229a8e75ef9422da2bd1a"
+    },
+    {
+      "round": 49,
+      "attempts": 1,
+      "shipped": true,
+      "loc": 1596,
+      "locDelta": 7,
+      "tokens": 20163,
+      "usd": 0.018191,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 6672,
+        "outputTokens": 13491,
+        "usd": 0.018191
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Add a single \"Order in 30 seconds\" sticky bottom bar that collapses the whole form into one tap-to-submit path, so mobile visitors who never scroll to the submit button still convert.",
+      "commit": "1f30bc2db6f801232e4a024c24c63fb6bf74af55"
+    },
+    {
+      "round": 50,
+      "attempts": 2,
+      "shipped": true,
+      "loc": 1597,
+      "locDelta": 1,
+      "tokens": 11245,
+      "usd": 0.007454,
+      "usage": {
+        "calls": 2,
+        "inputTokens": 13383,
+        "outputTokens": 15938,
+        "usd": 0.023139999999999997
+      },
+      "verdict": "shipped",
+      "flags": [],
+      "failures": [],
+      "summary": "Removed the dead `#addon-muffin` reference by making the muffin checkbox lookup defensive, so the form JS no longer points at a missing DOM id while keeping every muffin entry point working.",
+      "commit": "0b578b06e8642e64432956747f7143db9bf37ce6"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "form-works",
+      "label": "Order form works",
+      "round": 1,
+      "ts": "2026-11-01T20:25:24.855Z"
+    },
+    {
+      "id": "first-responsive",
+      "label": "First responsive layout",
+      "round": 1,
+      "ts": "2026-11-01T20:25:24.855Z"
+    }
+  ],
+  "gateEvents": [
+    {
+      "ts": "2026-11-01T20:25:14.740Z",
+      "type": "baseline-commit",
+      "round": 0,
+      "message": "committed user working tree as b26a66a6"
+    },
+    {
+      "ts": "2026-11-01T20:25:14.945Z",
+      "type": "run-start",
+      "round": 0,
+      "message": "openai-compat/deepseek-ai/DeepSeek-V4.1-Flash-1017 · rounds≤50 · outputs_max=4"
+    },
+    {
+      "ts": "2026-11-01T20:25:24.595Z",
+      "type": "check-run",
+      "round": 1,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:25:24.595Z",
+      "type": "gate-verdict",
+      "round": 1,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:25:24.901Z",
+      "type": "ship",
+      "round": 1,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:25:24.901Z",
+      "type": "milestone",
+      "round": 1,
+      "message": "form-works, first-responsive"
+    },
+    {
+      "ts": "2026-11-01T20:25:31.123Z",
+      "type": "check-run",
+      "round": 2,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:25:31.123Z",
+      "type": "gate-verdict",
+      "round": 2,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:25:31.369Z",
+      "type": "ship",
+      "round": 2,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:25:44.227Z",
+      "type": "check-run",
+      "round": 3,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:25:44.227Z",
+      "type": "gate-verdict",
+      "round": 3,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:25:44.704Z",
+      "type": "ship",
+      "round": 3,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:25:57.761Z",
+      "type": "check-run",
+      "round": 4,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:25:57.763Z",
+      "type": "gate-verdict",
+      "round": 4,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:25:57.953Z",
+      "type": "ship",
+      "round": 4,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:26:11.096Z",
+      "type": "check-run",
+      "round": 5,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:26:11.097Z",
+      "type": "gate-verdict",
+      "round": 5,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:26:11.328Z",
+      "type": "ship",
+      "round": 5,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:26:25.345Z",
+      "type": "check-run",
+      "round": 6,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:26:25.345Z",
+      "type": "gate-verdict",
+      "round": 6,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:26:25.638Z",
+      "type": "ship",
+      "round": 6,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:26:40.212Z",
+      "type": "check-run",
+      "round": 7,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:26:40.212Z",
+      "type": "gate-verdict",
+      "round": 7,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:26:40.460Z",
+      "type": "ship",
+      "round": 7,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:27:00.242Z",
+      "type": "check-run",
+      "round": 8,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:27:00.257Z",
+      "type": "gate-verdict",
+      "round": 8,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:27:00.643Z",
+      "type": "ship",
+      "round": 8,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:27:18.433Z",
+      "type": "check-run",
+      "round": 9,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:27:18.433Z",
+      "type": "gate-verdict",
+      "round": 9,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:27:18.664Z",
+      "type": "ship",
+      "round": 9,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:27:42.790Z",
+      "type": "check-run",
+      "round": 10,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:27:42.790Z",
+      "type": "gate-verdict",
+      "round": 10,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:27:42.987Z",
+      "type": "ship",
+      "round": 10,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:28:04.604Z",
+      "type": "check-run",
+      "round": 11,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:28:04.608Z",
+      "type": "gate-verdict",
+      "round": 11,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:28:04.836Z",
+      "type": "ship",
+      "round": 11,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:28:27.303Z",
+      "type": "check-run",
+      "round": 12,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:28:27.304Z",
+      "type": "gate-verdict",
+      "round": 12,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:28:27.524Z",
+      "type": "ship",
+      "round": 12,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:28:40.220Z",
+      "type": "check-run",
+      "round": 13,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:28:40.220Z",
+      "type": "gate-verdict",
+      "round": 13,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:28:40.429Z",
+      "type": "ship",
+      "round": 13,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:29:05.990Z",
+      "type": "check-run",
+      "round": 14,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:29:05.991Z",
+      "type": "gate-verdict",
+      "round": 14,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:29:06.236Z",
+      "type": "ship",
+      "round": 14,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:29:32.503Z",
+      "type": "check-run",
+      "round": 15,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:29:32.507Z",
+      "type": "gate-verdict",
+      "round": 15,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:29:33.115Z",
+      "type": "ship",
+      "round": 15,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:30:00.416Z",
+      "type": "check-run",
+      "round": 16,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:30:00.417Z",
+      "type": "gate-verdict",
+      "round": 16,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:30:00.628Z",
+      "type": "ship",
+      "round": 16,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:30:28.188Z",
+      "type": "check-run",
+      "round": 17,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:30:28.188Z",
+      "type": "gate-verdict",
+      "round": 17,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:30:28.419Z",
+      "type": "ship",
+      "round": 17,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:30:44.122Z",
+      "type": "check-run",
+      "round": 18,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:30:44.123Z",
+      "type": "gate-verdict",
+      "round": 18,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:30:44.342Z",
+      "type": "ship",
+      "round": 18,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:31:12.674Z",
+      "type": "check-run",
+      "round": 19,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:31:12.674Z",
+      "type": "gate-verdict",
+      "round": 19,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:31:12.977Z",
+      "type": "ship",
+      "round": 19,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:31:44.757Z",
+      "type": "check-run",
+      "round": 20,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:31:44.757Z",
+      "type": "gate-verdict",
+      "round": 20,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:31:45.049Z",
+      "type": "ship",
+      "round": 20,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:32:18.184Z",
+      "type": "check-run",
+      "round": 21,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:32:18.186Z",
+      "type": "gate-verdict",
+      "round": 21,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:32:18.462Z",
+      "type": "ship",
+      "round": 21,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:32:53.099Z",
+      "type": "check-run",
+      "round": 22,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:32:53.099Z",
+      "type": "gate-verdict",
+      "round": 22,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:32:53.462Z",
+      "type": "ship",
+      "round": 22,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:33:31.084Z",
+      "type": "check-run",
+      "round": 23,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:33:31.084Z",
+      "type": "gate-verdict",
+      "round": 23,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:33:31.381Z",
+      "type": "ship",
+      "round": 23,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:34:07.272Z",
+      "type": "check-run",
+      "round": 24,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:34:07.272Z",
+      "type": "gate-verdict",
+      "round": 24,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:34:07.452Z",
+      "type": "ship",
+      "round": 24,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:34:44.202Z",
+      "type": "check-run",
+      "round": 25,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:34:44.203Z",
+      "type": "gate-verdict",
+      "round": 25,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:34:44.446Z",
+      "type": "ship",
+      "round": 25,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:35:21.776Z",
+      "type": "check-run",
+      "round": 26,
+      "message": "JS references missing DOM ids: js/form.js:#order-bar-total"
+    },
+    {
+      "ts": "2026-11-01T20:35:21.776Z",
+      "type": "gate-verdict",
+      "round": 26,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:35:21.777Z",
+      "type": "attempt-rejected",
+      "round": 26,
+      "message": "[regression] JS references missing DOM ids: js/form.js:#order-bar-total"
+    },
+    {
+      "ts": "2026-11-01T20:35:36.908Z",
+      "type": "check-run",
+      "round": 26,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:35:36.908Z",
+      "type": "gate-verdict",
+      "round": 26,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:35:37.076Z",
+      "type": "ship",
+      "round": 26,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:36:15.651Z",
+      "type": "check-run",
+      "round": 27,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:36:15.651Z",
+      "type": "gate-verdict",
+      "round": 27,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:36:16.028Z",
+      "type": "ship",
+      "round": 27,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:36:52.419Z",
+      "type": "check-run",
+      "round": 28,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:36:52.420Z",
+      "type": "gate-verdict",
+      "round": 28,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:36:52.635Z",
+      "type": "ship",
+      "round": 28,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:37:31.756Z",
+      "type": "check-run",
+      "round": 29,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:37:31.758Z",
+      "type": "gate-verdict",
+      "round": 29,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:37:31.962Z",
+      "type": "ship",
+      "round": 29,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:38:18.212Z",
+      "type": "check-run",
+      "round": 30,
+      "message": "missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:38:18.221Z",
+      "type": "gate-verdict",
+      "round": 30,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:38:18.222Z",
+      "type": "attempt-rejected",
+      "round": 30,
+      "message": "[regression] missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:39:08.410Z",
+      "type": "check-run",
+      "round": 30,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:39:08.411Z",
+      "type": "gate-verdict",
+      "round": 30,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:39:08.642Z",
+      "type": "ship",
+      "round": 30,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:39:38.717Z",
+      "type": "check-run",
+      "round": 31,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:39:38.718Z",
+      "type": "gate-verdict",
+      "round": 31,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:39:38.896Z",
+      "type": "ship",
+      "round": 31,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:40:32.252Z",
+      "type": "check-run",
+      "round": 32,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:40:32.252Z",
+      "type": "gate-verdict",
+      "round": 32,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:40:32.478Z",
+      "type": "ship",
+      "round": 32,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:40:55.282Z",
+      "type": "check-run",
+      "round": 33,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:40:55.283Z",
+      "type": "gate-verdict",
+      "round": 33,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:40:55.496Z",
+      "type": "ship",
+      "round": 33,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:41:46.632Z",
+      "type": "check-run",
+      "round": 34,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:41:46.632Z",
+      "type": "gate-verdict",
+      "round": 34,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:41:47.062Z",
+      "type": "ship",
+      "round": 34,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:42:41.472Z",
+      "type": "check-run",
+      "round": 35,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:42:41.473Z",
+      "type": "gate-verdict",
+      "round": 35,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:42:41.868Z",
+      "type": "ship",
+      "round": 35,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:43:27.575Z",
+      "type": "check-run",
+      "round": 36,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:43:27.577Z",
+      "type": "gate-verdict",
+      "round": 36,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:43:27.948Z",
+      "type": "ship",
+      "round": 36,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:44:16.760Z",
+      "type": "check-run",
+      "round": 37,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:44:16.763Z",
+      "type": "gate-verdict",
+      "round": 37,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:44:17.145Z",
+      "type": "ship",
+      "round": 37,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:45:07.337Z",
+      "type": "check-run",
+      "round": 38,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:45:07.338Z",
+      "type": "gate-verdict",
+      "round": 38,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:45:07.814Z",
+      "type": "ship",
+      "round": 38,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:45:53.540Z",
+      "type": "check-run",
+      "round": 39,
+      "message": "missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:45:53.546Z",
+      "type": "gate-verdict",
+      "round": 39,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:45:53.550Z",
+      "type": "attempt-rejected",
+      "round": 39,
+      "message": "[regression] missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:46:37.652Z",
+      "type": "check-run",
+      "round": 39,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:46:37.652Z",
+      "type": "gate-verdict",
+      "round": 39,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:46:37.932Z",
+      "type": "ship",
+      "round": 39,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:47:03.526Z",
+      "type": "check-run",
+      "round": 40,
+      "message": "JS references missing DOM ids: js/form.js:#sticky-muffin"
+    },
+    {
+      "ts": "2026-11-01T20:47:03.526Z",
+      "type": "gate-verdict",
+      "round": 40,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:47:03.526Z",
+      "type": "attempt-rejected",
+      "round": 40,
+      "message": "[regression] JS references missing DOM ids: js/form.js:#sticky-muffin"
+    },
+    {
+      "ts": "2026-11-01T20:47:22.368Z",
+      "type": "check-run",
+      "round": 40,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:47:22.369Z",
+      "type": "gate-verdict",
+      "round": 40,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:47:22.572Z",
+      "type": "ship",
+      "round": 40,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:48:15.850Z",
+      "type": "check-run",
+      "round": 41,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:48:15.851Z",
+      "type": "gate-verdict",
+      "round": 41,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:48:16.424Z",
+      "type": "ship",
+      "round": 41,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:48:59.412Z",
+      "type": "check-run",
+      "round": 42,
+      "message": "missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:48:59.414Z",
+      "type": "gate-verdict",
+      "round": 42,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:48:59.414Z",
+      "type": "attempt-rejected",
+      "round": 42,
+      "message": "[regression] missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:49:28.342Z",
+      "type": "check-run",
+      "round": 42,
+      "message": "JS references missing DOM ids: js/form.js:#sticky-muffin, js/form.js:#sticky-usual"
+    },
+    {
+      "ts": "2026-11-01T20:49:28.342Z",
+      "type": "gate-verdict",
+      "round": 42,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:49:28.343Z",
+      "type": "attempt-rejected",
+      "round": 42,
+      "message": "[regression] JS references missing DOM ids: js/form.js:#sticky-muffin, js/form.js:#sticky-usual"
+    },
+    {
+      "ts": "2026-11-01T20:49:38.837Z",
+      "type": "check-run",
+      "round": 42,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:49:38.838Z",
+      "type": "gate-verdict",
+      "round": 42,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:49:39.287Z",
+      "type": "ship",
+      "round": 42,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:50:29.683Z",
+      "type": "check-run",
+      "round": 43,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:50:29.685Z",
+      "type": "gate-verdict",
+      "round": 43,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:50:30.068Z",
+      "type": "ship",
+      "round": 43,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:51:18.549Z",
+      "type": "check-run",
+      "round": 44,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:51:18.551Z",
+      "type": "gate-verdict",
+      "round": 44,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:51:18.971Z",
+      "type": "ship",
+      "round": 44,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:52:13.147Z",
+      "type": "check-run",
+      "round": 45,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:52:13.148Z",
+      "type": "gate-verdict",
+      "round": 45,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:52:13.665Z",
+      "type": "ship",
+      "round": 45,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:53:07.272Z",
+      "type": "check-run",
+      "round": 46,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:53:07.274Z",
+      "type": "gate-verdict",
+      "round": 46,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:53:07.645Z",
+      "type": "ship",
+      "round": 46,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:53:58.220Z",
+      "type": "check-run",
+      "round": 47,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:53:58.222Z",
+      "type": "gate-verdict",
+      "round": 47,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:53:58.689Z",
+      "type": "ship",
+      "round": 47,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:54:48.634Z",
+      "type": "check-run",
+      "round": 48,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:54:48.636Z",
+      "type": "gate-verdict",
+      "round": 48,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:54:48.904Z",
+      "type": "ship",
+      "round": 48,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:55:39.853Z",
+      "type": "check-run",
+      "round": 49,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:55:39.854Z",
+      "type": "gate-verdict",
+      "round": 49,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:55:40.189Z",
+      "type": "ship",
+      "round": 49,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:56:23.018Z",
+      "type": "check-run",
+      "round": 50,
+      "message": "JS references missing DOM ids: js/form.js:#addon-muffin"
+    },
+    {
+      "ts": "2026-11-01T20:56:23.020Z",
+      "type": "gate-verdict",
+      "round": 50,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:56:23.024Z",
+      "type": "attempt-rejected",
+      "round": 50,
+      "message": "[regression] JS references missing DOM ids: js/form.js:#addon-muffin"
+    },
+    {
+      "ts": "2026-11-01T20:56:41.846Z",
+      "type": "check-run",
+      "round": 50,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:56:41.847Z",
+      "type": "gate-verdict",
+      "round": 50,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:56:42.116Z",
+      "type": "ship",
+      "round": 50,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:56:42.122Z",
+      "type": "completed",
+      "round": 50,
+      "message": "all 50 rounds shipped"
+    }
+  ],
+  "latched": {
+    "checks": {
+      "required-selectors": true,
+      "critical-selectors": true,
+      "forbidden-strings": true,
+      "loc-cap": true,
+      "max-files": true,
+      "js-refs-resolve": true
+    },
+    "forbiddenAbsent": {}
+  },
+  "baseline": {
+    "loc": 161,
+    "files": 3,
+    "comicSans": false,
+    "hasForm": true,
+    "green": [
+      "required-selectors",
+      "critical-selectors",
+      "forbidden-strings",
+      "loc-cap",
+      "max-files"
+    ],
+    "forbiddenPresent": [],
+    "commit": "b26a66a6e5f9a3751a45fa51e00cdd1dafeae801"
+  }
+}

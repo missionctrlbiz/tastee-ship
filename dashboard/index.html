@@ -19,6 +19,7 @@
       </div>
     </div>
     <div class="head-right">
+      <button id="trends-toggle" class="button button--secondary button--small" aria-expanded="false" aria-controls="trends-tray">Trends</button>
       <label class="project-pick" for="project">
         <span class="project-pick__label">Project path</span>
         <input id="project" placeholder="." spellcheck="false" autocomplete="off" />
@@ -67,29 +68,39 @@
     </div>
   </section>
 
+  <div class="msline" aria-label="Milestones">
+    <span class="msline-title">Milestones</span>
+    <div id="milestones" class="milestones"><span class="empty">No milestones yet</span></div>
+  </div>
+
   <main>
-    <section class="panel" id="panel-trends">
-      <h2>Trends <span class="hint">LOC per round · cumulative spend · dashed line = halt</span></h2>
-      <div class="charts">
-        <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="LOC per round chart"></svg></figure>
-        <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="Cumulative spend chart"></svg></figure>
+    <section class="panel" id="panel-scrub">
+      <h2>Site preview <span class="hint">Scrub through every shipped round — sandboxed</span></h2>
+      <div class="scrub-controls">
+        <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Snapshot timeline" />
+        <span id="scrub-label" class="scrub-label" aria-live="polite">—</span>
       </div>
-      <div id="chart-tip" class="chart-tip" hidden></div>
+      <div id="stage">
+        <div class="frame-wrap">
+          <span class="frame-tag" id="tag-a" hidden>Round —</span>
+          <iframe id="preview" title="Site preview at the selected round" sandbox="allow-scripts allow-forms"></iframe>
+          <div class="preview-loading" aria-hidden="true"><span>Loading snapshot…</span></div>
+        </div>
+      </div>
     </section>
 
-    <section class="panel" id="panel-milestones">
-      <h2>Milestones</h2>
-      <div id="milestones" class="milestones"><span class="empty">No milestones yet</span></div>
-    </section>
-
-    <section class="panel" id="panel-rounds">
-      <h2>Rounds <span class="hint">Select a row to inspect its git diff</span></h2>
-      <div class="table-scroll">
-        <table id="rounds">
-          <thead><tr><th>Round</th><th>Attempts</th><th>LOC</th><th>Δ LOC</th><th>Spend</th><th>Verdict</th><th>Summary</th></tr></thead>
-          <tbody></tbody>
-        </table>
-      </div>
+    <section class="panel" id="panel-rounds" aria-label="Shipped rounds">
+      <h2>Rounds <span class="hint">Select a round to preview it. Use the diff link for the git change.</span></h2>
+      <ol id="round-rail" class="round-rail" role="list"></ol>
+      <details id="rounds-disclosure" class="rounds-disclosure">
+        <summary>All-rounds table</summary>
+        <div class="table-scroll">
+          <table id="rounds">
+            <thead><tr><th>Round</th><th>Attempts</th><th>LOC</th><th>Δ LOC</th><th>Spend</th><th>Verdict</th><th>Summary</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </details>
       <div id="diff-drawer" class="diff-drawer" hidden>
         <div class="diff-head">
           <div class="diff-heading">
@@ -100,18 +111,6 @@
         </div>
         <table id="diff-stat" class="diff-stat"></table>
         <pre id="diff-patch" tabindex="0"></pre>
-      </div>
-    </section>
-
-    <section class="panel" id="panel-scrub">
-      <h2>Site preview <span class="hint">Scrub through every shipped round — sandboxed</span></h2>
-      <div class="scrub-controls">
-        <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Snapshot timeline" />
-        <span id="scrub-label" class="scrub-label" aria-live="polite">—</span>
-      </div>
-      <div class="frame-wrap">
-        <iframe id="preview" title="Site preview at the selected round" sandbox="allow-scripts allow-forms"></iframe>
-        <div class="preview-loading" aria-hidden="true"><span>Loading snapshot…</span></div>
       </div>
     </section>
 
@@ -136,6 +135,17 @@
   <footer>
     <p>Reference case study: <a href="https://www.youtube.com/watch?v=DByAR5Su1Yw">“I Told Claude to ‘Make it better’ 100 Times”</a> — this dashboard keeps his rounds/milestones/scrubber and adds the stop button he lacked.</p>
   </footer>
+
+  <div id="trends-tray" class="tray" role="region" aria-label="Trends" hidden>
+    <section class="panel" id="panel-trends">
+      <h2>Trends <span class="hint">LOC per round · cumulative spend · dashed line = halt</span></h2>
+      <div class="charts">
+        <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="LOC per round chart"></svg></figure>
+        <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none" role="img" aria-label="Cumulative spend chart"></svg></figure>
+      </div>
+      <div id="chart-tip" class="chart-tip" hidden></div>
+    </section>
+  </div>
 
   <script src="/app.js"></script>
 </body>

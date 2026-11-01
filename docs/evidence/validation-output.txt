@@ -69,10 +69,10 @@ findings. Re-run with `tship keys add anthropic` + `--provider anthropic` for li
 
 — run 4 — kill-switch drill: stop mid-run, verify rollback, resume
   [PASS] killed at round 21: status=killed, reason=user-rejection
-  [PASS] repo HEAD == last good checkpoint 6c391a60 (rolled back)
+  [PASS] repo HEAD == last good checkpoint 22491c3f (rolled back)
   [PASS] working tree clean — in-flight attempt discarded
   [PASS] resumed from checkpoint → completed all 50 rounds
-  [PASS] usage continued across the kill (22 → 51 calls, $0.42 → $1.01)
+  [PASS] usage continued across the kill (21 → 52 calls, $0.40 → $1.02)
 
 — keys: stored in .env.local, chmod 600, never committed
   [PASS] .env.local written

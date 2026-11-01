@@ -499,17 +499,14 @@ main {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 
   grid-template-areas:
-    'trends trends trends trends trends trends trends trends milestones milestones milestones milestones'
-    'rounds rounds rounds rounds rounds rounds rounds preview preview preview preview preview'
+    'preview preview preview preview preview preview preview rounds rounds rounds rounds rounds'
     'log log log log log log log log log log log log';
 
-  align-items: start;
+  align-items: stretch;
 }
 
-#panel-trends { grid-area: trends; }
-#panel-milestones { grid-area: milestones; }
-#panel-rounds { grid-area: rounds; }
 #panel-scrub { grid-area: preview; }
+#panel-rounds { grid-area: rounds; }
 #panel-log { grid-area: log; }
 
 .panel {
@@ -565,6 +562,32 @@ main {
 }
 
 /* ------------------------------------------------------------- milestones --- */
+
+/* Milestones are a thin strip between the metrics and the main grid, not a
+   panel. The chips inside keep their card styling. */
+
+.msline {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  width: min(100% - 48px, 1680px);
+  margin: 14px auto 0;
+}
+
+.msline-title {
+  color: var(--text-subtle);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.msline .milestones {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
 
 .milestones {
   display: flex;
@@ -703,12 +726,19 @@ figcaption {
 }
 
 /* --------------------------------------------------------------- preview --- */
+/* The site under judgment is the protagonist: hero frame on the left, the
+   rounds rail beside it, trends summoned on demand from the topbar tray. */
+
+#panel-scrub {
+  display: flex;
+  flex-direction: column;
+}
 
 .scrub-controls {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 #scrub {
@@ -769,6 +799,34 @@ figcaption {
   white-space: nowrap;
 }
 
+/* The stage pre-wires A/B compare: a second frame can arrive later untouched.
+   min-height (not min-height: 0) is what guarantees the hero frame's height
+   when the panel sits alone in its grid row at narrow widths. */
+
+#stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 1px;
+
+  background: var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+
+  flex: 1;
+  min-height: 544px;
+}
+
+#stage[data-compare='on'] {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  #stage[data-compare='on'] {
+    grid-template-columns: 1fr;
+  }
+}
+
 .frame-wrap {
   position: relative;
   overflow: hidden;
@@ -781,9 +839,25 @@ figcaption {
 #preview {
   display: block;
   width: 100%;
-  height: 430px;
+  height: 100%;
   border: 0;
   background: #fff;
+}
+
+.frame-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+
+  padding: 3px 9px;
+
+  color: var(--text);
+  background: rgba(11, 18, 32, 0.82);
+  border-radius: var(--radius-pill);
+
+  font: 600 11px/1.4 var(--font-mono);
+  font-variant-numeric: tabular-nums;
 }
 
 .preview-loading {
@@ -804,6 +878,165 @@ figcaption {
 }
 
 /* ----------------------------------------------------------------- rounds --- */
+
+#panel-rounds {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* The rail is the shipped storyline — rejected attempts live in the gate log.
+   Cards cap at ~52px with a 2-line summary, so ~12 rounds match the preview's
+   height and 50 rounds scroll inside the rail instead of stretching the row. */
+
+.round-rail {
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+@media (min-width: 1101px) {
+  .round-rail {
+    flex: 1 1 0%;
+    max-height: 584px;
+    padding-right: 4px; /* scrollbar gutter */
+  }
+}
+
+.round-rail__empty {
+  padding: 6px 2px;
+}
+
+.round-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: 'main diff';
+
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.round-card:hover {
+  background: var(--surface-hover);
+}
+
+.round-card:focus-within,
+.round-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.round-card.is-active {
+  border-color: var(--accent);
+  box-shadow: inset 2.5px 0 0 var(--accent);
+  background: var(--accent-soft);
+}
+
+.round-card__main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: auto auto 1fr;
+  grid-template-areas:
+    'no badge nums'
+    'sum sum sum';
+  align-items: center;
+  gap: 2px 10px;
+
+  min-width: 0;
+  padding: 9px 11px;
+
+  text-align: left;
+  color: inherit;
+  background: none;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.round-card__no {
+  grid-area: no;
+  color: var(--accent);
+  font: 700 12px var(--font-mono);
+}
+
+.round-card__badge {
+  grid-area: badge;
+  justify-self: start;
+}
+
+.round-card__nums {
+  grid-area: nums;
+  justify-self: end;
+
+  color: var(--text-muted);
+  font: 550 11.5px var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.round-card__sum {
+  grid-area: sum;
+
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.round-card .status-badge {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+.round-card__diff {
+  grid-area: diff;
+  align-self: start;
+  margin: 6px 6px 0 0;
+  padding: 4px 9px;
+
+  color: var(--text-muted);
+  background: var(--surface-inset);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.round-card__diff:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.rounds-disclosure summary {
+  margin-top: 10px;
+  padding: 6px 2px;
+
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rounds-disclosure summary:hover {
+  color: var(--text);
+}
+
+.rounds-disclosure[open] summary {
+  margin-bottom: 8px;
+}
 
 .table-scroll {
   width: 100%;
@@ -1228,6 +1461,36 @@ footer a {
   color: var(--accent);
 }
 
+/* ------------------------------------------------------------ trends tray --- */
+
+/* Non-modal bottom sheet: no backdrop, the run stays visible behind it.
+   transform:none while open — a retained transform would become the containing
+   block for the fixed-position chart tooltip and misplace it. */
+
+.tray {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+
+  max-height: 46vh;
+  overflow: auto;
+  padding: 18px 24px 22px;
+
+  background: var(--surface);
+  border-top: 1px solid var(--border-strong);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -18px 48px rgba(0, 0, 0, 0.35);
+
+  transform: translateY(105%);
+  transition: transform var(--transition-normal);
+}
+
+.tray.open {
+  transform: none;
+}
+
 /* ------------------------------------------------------------- responsive --- */
 
 @media (max-width: 1100px) {
@@ -1235,10 +1498,9 @@ footer a {
     grid-template-columns: repeat(6, minmax(0, 1fr));
 
     grid-template-areas:
-      'trends trends trends trends trends trends'
-      'milestones milestones milestones milestones milestones milestones'
-      'preview preview preview rounds rounds rounds'
-      'log log log log log log';
+      'preview preview preview preview preview preview'
+      'rounds  rounds  rounds  rounds  rounds  rounds'
+      'log     log     log     log     log     log';
   }
 }
 
@@ -1247,6 +1509,10 @@ footer a {
     width: calc(100% - 24px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .msline {
+    width: calc(100% - 24px);
   }
 
   header {
@@ -1261,8 +1527,6 @@ footer a {
     grid-template-columns: minmax(0, 1fr);
 
     grid-template-areas:
-      'trends'
-      'milestones'
       'preview'
       'rounds'
       'log';
@@ -1299,8 +1563,17 @@ footer a {
     gap: 4px;
   }
 
-  #preview {
-    height: 320px;
+  #stage {
+    min-height: 324px;
+  }
+
+  .round-card__sum {
+    -webkit-line-clamp: 1;
+  }
+
+  .tray {
+    padding: 14px;
+    max-height: 70vh;
   }
 
   #log-filters {
@@ -1344,8 +1617,8 @@ footer a {
     min-height: 42px;
   }
 
-  #preview {
-    height: 280px;
+  #stage {
+    min-height: 284px;
   }
 }
 

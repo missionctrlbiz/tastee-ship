@@ -132,6 +132,7 @@ function render(state) {
   renderMilestones(state.milestones || []);
   renderCharts(state.rounds || [], state);
   renderRounds(state.rounds || []);
+  renderRoundRail(state.rounds || []);
   refreshEvents();
 }
 
@@ -235,6 +236,9 @@ $('log').addEventListener('keydown', (ev) => {
 });
 
 function jumpToRound(round) {
+  // rows live inside the collapsed disclosure — open it so the flash is visible
+  const disclosure = $('rounds-disclosure');
+  if (disclosure && !disclosure.open) disclosure.open = true;
   const rows = [...document.querySelectorAll('#rounds tbody tr[data-round]')];
   const exact = rows.find((r) => Number(r.dataset.round) === round);
   const target = exact || rows.filter((r) => Number(r.dataset.round) < round).pop() || rows[0];
@@ -409,6 +413,77 @@ for (const svgId of ['chart-loc', 'chart-cost']) {
   });
 }
 
+// ------------------------------------------------------------- round rail ---
+// The rail is the shipped storyline — one compact card per shipped round.
+// Rejected attempts are not on the rail; they live in the gate log by design.
+// Selecting a card and scrubbing the preview share one active state: each
+// drives the other.
+
+const roundOfSnapshot = (name) => Number(name.match(/round-(\d+)/)?.[1] || 0);
+const snapshotIndexForRound = (round) => snapshots.findIndex((s) => roundOfSnapshot(s) === round);
+const currentPreviewRound = () => (snapshots.length ? roundOfSnapshot(snapshots[Number($('scrub').value) || 0]) : null);
+
+function renderRoundRail(rounds) {
+  const rail = $('round-rail');
+  if (!rail) return;
+  const keep = rail.scrollTop;
+  // survive the 1s re-render: restore scroll position and keyboard focus
+  const ae = document.activeElement;
+  const focusKey = rail.contains(ae) ? `${ae.classList.contains('round-card__diff') ? 'diff' : 'main'}:${ae.dataset.round}` : null;
+  const active = currentPreviewRound();
+  rail.innerHTML = rounds.length
+    ? rounds
+        .map((r) => {
+          const p = verdictPresentation(r.verdict);
+          const isActive = r.round === active;
+          return `<li class="round-card${isActive ? ' is-active' : ''}" data-round="${r.round}"${isActive ? ' aria-current="true"' : ''}>
+            <button type="button" class="round-card__main" data-round="${r.round}" aria-label="Round ${r.round}, ${p.label} — preview this round">
+              <span class="round-card__no">r${r.round}</span>
+              <span class="status-badge round-card__badge ${p.className}">${escapeHtml(p.label)}</span>
+              <span class="round-card__nums">Δ${r.locDelta ?? '—'} LOC · ${fmtUsd(roundUsd(r))}</span>
+              <span class="round-card__sum" title="${escapeHtml(r.summary || '')}">${escapeHtml(r.summary || '')}</span>
+            </button>
+            <button type="button" class="round-card__diff" data-round="${r.round}" aria-label="Open the git diff for round ${r.round}">diff</button>
+          </li>`;
+        })
+        .join('')
+    : '<li class="empty round-rail__empty">No rounds shipped yet — cards appear as the agent ships.</li>';
+  rail.scrollTop = keep;
+  if (focusKey) {
+    const [kind, num] = focusKey.split(':');
+    rail.querySelector(`.round-card__${kind}[data-round="${num}"]`)?.focus();
+  }
+}
+
+function markActiveRound(round) {
+  document.querySelectorAll('#round-rail .round-card').forEach((li) => {
+    const on = Number(li.dataset.round) === round;
+    li.classList.toggle('is-active', on);
+    if (on) li.setAttribute('aria-current', 'true');
+    else li.removeAttribute('aria-current');
+    if (on) li.scrollIntoView({ block: 'nearest' });
+  });
+}
+
+function selectRound(round) {
+  const idx = snapshotIndexForRound(round);
+  if (idx >= 0) {
+    $('scrub').value = String(idx);
+    updateScrub();
+  } else {
+    markActiveRound(round); // round has no snapshot yet; highlight only
+  }
+}
+
+// The card buttons are real <button>s, so Enter/Space already produce click
+// events natively — click delegation covers mouse and keyboard alike.
+$('round-rail')?.addEventListener('click', (ev) => {
+  const diff = ev.target.closest('.round-card__diff');
+  if (diff) return showDiff(Number(diff.dataset.round));
+  const card = ev.target.closest('.round-card__main');
+  if (card) selectRound(Number(card.dataset.round));
+});
+
 // --------------------------------------------------------------- scrubber ---
 
 async function loadSnapshots() {
@@ -421,9 +496,11 @@ async function loadSnapshots() {
 
 function updateScrub() {
   const i = Number($('scrub').value);
+  const tag = $('tag-a');
   if (!snapshots.length) {
     $('scrub-label').textContent = 'No snapshots yet';
     $('scrub').setAttribute('aria-valuetext', 'no snapshots');
+    if (tag) tag.hidden = true;
     $('preview').srcdoc = '<p style="font:14px sans-serif;color:#7d8ca4;padding:1rem">Snapshots appear after the first shipped round.</p>';
     document.querySelector('.frame-wrap')?.classList.remove('is-loading');
     return;
@@ -432,8 +509,15 @@ function updateScrub() {
   const round = Number(name.match(/round-(\d+)/)?.[1] || '?');
   $('scrub-label').textContent = `Round ${round} · ${i + 1} of ${snapshots.length}`;
   $('scrub').setAttribute('aria-valuetext', `round ${round}, snapshot ${i + 1} of ${snapshots.length}`);
+  if (tag) {
+    tag.textContent = `Round ${round}`;
+    tag.hidden = false;
+  }
   document.querySelector('.frame-wrap')?.classList.add('is-loading');
-  $('preview').src = `/api/snapshot?name=${encodeURIComponent(name)}&project=${encodeURIComponent(projectInput.value)}`;
+  const url = `/api/snapshot?name=${encodeURIComponent(name)}&project=${encodeURIComponent(projectInput.value)}`;
+  // selecting the already-shown round must not reload the iframe
+  if ($('preview').src !== new URL(url, location.href).href) $('preview').src = url;
+  markActiveRound(round);
 }
 
 $('preview').addEventListener('load', () => {
@@ -463,6 +547,33 @@ $('kill').addEventListener('click', async () => {
     alert(`STOP FAILED: ${e.message} — the run is NOT stopped. Use \`tship stop\`.`);
   }
 });
+
+// ----------------------------------------------------------- trends tray ---
+
+function setTrends(open) {
+  const tray = $('trends-tray');
+  tray.hidden = false;
+  void tray.offsetWidth; // flush pending styles so the class change animates
+  tray.classList.toggle('open', open);
+  $('trends-toggle').setAttribute('aria-expanded', String(open));
+  if (!open) setTimeout(() => { if (!tray.classList.contains('open')) tray.hidden = true; }, 240);
+  try {
+    localStorage.setItem('tsh-tray', open ? '1' : '0');
+  } catch {}
+}
+
+$('trends-toggle')?.addEventListener('click', () => setTrends($('trends-tray').classList.contains('open') ? false : true));
+
+addEventListener('keydown', (ev) => {
+  if (ev.key !== 'Escape') return;
+  if (!$('trends-tray').hidden && !$('diff-drawer').hidden) return; // diff drawer closes first
+  if (!$('trends-tray').hidden) setTrends(false);
+});
+
+// Trends are on-demand now — restore last session's choice, defaulting closed.
+try {
+  if (localStorage.getItem('tsh-tray') === '1') setTrends(true);
+} catch {}
 
 // ------------------------------------------------------------------- live ---
 

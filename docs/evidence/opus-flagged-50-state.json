@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "createdAt": "2026-11-01T21:00:09.892Z",
-  "updatedAt": "2026-11-01T21:00:32.543Z",
+  "createdAt": "2026-11-01T21:49:26.141Z",
+  "updatedAt": "2026-11-01T21:49:43.031Z",
   "project": "proj",
   "status": "completed",
   "haltReason": null,
   "run": {
-    "id": "run-mvybdbmt-8dvhiv",
+    "id": "run-mvyd4oou-vk1n6s",
     "provider": "mock",
     "model": "mock-opus",
     "outputsMax": 4,
     "roundsMax": 50,
     "roundIndex": 50,
     "attemptsThisRound": 0,
-    "lastGoodCommit": "fee24b012c261cbf2a2dd537b469e1cba74244a1",
+    "lastGoodCommit": "b1770818a42ffe6b27cdc3b54a7c6e5295a0c23f",
     "overbuildAction": "flag",
-    "startedAt": "2026-11-01T21:00:09.893Z"
+    "startedAt": "2026-11-01T21:49:26.142Z"
   },
   "usage": {
     "calls": 52,
@@ -42,7 +42,7 @@
       "flags": [],
       "failures": [],
       "summary": "Full visual redesign: design language, shadows, spacing, type.",
-      "commit": "ef8eb3ebfc69d9891cab9688610f8b59a6702594"
+      "commit": "19fc55dfb8a779370046ef6fe780a3b5e6b489b4"
     },
     {
       "round": 2,
@@ -62,7 +62,7 @@
       "flags": [],
       "failures": [],
       "summary": "Restructure the page into semantic sections and go responsive.",
-      "commit": "4c244ac5986eb1d0bc6f875bbf71cf705f4b3695"
+      "commit": "bdd78aabf5ffabae09843fb9cc0e55bb6e3d8cb0"
     },
     {
       "round": 3,
@@ -82,7 +82,7 @@
       "flags": [],
       "failures": [],
       "summary": "Rebuild the order form on a validation framework with inline errors.",
-      "commit": "9644e928d8fe4f1dbb63f6bd71bb05e17081209b"
+      "commit": "fb36ef12d1b8fcb29f74686b9f19fec26b7b5f3e"
     },
     {
       "round": 4,
@@ -102,7 +102,7 @@
       "flags": [],
       "failures": [],
       "summary": "Cinematic hero image with gradient overlay.",
-      "commit": "5246065e9b8a8d104ac1844b3366c0f4f1e8bc8d"
+      "commit": "0d919e1f5df50fc67a518cfa3b563af5b5ddaef3"
     },
     {
       "round": 5,
@@ -122,7 +122,7 @@
       "flags": [],
       "failures": [],
       "summary": "Motion framework: scroll reveals, hover states, transitions.",
-      "commit": "052cc0e7467d37257167a520fc30765f9a626ca5"
+      "commit": "fad03f6b0e7524da1bcdc0e1aea982dab22e0061"
     },
     {
       "round": 6,
@@ -142,7 +142,7 @@
       "flags": [],
       "failures": [],
       "summary": "Ship a UI component library (buttons, cards, chips, modals).",
-      "commit": "13a6e31977ca7b6175db5e6a1e8e5008c99aa724"
+      "commit": "0eaf9c808369e1738d7ecfbaf50d7bb38a24e376"
     },
     {
       "round": 7,
@@ -162,7 +162,7 @@
       "flags": [],
       "failures": [],
       "summary": "A tiny state manager so widgets share one source of truth.",
-      "commit": "0c5af8b7cacdaf69adf43b191ce63a48e23add9a"
+      "commit": "5f97265e39663b91f2ab1438069f55ca43ba53d7"
     },
     {
       "round": 8,
@@ -182,7 +182,7 @@
       "flags": [],
       "failures": [],
       "summary": "Theming system with runtime theme switching.",
-      "commit": "e966d5946cf4af91fc82dee183cbce25b396a264"
+      "commit": "50d65d20304d77158bbbf999f924b4efd5801321"
     },
     {
       "round": 9,
@@ -202,7 +202,7 @@
       "flags": [],
       "failures": [],
       "summary": "Full-bleed video hero with sound-off poster frame.",
-      "commit": "362c7befce6475d1272208a86b90b59379446c2f"
+      "commit": "26290f29d641a896a7306fb01a967ff84357bfe3"
     },
     {
       "round": 10,
@@ -222,7 +222,7 @@
       "flags": [],
       "failures": [],
       "summary": "Micro-interactions everywhere: magnetic buttons, ripples, toasts.",
-      "commit": "6b68b757bea22c792c91cb1cc14464911b01e7a5"
+      "commit": "f1fb1342e8c628f12a69db481b7742b5fac1b6ac"
     },
     {
       "round": 11,
@@ -242,7 +242,7 @@
       "flags": [],
       "failures": [],
       "summary": "PWA: manifest + service worker for offline menu browsing.",
-      "commit": "7f2bab9490cf3da67cedba3e7265aadf64a71421"
+      "commit": "4281deb223f5740115a64e5f493ad530c0892cac"
     },
     {
       "round": 12,
@@ -262,7 +262,7 @@
       "flags": [],
       "failures": [],
       "summary": "First-party analytics module with funnel events.",
-      "commit": "af3c82ef6cf06189225bf652b32c2f08ac1d8658"
+      "commit": "68c90e1bcac1b07bea6075964dda248bd062f139"
     },
     {
       "round": 13,
@@ -284,7 +284,7 @@
       ],
       "failures": [],
       "summary": "Bold differentiator: an interactive pumpkin-carving configurator for the season.",
-      "commit": "081ce40f26ab5101d1a40974f82597092bf93083"
+      "commit": "a8b06d1d41d36dbc8378e8de93f810a07d6487ce"
     },
     {
       "round": 14,
@@ -306,7 +306,7 @@
       ],
       "failures": [],
       "summary": "Design tokens extracted to their own layer.",
-      "commit": "61261f361f21e71ccbfe8302c7366dbb4d2fb641"
+      "commit": "94c14913631719d04b40ccfe068507f26e0ba090"
     },
     {
       "round": 15,
@@ -328,7 +328,7 @@
       ],
       "failures": [],
       "summary": "i18n scaffold with message catalogs.",
-      "commit": "8fedbc71697cc18d70ddf220331efb17b40c1e73"
+      "commit": "2e4088e8ca05f8971e26f815bb2fc3a95e869460"
     },
     {
       "round": 16,
@@ -350,7 +350,7 @@
       ],
       "failures": [],
       "summary": "Canvas-based order visualiser.",
-      "commit": "d5ef8b2d4e835f49695fe5fbbf7508af10ee477c"
+      "commit": "4407d1e2d2d95bab4871c5280e41e1459dcc7fc8"
     },
     {
       "round": 17,
@@ -372,7 +372,7 @@
       ],
       "failures": [],
       "summary": "Live order board (websocket stub with graceful fallback).",
-      "commit": "9805fea3ec9760c0cfb7de4791efe5f5b2850f9d"
+      "commit": "cfe1a22b1243b755beae6ee818c3b249a500b83d"
     },
     {
       "round": 18,
@@ -394,7 +394,7 @@
       ],
       "failures": [],
       "summary": "ML-style drink recommender (rules-based stand-in).",
-      "commit": "540d3301fb29ea72d6aa92fd0063bc0b49cf929e"
+      "commit": "5123418414da9f6155f93e1617a0ecdc951addf7"
     },
     {
       "round": 19,
@@ -416,7 +416,7 @@
       ],
       "failures": [],
       "summary": "Blog engine with markdown-ish parsing.",
-      "commit": "5a82368e0ddd586d3382f1e7558f166b8afc2449"
+      "commit": "b1c3344d8529ecdf0d5037961d0390b36b8f3500"
     },
     {
       "round": 20,
@@ -438,7 +438,7 @@
       ],
       "failures": [],
       "summary": "Admin dashboard page for staff.",
-      "commit": "5596e67f5a3c6d5073788137c6e837c655b9818a"
+      "commit": "5110a1f3caaf8f2fd3979cac2d8222980f948da5"
     },
     {
       "round": 21,
@@ -460,7 +460,7 @@
       ],
       "failures": [],
       "summary": "Dark mode.",
-      "commit": "11fd375aecf179a8f406da73a308b095a7b52f89"
+      "commit": "fa7aa464df8ce902c81ed7c11d4491844056bf17"
     },
     {
       "round": 22,
@@ -482,7 +482,7 @@
       ],
       "failures": [],
       "summary": "Print stylesheet for the menu.",
-      "commit": "90d5de83b0ca3edad44218a53e9580a02af04cba"
+      "commit": "f8f46d179f7a47383bec706f1e160e37077a9f15"
     },
     {
       "round": 23,
@@ -504,7 +504,7 @@
       ],
       "failures": [],
       "summary": "In-repo test harness for the form validators.",
-      "commit": "780fc5d6338332e859ae634daa6be7f5158165cc"
+      "commit": "041e4b4fc0807c6f770beb8a44ec323be11bb6ef"
     },
     {
       "round": 24,
@@ -526,7 +526,7 @@
       ],
       "failures": [],
       "summary": "Content layer: menu data in JSON with a loader.",
-      "commit": "8242e3140dab959e7dfaac94636ea57e0c5df021"
+      "commit": "392b8d99cebff6d2a6a714916aa66bd8e6bae37e"
     },
     {
       "round": 25,
@@ -548,7 +548,7 @@
       ],
       "failures": [],
       "summary": "Account UI stub with sign-in sheet.",
-      "commit": "cd763a4a6df8d717412fc5107c67ae6f025b8b1d"
+      "commit": "9f336741706bd929fb474a831dacb85bb59bcf23"
     },
     {
       "round": 26,
@@ -570,7 +570,7 @@
       ],
       "failures": [],
       "summary": "Charts on canvas for weekly orders.",
-      "commit": "dca6b819ac42a3cd8ef2bf6e1f993e6504af89f8"
+      "commit": "ff12d91903ce486d348334a68f7116d8a1f2c0ae"
     },
     {
       "round": 27,
@@ -592,7 +592,7 @@
       ],
       "failures": [],
       "summary": "Notification center with toasts.",
-      "commit": "07ee357bd8352c6ca81da393d05e810afdeeb488"
+      "commit": "4f0f16748cbb0727b63112ea2ff200529729305b"
     },
     {
       "round": 28,
@@ -614,7 +614,7 @@
       ],
       "failures": [],
       "summary": "Review aggregator widget.",
-      "commit": "7b8fab2c5f934fbc357ea24c18aa72663a553024"
+      "commit": "0cc081eb2cb277a1516c90a929838862703ad91d"
     },
     {
       "round": 29,
@@ -636,7 +636,7 @@
       ],
       "failures": [],
       "summary": "Gift card purchase flow.",
-      "commit": "54544f743502c2fd11df4d5a1d42da7a59a52fca"
+      "commit": "34f68549e7e5e2f1f3b06c0e7f64cd78884eb3cc"
     },
     {
       "round": 30,
@@ -658,7 +658,7 @@
       ],
       "failures": [],
       "summary": "Language toggle, now wired to a real control in the nav.",
-      "commit": "450b2c52f426592055a2be07d02d359381ec33a9"
+      "commit": "70a35c1e0d6b6798c7c083002b7716165cd77c2a"
     },
     {
       "round": 31,
@@ -680,7 +680,7 @@
       ],
       "failures": [],
       "summary": "Booking system for the tasting room.",
-      "commit": "0461e07005cb08fb18855b44aebbc519efb8f6c2"
+      "commit": "f0b2060b9bd60846b317e8350ca1c8242a53b077"
     },
     {
       "round": 32,
@@ -702,7 +702,7 @@
       ],
       "failures": [],
       "summary": "Events calendar.",
-      "commit": "b70166d9b8c1cc8a387b3f248d6722f88adfc856"
+      "commit": "8e103707628a72ffc4046691e0af25efbf0a1f10"
     },
     {
       "round": 33,
@@ -724,7 +724,7 @@
       ],
       "failures": [],
       "summary": "Merch store with cart.",
-      "commit": "c40ae2669875fcc9cfc964b18b28e0647b73294d"
+      "commit": "934ca011ee3475d1adfc3f8357891092dacb6685"
     },
     {
       "round": 34,
@@ -746,7 +746,7 @@
       ],
       "failures": [],
       "summary": "Loyalty plus: tiers and stamps.",
-      "commit": "dd1002ea833470c4bfb51c1852f03f512ab7e7b0"
+      "commit": "c76be808d046745592f528c6fd2eea02435492ec"
     },
     {
       "round": 35,
@@ -768,7 +768,7 @@
       ],
       "failures": [],
       "summary": "Gift registry.",
-      "commit": "275890671862dbb215a851c736bf0e9e1bc947c1"
+      "commit": "e5b88e1f2020172a1ef1b2e38c3fe1770421879f"
     },
     {
       "round": 36,
@@ -790,7 +790,7 @@
       ],
       "failures": [],
       "summary": "Catering quote builder.",
-      "commit": "48149000b13deec27b166f5ef2d1e79abfbe873d"
+      "commit": "52bc61e916ab722bd8d0e4aa5f4b84e43ef050b6"
     },
     {
       "round": 37,
@@ -812,7 +812,7 @@
       ],
       "failures": [],
       "summary": "Blog comments with moderation queue stub.",
-      "commit": "1fad5ddff8bcc035b364c685310d6d2755b3c8b4"
+      "commit": "14113e9cbba210ceafe6b0c1d045dbba62f444a2"
     },
     {
       "round": 38,
@@ -834,7 +834,7 @@
       ],
       "failures": [],
       "summary": "Keep the stable order-form id; alias it in JS instead.",
-      "commit": "2c6614b652655c054c4867b13ab56b908399cf1f"
+      "commit": "8637ec9df6cc548d8770308eaa7ade28b84360e6"
     },
     {
       "round": 39,
@@ -856,7 +856,7 @@
       ],
       "failures": [],
       "summary": "Search index over menu + blog.",
-      "commit": "cc4fcc378d4eb4531c4e7c860401a7303ec4d02d"
+      "commit": "1cb58a79a4d23dc26a4ebc2cfd5c27ba55e9f5df"
     },
     {
       "round": 40,
@@ -878,7 +878,7 @@
       ],
       "failures": [],
       "summary": "Responsive images with srcset scaffolding.",
-      "commit": "912b0b3f09763c9dc4925d81fd0074a84e52c013"
+      "commit": "ee5e2e3e961cc6fb75daa7412c3a3bd7a5212681"
     },
     {
       "round": 41,
@@ -900,7 +900,7 @@
       ],
       "failures": [],
       "summary": "Cookie banner module.",
-      "commit": "a9c4e2ef95a422f6e0c7372020ceb7695721f69f"
+      "commit": "4caefe3c23b3ce288a3b2878f2563943a55e189b"
     },
     {
       "round": 42,
@@ -922,7 +922,7 @@
       ],
       "failures": [],
       "summary": "Waitlist for limited roasts.",
-      "commit": "590017bff2e067cc126e2981e34ffe16aa55feb5"
+      "commit": "72d148656fdee1766de75f80a377c905e8c6c3f3"
     },
     {
       "round": 43,
@@ -944,7 +944,7 @@
       ],
       "failures": [],
       "summary": "Subscription coffee plan.",
-      "commit": "a4692db7e9b9b4085600fc9ed1fe9acb9632177e"
+      "commit": "83ab413e50e5648998183804b45edef810307c49"
     },
     {
       "round": 44,
@@ -966,7 +966,7 @@
       ],
       "failures": [],
       "summary": "A11y audit page with findings.",
-      "commit": "ab576f0ba2751945337a369203ee1b67bfe75749"
+      "commit": "b9528616c5222cd0bbc018e7770f404dad0eebdf"
     },
     {
       "round": 45,
@@ -988,7 +988,7 @@
       ],
       "failures": [],
       "summary": "Perf budget tracker.",
-      "commit": "e679d64f7d09c9e3cf590cc2bbb613fe41fbd6bf"
+      "commit": "839a9b2066f10203f00a33ea26947186b26a9f14"
     },
     {
       "round": 46,
@@ -1010,7 +1010,7 @@
       ],
       "failures": [],
       "summary": "Order status page with timeline.",
-      "commit": "d3c005b65e27063011dc72e199890c602f91466e"
+      "commit": "af0e3eb09f902604afae0d59b983eb38eb8e4a3c"
     },
     {
       "round": 47,
@@ -1032,7 +1032,7 @@
       ],
       "failures": [],
       "summary": "Staff tips split calculator.",
-      "commit": "640106f46c81984bd1a4a7fad4e5d1d0468c3ffc"
+      "commit": "9cade620c8a0b9713b4bb744dad09f1f380a945b"
     },
     {
       "round": 48,
@@ -1054,7 +1054,7 @@
       ],
       "failures": [],
       "summary": "Seasonal campaign scheduler.",
-      "commit": "9804bb52f5baf2d25a124aa01451e9b319ea35f9"
+      "commit": "d724661860116b90ca8a7b1dd3b94de23660bb4b"
     },
     {
       "round": 49,
@@ -1076,7 +1076,7 @@
       ],
       "failures": [],
       "summary": "Barista leaderboard.",
-      "commit": "1a754ed0115961da31ab698d0242b9122ec602ae"
+      "commit": "f24a09bbaa640b88f25c64901c179669e1b7867a"
     },
     {
       "round": 50,
@@ -1098,7 +1098,7 @@
       ],
       "failures": [],
       "summary": "Grand unification stylesheet pass.",
-      "commit": "fee24b012c261cbf2a2dd537b469e1cba74244a1"
+      "commit": "b1770818a42ffe6b27cdc3b54a7c6e5295a0c23f"
     }
   ],
   "milestones": [
@@ -1106,1242 +1106,1242 @@
       "id": "first-responsive",
       "label": "First responsive layout",
       "round": 2,
-      "ts": "2026-11-01T21:00:11.545Z"
+      "ts": "2026-11-01T21:49:27.212Z"
     },
     {
       "id": "form-works",
       "label": "Order form works",
       "round": 3,
-      "ts": "2026-11-01T21:00:11.923Z"
+      "ts": "2026-11-01T21:49:27.501Z"
     },
     {
       "id": "first-image",
       "label": "First image",
       "round": 4,
-      "ts": "2026-11-01T21:00:12.404Z"
+      "ts": "2026-11-01T21:49:27.763Z"
     },
     {
       "id": "first-video",
       "label": "First video",
       "round": 9,
-      "ts": "2026-11-01T21:00:14.501Z"
+      "ts": "2026-11-01T21:49:29.443Z"
     },
     {
       "id": "first-canvas",
       "label": "First canvas",
       "round": 16,
-      "ts": "2026-11-01T21:00:17.344Z"
+      "ts": "2026-11-01T21:49:31.731Z"
     }
   ],
   "gateEvents": [
     {
-      "ts": "2026-11-01T21:00:10.485Z",
+      "ts": "2026-11-01T21:49:26.586Z",
       "type": "baseline-commit",
       "round": 0,
-      "message": "committed user working tree as 12b3be3f"
+      "message": "committed user working tree as 8b170677"
     },
     {
-      "ts": "2026-11-01T21:00:10.692Z",
+      "ts": "2026-11-01T21:49:26.698Z",
       "type": "run-start",
       "round": 0,
       "message": "mock/mock-opus · rounds≤50 · outputs_max=4"
     },
     {
-      "ts": "2026-11-01T21:00:10.813Z",
+      "ts": "2026-11-01T21:49:26.780Z",
       "type": "check-run",
       "round": 1,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:10.814Z",
+      "ts": "2026-11-01T21:49:26.780Z",
       "type": "gate-verdict",
       "round": 1,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:11.146Z",
+      "ts": "2026-11-01T21:49:26.985Z",
       "type": "ship",
       "round": 1,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:11.224Z",
+      "ts": "2026-11-01T21:49:27.036Z",
       "type": "check-run",
       "round": 2,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:11.224Z",
+      "ts": "2026-11-01T21:49:27.037Z",
       "type": "gate-verdict",
       "round": 2,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:11.610Z",
+      "ts": "2026-11-01T21:49:27.251Z",
       "type": "ship",
       "round": 2,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:11.611Z",
+      "ts": "2026-11-01T21:49:27.251Z",
       "type": "milestone",
       "round": 2,
       "message": "first-responsive"
     },
     {
-      "ts": "2026-11-01T21:00:11.688Z",
+      "ts": "2026-11-01T21:49:27.302Z",
       "type": "check-run",
       "round": 3,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:11.689Z",
+      "ts": "2026-11-01T21:49:27.302Z",
       "type": "gate-verdict",
       "round": 3,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:11.991Z",
+      "ts": "2026-11-01T21:49:27.542Z",
       "type": "ship",
       "round": 3,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:11.991Z",
+      "ts": "2026-11-01T21:49:27.542Z",
       "type": "milestone",
       "round": 3,
       "message": "form-works"
     },
     {
-      "ts": "2026-11-01T21:00:12.060Z",
+      "ts": "2026-11-01T21:49:27.595Z",
       "type": "check-run",
       "round": 4,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:12.060Z",
+      "ts": "2026-11-01T21:49:27.596Z",
       "type": "gate-verdict",
       "round": 4,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:12.480Z",
+      "ts": "2026-11-01T21:49:27.802Z",
       "type": "ship",
       "round": 4,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:12.480Z",
+      "ts": "2026-11-01T21:49:27.803Z",
       "type": "milestone",
       "round": 4,
       "message": "first-image"
     },
     {
-      "ts": "2026-11-01T21:00:12.561Z",
+      "ts": "2026-11-01T21:49:27.858Z",
       "type": "check-run",
       "round": 5,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:12.562Z",
+      "ts": "2026-11-01T21:49:27.858Z",
       "type": "gate-verdict",
       "round": 5,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:12.880Z",
+      "ts": "2026-11-01T21:49:28.086Z",
       "type": "ship",
       "round": 5,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:12.954Z",
+      "ts": "2026-11-01T21:49:28.148Z",
       "type": "check-run",
       "round": 6,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:12.954Z",
+      "ts": "2026-11-01T21:49:28.149Z",
       "type": "gate-verdict",
       "round": 6,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:13.272Z",
+      "ts": "2026-11-01T21:49:28.529Z",
       "type": "ship",
       "round": 6,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:13.345Z",
+      "ts": "2026-11-01T21:49:28.640Z",
       "type": "check-run",
       "round": 7,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:13.345Z",
+      "ts": "2026-11-01T21:49:28.640Z",
       "type": "gate-verdict",
       "round": 7,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:13.686Z",
+      "ts": "2026-11-01T21:49:28.892Z",
       "type": "ship",
       "round": 7,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:13.759Z",
+      "ts": "2026-11-01T21:49:28.947Z",
       "type": "check-run",
       "round": 8,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:13.759Z",
+      "ts": "2026-11-01T21:49:28.947Z",
       "type": "gate-verdict",
       "round": 8,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:14.090Z",
+      "ts": "2026-11-01T21:49:29.163Z",
       "type": "ship",
       "round": 8,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:14.175Z",
+      "ts": "2026-11-01T21:49:29.226Z",
       "type": "check-run",
       "round": 9,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:14.175Z",
+      "ts": "2026-11-01T21:49:29.226Z",
       "type": "gate-verdict",
       "round": 9,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:14.560Z",
+      "ts": "2026-11-01T21:49:29.481Z",
       "type": "ship",
       "round": 9,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:14.560Z",
+      "ts": "2026-11-01T21:49:29.481Z",
       "type": "milestone",
       "round": 9,
       "message": "first-video"
     },
     {
-      "ts": "2026-11-01T21:00:14.644Z",
+      "ts": "2026-11-01T21:49:29.545Z",
       "type": "check-run",
       "round": 10,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:14.645Z",
+      "ts": "2026-11-01T21:49:29.546Z",
       "type": "gate-verdict",
       "round": 10,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:14.989Z",
+      "ts": "2026-11-01T21:49:29.805Z",
       "type": "ship",
       "round": 10,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:15.088Z",
+      "ts": "2026-11-01T21:49:29.865Z",
       "type": "check-run",
       "round": 11,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:15.088Z",
+      "ts": "2026-11-01T21:49:29.866Z",
       "type": "gate-verdict",
       "round": 11,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:15.427Z",
+      "ts": "2026-11-01T21:49:30.120Z",
       "type": "ship",
       "round": 11,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:15.543Z",
+      "ts": "2026-11-01T21:49:30.185Z",
       "type": "check-run",
       "round": 12,
       "message": "all checks green"
     },
     {
-      "ts": "2026-11-01T21:00:15.543Z",
+      "ts": "2026-11-01T21:49:30.185Z",
       "type": "gate-verdict",
       "round": 12,
       "message": "ship"
     },
     {
-      "ts": "2026-11-01T21:00:15.874Z",
+      "ts": "2026-11-01T21:49:30.441Z",
       "type": "ship",
       "round": 12,
       "message": "shipped clean"
     },
     {
-      "ts": "2026-11-01T21:00:15.973Z",
+      "ts": "2026-11-01T21:49:30.498Z",
       "type": "check-run",
       "round": 13,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:15.973Z",
+      "ts": "2026-11-01T21:49:30.499Z",
       "type": "gate-verdict",
       "round": 13,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:16.342Z",
+      "ts": "2026-11-01T21:49:30.703Z",
       "type": "overbuild-flag",
       "round": 13,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:16.343Z",
+      "ts": "2026-11-01T21:49:30.703Z",
       "type": "ship",
       "round": 13,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:16.419Z",
+      "ts": "2026-11-01T21:49:30.768Z",
       "type": "check-run",
       "round": 14,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:16.420Z",
+      "ts": "2026-11-01T21:49:30.768Z",
       "type": "gate-verdict",
       "round": 14,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:16.722Z",
+      "ts": "2026-11-01T21:49:30.991Z",
       "type": "overbuild-flag",
       "round": 14,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:16.722Z",
+      "ts": "2026-11-01T21:49:30.991Z",
       "type": "ship",
       "round": 14,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:16.794Z",
+      "ts": "2026-11-01T21:49:31.081Z",
       "type": "check-run",
       "round": 15,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:16.795Z",
+      "ts": "2026-11-01T21:49:31.081Z",
       "type": "gate-verdict",
       "round": 15,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:17.055Z",
+      "ts": "2026-11-01T21:49:31.445Z",
       "type": "overbuild-flag",
       "round": 15,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:17.055Z",
+      "ts": "2026-11-01T21:49:31.446Z",
       "type": "ship",
       "round": 15,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:17.129Z",
+      "ts": "2026-11-01T21:49:31.526Z",
       "type": "check-run",
       "round": 16,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:17.129Z",
+      "ts": "2026-11-01T21:49:31.526Z",
       "type": "gate-verdict",
       "round": 16,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:17.514Z",
+      "ts": "2026-11-01T21:49:31.775Z",
       "type": "overbuild-flag",
       "round": 16,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:17.524Z",
+      "ts": "2026-11-01T21:49:31.776Z",
       "type": "ship",
       "round": 16,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:17.525Z",
+      "ts": "2026-11-01T21:49:31.776Z",
       "type": "milestone",
       "round": 16,
       "message": "first-canvas"
     },
     {
-      "ts": "2026-11-01T21:00:17.654Z",
+      "ts": "2026-11-01T21:49:31.842Z",
       "type": "check-run",
       "round": 17,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:17.655Z",
+      "ts": "2026-11-01T21:49:31.842Z",
       "type": "gate-verdict",
       "round": 17,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:18.170Z",
+      "ts": "2026-11-01T21:49:32.067Z",
       "type": "overbuild-flag",
       "round": 17,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:18.170Z",
+      "ts": "2026-11-01T21:49:32.068Z",
       "type": "ship",
       "round": 17,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:18.283Z",
+      "ts": "2026-11-01T21:49:32.135Z",
       "type": "check-run",
       "round": 18,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:18.283Z",
+      "ts": "2026-11-01T21:49:32.135Z",
       "type": "gate-verdict",
       "round": 18,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:18.713Z",
+      "ts": "2026-11-01T21:49:32.393Z",
       "type": "overbuild-flag",
       "round": 18,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:18.714Z",
+      "ts": "2026-11-01T21:49:32.393Z",
       "type": "ship",
       "round": 18,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:18.908Z",
+      "ts": "2026-11-01T21:49:32.462Z",
       "type": "check-run",
       "round": 19,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:18.909Z",
+      "ts": "2026-11-01T21:49:32.463Z",
       "type": "gate-verdict",
       "round": 19,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:19.271Z",
+      "ts": "2026-11-01T21:49:32.683Z",
       "type": "overbuild-flag",
       "round": 19,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:19.272Z",
+      "ts": "2026-11-01T21:49:32.684Z",
       "type": "ship",
       "round": 19,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:19.369Z",
+      "ts": "2026-11-01T21:49:32.748Z",
       "type": "check-run",
       "round": 20,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:19.370Z",
+      "ts": "2026-11-01T21:49:32.749Z",
       "type": "gate-verdict",
       "round": 20,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:19.724Z",
+      "ts": "2026-11-01T21:49:32.970Z",
       "type": "overbuild-flag",
       "round": 20,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:19.725Z",
+      "ts": "2026-11-01T21:49:32.970Z",
       "type": "ship",
       "round": 20,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:19.854Z",
+      "ts": "2026-11-01T21:49:33.046Z",
       "type": "check-run",
       "round": 21,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:19.855Z",
+      "ts": "2026-11-01T21:49:33.047Z",
       "type": "gate-verdict",
       "round": 21,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:20.176Z",
+      "ts": "2026-11-01T21:49:33.325Z",
       "type": "overbuild-flag",
       "round": 21,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:20.176Z",
+      "ts": "2026-11-01T21:49:33.325Z",
       "type": "ship",
       "round": 21,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:20.273Z",
+      "ts": "2026-11-01T21:49:33.454Z",
       "type": "check-run",
       "round": 22,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:20.273Z",
+      "ts": "2026-11-01T21:49:33.454Z",
       "type": "gate-verdict",
       "round": 22,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:20.635Z",
+      "ts": "2026-11-01T21:49:33.725Z",
       "type": "overbuild-flag",
       "round": 22,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:20.635Z",
+      "ts": "2026-11-01T21:49:33.725Z",
       "type": "ship",
       "round": 22,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:20.737Z",
+      "ts": "2026-11-01T21:49:33.788Z",
       "type": "check-run",
       "round": 23,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:20.739Z",
+      "ts": "2026-11-01T21:49:33.792Z",
       "type": "gate-verdict",
       "round": 23,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:21.059Z",
+      "ts": "2026-11-01T21:49:34.020Z",
       "type": "overbuild-flag",
       "round": 23,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:21.059Z",
+      "ts": "2026-11-01T21:49:34.020Z",
       "type": "ship",
       "round": 23,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:21.159Z",
+      "ts": "2026-11-01T21:49:34.096Z",
       "type": "check-run",
       "round": 24,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:21.159Z",
+      "ts": "2026-11-01T21:49:34.096Z",
       "type": "gate-verdict",
       "round": 24,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:21.523Z",
+      "ts": "2026-11-01T21:49:34.325Z",
       "type": "overbuild-flag",
       "round": 24,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:21.524Z",
+      "ts": "2026-11-01T21:49:34.325Z",
       "type": "ship",
       "round": 24,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:21.622Z",
+      "ts": "2026-11-01T21:49:34.436Z",
       "type": "check-run",
       "round": 25,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:21.622Z",
+      "ts": "2026-11-01T21:49:34.437Z",
       "type": "gate-verdict",
       "round": 25,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:21.928Z",
+      "ts": "2026-11-01T21:49:34.659Z",
       "type": "overbuild-flag",
       "round": 25,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:21.928Z",
+      "ts": "2026-11-01T21:49:34.659Z",
       "type": "ship",
       "round": 25,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:22.026Z",
+      "ts": "2026-11-01T21:49:34.735Z",
       "type": "check-run",
       "round": 26,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:22.027Z",
+      "ts": "2026-11-01T21:49:34.736Z",
       "type": "gate-verdict",
       "round": 26,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:22.344Z",
+      "ts": "2026-11-01T21:49:34.960Z",
       "type": "overbuild-flag",
       "round": 26,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:22.344Z",
+      "ts": "2026-11-01T21:49:34.960Z",
       "type": "ship",
       "round": 26,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:22.464Z",
+      "ts": "2026-11-01T21:49:35.036Z",
       "type": "check-run",
       "round": 27,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:22.464Z",
+      "ts": "2026-11-01T21:49:35.036Z",
       "type": "gate-verdict",
       "round": 27,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:22.809Z",
+      "ts": "2026-11-01T21:49:35.260Z",
       "type": "overbuild-flag",
       "round": 27,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:22.809Z",
+      "ts": "2026-11-01T21:49:35.261Z",
       "type": "ship",
       "round": 27,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:22.897Z",
+      "ts": "2026-11-01T21:49:35.336Z",
       "type": "check-run",
       "round": 28,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:22.897Z",
+      "ts": "2026-11-01T21:49:35.336Z",
       "type": "gate-verdict",
       "round": 28,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:23.237Z",
+      "ts": "2026-11-01T21:49:35.597Z",
       "type": "overbuild-flag",
       "round": 28,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:23.237Z",
+      "ts": "2026-11-01T21:49:35.597Z",
       "type": "ship",
       "round": 28,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:23.328Z",
+      "ts": "2026-11-01T21:49:35.670Z",
       "type": "check-run",
       "round": 29,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:23.329Z",
+      "ts": "2026-11-01T21:49:35.670Z",
       "type": "gate-verdict",
       "round": 29,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:23.727Z",
+      "ts": "2026-11-01T21:49:35.878Z",
       "type": "overbuild-flag",
       "round": 29,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:23.728Z",
+      "ts": "2026-11-01T21:49:35.878Z",
       "type": "ship",
       "round": 29,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:23.873Z",
+      "ts": "2026-11-01T21:49:35.954Z",
       "type": "check-run",
       "round": 30,
       "message": "forbidden content present: pumpkin; JS references missing DOM ids: js/lang.js:#lang-select, js/lang.js:#i18n-panel"
     },
     {
-      "ts": "2026-11-01T21:00:23.874Z",
+      "ts": "2026-11-01T21:49:35.954Z",
       "type": "gate-verdict",
       "round": 30,
       "message": "retry"
     },
     {
-      "ts": "2026-11-01T21:00:23.875Z",
+      "ts": "2026-11-01T21:49:35.958Z",
       "type": "attempt-rejected",
       "round": 30,
       "message": "[overbuild] forbidden content present: pumpkin; [regression] JS references missing DOM ids: js/lang.js:#lang-select, js/lang.js:#i18n-panel"
     },
     {
-      "ts": "2026-11-01T21:00:24.056Z",
+      "ts": "2026-11-01T21:49:36.068Z",
       "type": "check-run",
       "round": 30,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:24.057Z",
+      "ts": "2026-11-01T21:49:36.069Z",
       "type": "gate-verdict",
       "round": 30,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:24.547Z",
+      "ts": "2026-11-01T21:49:36.284Z",
       "type": "overbuild-flag",
       "round": 30,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:24.547Z",
+      "ts": "2026-11-01T21:49:36.284Z",
       "type": "ship",
       "round": 30,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:24.639Z",
+      "ts": "2026-11-01T21:49:36.402Z",
       "type": "check-run",
       "round": 31,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:24.639Z",
+      "ts": "2026-11-01T21:49:36.402Z",
       "type": "gate-verdict",
       "round": 31,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:24.881Z",
+      "ts": "2026-11-01T21:49:36.620Z",
       "type": "overbuild-flag",
       "round": 31,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:24.881Z",
+      "ts": "2026-11-01T21:49:36.621Z",
       "type": "ship",
       "round": 31,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:24.963Z",
+      "ts": "2026-11-01T21:49:36.705Z",
       "type": "check-run",
       "round": 32,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:24.964Z",
+      "ts": "2026-11-01T21:49:36.705Z",
       "type": "gate-verdict",
       "round": 32,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:25.224Z",
+      "ts": "2026-11-01T21:49:36.925Z",
       "type": "overbuild-flag",
       "round": 32,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:25.224Z",
+      "ts": "2026-11-01T21:49:36.925Z",
       "type": "ship",
       "round": 32,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:25.309Z",
+      "ts": "2026-11-01T21:49:37.006Z",
       "type": "check-run",
       "round": 33,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:25.309Z",
+      "ts": "2026-11-01T21:49:37.009Z",
       "type": "gate-verdict",
       "round": 33,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:25.625Z",
+      "ts": "2026-11-01T21:49:37.235Z",
       "type": "overbuild-flag",
       "round": 33,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:25.625Z",
+      "ts": "2026-11-01T21:49:37.235Z",
       "type": "ship",
       "round": 33,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:25.712Z",
+      "ts": "2026-11-01T21:49:37.313Z",
       "type": "check-run",
       "round": 34,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:25.713Z",
+      "ts": "2026-11-01T21:49:37.313Z",
       "type": "gate-verdict",
       "round": 34,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:25.988Z",
+      "ts": "2026-11-01T21:49:37.569Z",
       "type": "overbuild-flag",
       "round": 34,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:25.989Z",
+      "ts": "2026-11-01T21:49:37.569Z",
       "type": "ship",
       "round": 34,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:26.080Z",
+      "ts": "2026-11-01T21:49:37.647Z",
       "type": "check-run",
       "round": 35,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:26.080Z",
+      "ts": "2026-11-01T21:49:37.648Z",
       "type": "gate-verdict",
       "round": 35,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:26.336Z",
+      "ts": "2026-11-01T21:49:37.855Z",
       "type": "overbuild-flag",
       "round": 35,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:26.336Z",
+      "ts": "2026-11-01T21:49:37.858Z",
       "type": "ship",
       "round": 35,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:26.456Z",
+      "ts": "2026-11-01T21:49:37.943Z",
       "type": "check-run",
       "round": 36,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:26.457Z",
+      "ts": "2026-11-01T21:49:37.943Z",
       "type": "gate-verdict",
       "round": 36,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:26.776Z",
+      "ts": "2026-11-01T21:49:38.208Z",
       "type": "overbuild-flag",
       "round": 36,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:26.777Z",
+      "ts": "2026-11-01T21:49:38.208Z",
       "type": "ship",
       "round": 36,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:26.886Z",
+      "ts": "2026-11-01T21:49:38.285Z",
       "type": "check-run",
       "round": 37,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:26.886Z",
+      "ts": "2026-11-01T21:49:38.285Z",
       "type": "gate-verdict",
       "round": 37,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:27.190Z",
+      "ts": "2026-11-01T21:49:38.554Z",
       "type": "overbuild-flag",
       "round": 37,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:27.190Z",
+      "ts": "2026-11-01T21:49:38.554Z",
       "type": "ship",
       "round": 37,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:27.280Z",
+      "ts": "2026-11-01T21:49:38.634Z",
       "type": "check-run",
       "round": 38,
       "message": "critical selector(s) removed: #order-form; forbidden content present: pumpkin; JS references missing DOM ids: js/form.js:#order-form"
     },
     {
-      "ts": "2026-11-01T21:00:27.280Z",
+      "ts": "2026-11-01T21:49:38.635Z",
       "type": "gate-verdict",
       "round": 38,
       "message": "retry"
     },
     {
-      "ts": "2026-11-01T21:00:27.286Z",
+      "ts": "2026-11-01T21:49:38.636Z",
       "type": "attempt-rejected",
       "round": 38,
       "message": "[regression] critical selector(s) removed: #order-form; [overbuild] forbidden content present: pumpkin; [regression] JS references missing DOM ids: js/form.js:#order-form"
     },
     {
-      "ts": "2026-11-01T21:00:27.447Z",
+      "ts": "2026-11-01T21:49:38.760Z",
       "type": "check-run",
       "round": 38,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:27.447Z",
+      "ts": "2026-11-01T21:49:38.760Z",
       "type": "gate-verdict",
       "round": 38,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:27.753Z",
+      "ts": "2026-11-01T21:49:38.988Z",
       "type": "overbuild-flag",
       "round": 38,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:27.753Z",
+      "ts": "2026-11-01T21:49:38.988Z",
       "type": "ship",
       "round": 38,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:27.850Z",
+      "ts": "2026-11-01T21:49:39.071Z",
       "type": "check-run",
       "round": 39,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:27.851Z",
+      "ts": "2026-11-01T21:49:39.071Z",
       "type": "gate-verdict",
       "round": 39,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:28.326Z",
+      "ts": "2026-11-01T21:49:39.304Z",
       "type": "overbuild-flag",
       "round": 39,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:28.327Z",
+      "ts": "2026-11-01T21:49:39.305Z",
       "type": "ship",
       "round": 39,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:28.440Z",
+      "ts": "2026-11-01T21:49:39.430Z",
       "type": "check-run",
       "round": 40,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:28.440Z",
+      "ts": "2026-11-01T21:49:39.431Z",
       "type": "gate-verdict",
       "round": 40,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:28.696Z",
+      "ts": "2026-11-01T21:49:39.655Z",
       "type": "overbuild-flag",
       "round": 40,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:28.697Z",
+      "ts": "2026-11-01T21:49:39.658Z",
       "type": "ship",
       "round": 40,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:28.783Z",
+      "ts": "2026-11-01T21:49:39.743Z",
       "type": "check-run",
       "round": 41,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:28.784Z",
+      "ts": "2026-11-01T21:49:39.743Z",
       "type": "gate-verdict",
       "round": 41,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:29.028Z",
+      "ts": "2026-11-01T21:49:39.972Z",
       "type": "overbuild-flag",
       "round": 41,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.028Z",
+      "ts": "2026-11-01T21:49:39.975Z",
       "type": "ship",
       "round": 41,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:29.117Z",
+      "ts": "2026-11-01T21:49:40.055Z",
       "type": "check-run",
       "round": 42,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.119Z",
+      "ts": "2026-11-01T21:49:40.055Z",
       "type": "gate-verdict",
       "round": 42,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:29.363Z",
+      "ts": "2026-11-01T21:49:40.285Z",
       "type": "overbuild-flag",
       "round": 42,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.363Z",
+      "ts": "2026-11-01T21:49:40.285Z",
       "type": "ship",
       "round": 42,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:29.472Z",
+      "ts": "2026-11-01T21:49:40.402Z",
       "type": "check-run",
       "round": 43,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.472Z",
+      "ts": "2026-11-01T21:49:40.403Z",
       "type": "gate-verdict",
       "round": 43,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:29.743Z",
+      "ts": "2026-11-01T21:49:40.630Z",
       "type": "overbuild-flag",
       "round": 43,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.743Z",
+      "ts": "2026-11-01T21:49:40.630Z",
       "type": "ship",
       "round": 43,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:29.831Z",
+      "ts": "2026-11-01T21:49:40.709Z",
       "type": "check-run",
       "round": 44,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:29.831Z",
+      "ts": "2026-11-01T21:49:40.709Z",
       "type": "gate-verdict",
       "round": 44,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:30.089Z",
+      "ts": "2026-11-01T21:49:40.937Z",
       "type": "overbuild-flag",
       "round": 44,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.089Z",
+      "ts": "2026-11-01T21:49:40.937Z",
       "type": "ship",
       "round": 44,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:30.176Z",
+      "ts": "2026-11-01T21:49:41.027Z",
       "type": "check-run",
       "round": 45,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.177Z",
+      "ts": "2026-11-01T21:49:41.027Z",
       "type": "gate-verdict",
       "round": 45,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:30.461Z",
+      "ts": "2026-11-01T21:49:41.294Z",
       "type": "overbuild-flag",
       "round": 45,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.461Z",
+      "ts": "2026-11-01T21:49:41.294Z",
       "type": "ship",
       "round": 45,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:30.592Z",
+      "ts": "2026-11-01T21:49:41.451Z",
       "type": "check-run",
       "round": 46,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.592Z",
+      "ts": "2026-11-01T21:49:41.452Z",
       "type": "gate-verdict",
       "round": 46,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:30.879Z",
+      "ts": "2026-11-01T21:49:41.726Z",
       "type": "overbuild-flag",
       "round": 46,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.879Z",
+      "ts": "2026-11-01T21:49:41.726Z",
       "type": "ship",
       "round": 46,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:30.991Z",
+      "ts": "2026-11-01T21:49:41.809Z",
       "type": "check-run",
       "round": 47,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:30.991Z",
+      "ts": "2026-11-01T21:49:41.809Z",
       "type": "gate-verdict",
       "round": 47,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:31.274Z",
+      "ts": "2026-11-01T21:49:42.043Z",
       "type": "overbuild-flag",
       "round": 47,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:31.275Z",
+      "ts": "2026-11-01T21:49:42.043Z",
       "type": "ship",
       "round": 47,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:31.379Z",
+      "ts": "2026-11-01T21:49:42.128Z",
       "type": "check-run",
       "round": 48,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:31.379Z",
+      "ts": "2026-11-01T21:49:42.129Z",
       "type": "gate-verdict",
       "round": 48,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:31.743Z",
+      "ts": "2026-11-01T21:49:42.394Z",
       "type": "overbuild-flag",
       "round": 48,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:31.743Z",
+      "ts": "2026-11-01T21:49:42.394Z",
       "type": "ship",
       "round": 48,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:31.859Z",
+      "ts": "2026-11-01T21:49:42.486Z",
       "type": "check-run",
       "round": 49,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:31.860Z",
+      "ts": "2026-11-01T21:49:42.486Z",
       "type": "gate-verdict",
       "round": 49,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:32.144Z",
+      "ts": "2026-11-01T21:49:42.719Z",
       "type": "overbuild-flag",
       "round": 49,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:32.144Z",
+      "ts": "2026-11-01T21:49:42.719Z",
       "type": "ship",
       "round": 49,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:32.253Z",
+      "ts": "2026-11-01T21:49:42.804Z",
       "type": "check-run",
       "round": 50,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:32.253Z",
+      "ts": "2026-11-01T21:49:42.805Z",
       "type": "gate-verdict",
       "round": 50,
       "message": "shipped with flags"
     },
     {
-      "ts": "2026-11-01T21:00:32.541Z",
+      "ts": "2026-11-01T21:49:43.028Z",
       "type": "overbuild-flag",
       "round": 50,
       "message": "forbidden content present: pumpkin"
     },
     {
-      "ts": "2026-11-01T21:00:32.541Z",
+      "ts": "2026-11-01T21:49:43.028Z",
       "type": "ship",
       "round": 50,
       "message": "shipped (flagged: forbidden content present: pumpkin)"
     },
     {
-      "ts": "2026-11-01T21:00:32.543Z",
+      "ts": "2026-11-01T21:49:43.031Z",
       "type": "completed",
       "round": 50,
       "message": "all 50 rounds shipped"
@@ -2375,6 +2375,6 @@
       "Comic Sans",
       "marquee"
     ],
-    "commit": "12b3be3f01c9c094edf310b6d96fdadfd9bf9bea"
+    "commit": "8b170677564191417ca87cb5c22ea99e7fc55865"
   }
 }
