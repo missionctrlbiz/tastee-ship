@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "createdAt": "2026-11-01T17:58:16.473Z",
-  "updatedAt": "2026-11-01T17:58:20.117Z",
+  "createdAt": "2026-11-01T20:22:05.461Z",
+  "updatedAt": "2026-11-01T20:22:11.526Z",
   "project": "proj",
   "status": "halted",
   "haltReason": "overbuild",
   "run": {
-    "id": "run-mvy4vesb-23167m",
+    "id": "run-mvya0cye-99okwj",
     "provider": "mock",
     "model": "mock-opus",
     "outputsMax": 4,
     "roundsMax": 50,
     "roundIndex": 12,
     "attemptsThisRound": 1,
-    "lastGoodCommit": "be61f7ce2e6d4044a5006ef438ef62315a0c6d45",
+    "lastGoodCommit": "ce072e2fafdaca54c9a14c308c5249d06def4eb2",
     "overbuildAction": "halt",
-    "startedAt": "2026-11-01T17:58:16.475Z"
+    "startedAt": "2026-11-01T20:22:05.462Z"
   },
   "usage": {
     "calls": 13,
@@ -32,11 +32,17 @@
       "locDelta": 102,
       "tokens": 5787,
       "usd": 0.145185,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4814,
+        "outputTokens": 973,
+        "usd": 0.145185
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Full visual redesign: design language, shadows, spacing, type.",
-      "commit": "3be763c97881b15251f1fb6ce62631d13d931713"
+      "commit": "7c97ad50ecf3573148e5d45b95dcc151d94fb7bd"
     },
     {
       "round": 2,
@@ -46,11 +52,17 @@
       "locDelta": 71,
       "tokens": 5804,
       "usd": 0.14562,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4828,
+        "outputTokens": 976,
+        "usd": 0.14562
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Restructure the page into semantic sections and go responsive.",
-      "commit": "aa8825d680b12fb86795d02af9411c60d519839a"
+      "commit": "bc2b3e0e690adaf043711fd35d0b0ca4c8277c9b"
     },
     {
       "round": 3,
@@ -60,11 +72,17 @@
       "locDelta": 23,
       "tokens": 5821,
       "usd": 0.146055,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4842,
+        "outputTokens": 979,
+        "usd": 0.146055
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Rebuild the order form on a validation framework with inline errors.",
-      "commit": "8070d14f2ef595fbcc43812f515e67e7194abce4"
+      "commit": "b660e7df0fcbad81145af24539dd6712631c59a1"
     },
     {
       "round": 4,
@@ -74,11 +92,17 @@
       "locDelta": 4,
       "tokens": 5838,
       "usd": 0.14649,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4856,
+        "outputTokens": 982,
+        "usd": 0.14649
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Cinematic hero image with gradient overlay.",
-      "commit": "ff3847e64a48abbfa2eb526b0e49fb4e9a9de75f"
+      "commit": "e63e0dafa86fd1f2d09271e5430bec56f6f16d64"
     },
     {
       "round": 5,
@@ -88,11 +112,17 @@
       "locDelta": 267,
       "tokens": 5855,
       "usd": 0.146925,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4870,
+        "outputTokens": 985,
+        "usd": 0.146925
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Motion framework: scroll reveals, hover states, transitions.",
-      "commit": "4d447cca21471b50c88d41b3a5a30d5dc7b8a2df"
+      "commit": "2fc2d2782046443f397e90ab05a4fa962e6c0046"
     },
     {
       "round": 6,
@@ -102,11 +132,17 @@
       "locDelta": 311,
       "tokens": 5872,
       "usd": 0.14736,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4884,
+        "outputTokens": 988,
+        "usd": 0.14736
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Ship a UI component library (buttons, cards, chips, modals).",
-      "commit": "a9a844ddf4f9ed183884d2ad207b17769ef67c56"
+      "commit": "fedad7c542831b19401b5192b10d4b30e1f3d4a2"
     },
     {
       "round": 7,
@@ -116,11 +152,17 @@
       "locDelta": 342,
       "tokens": 5889,
       "usd": 0.147795,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4898,
+        "outputTokens": 991,
+        "usd": 0.147795
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "A tiny state manager so widgets share one source of truth.",
-      "commit": "31ad64bb7ba13c6bebd9dd12cebc22f80a109fd3"
+      "commit": "01a0e2002c64ceabca0d8e2a65f7d9019dcf61fc"
     },
     {
       "round": 8,
@@ -130,11 +172,17 @@
       "locDelta": 267,
       "tokens": 5906,
       "usd": 0.14823,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4912,
+        "outputTokens": 994,
+        "usd": 0.14823
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Theming system with runtime theme switching.",
-      "commit": "fa403d46c5c3beadd0bf65b70982c1d5f3f88a6e"
+      "commit": "e3f3c538ec4bc683dc6507b0eb249bda5f351631"
     },
     {
       "round": 9,
@@ -144,11 +192,17 @@
       "locDelta": 1,
       "tokens": 5923,
       "usd": 0.148665,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4926,
+        "outputTokens": 997,
+        "usd": 0.148665
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Full-bleed video hero with sound-off poster frame.",
-      "commit": "d9954203c2a87cf138921d900989ee0aeb5e9c31"
+      "commit": "f2517d5d7cb19a1c1d688509d34f1ac857b91b1f"
     },
     {
       "round": 10,
@@ -158,11 +212,17 @@
       "locDelta": 326,
       "tokens": 5940,
       "usd": 0.1491,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4940,
+        "outputTokens": 1000,
+        "usd": 0.1491
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Micro-interactions everywhere: magnetic buttons, ripples, toasts.",
-      "commit": "1b8ec2866c8260b6751fd7950fcf72f71b01ad0d"
+      "commit": "6212dc53de2a3f02e68a642a1a43a5268a464322"
     },
     {
       "round": 11,
@@ -172,11 +232,17 @@
       "locDelta": 16,
       "tokens": 5957,
       "usd": 0.149535,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4954,
+        "outputTokens": 1003,
+        "usd": 0.149535
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "PWA: manifest + service worker for offline menu browsing.",
-      "commit": "df7afb96fb616b60a29f861953768f88ec08d2b1"
+      "commit": "99e785e3b25723ce5d90bec25df3c6cfac32a04c"
     },
     {
       "round": 12,
@@ -186,11 +252,17 @@
       "locDelta": 282,
       "tokens": 5974,
       "usd": 0.14997,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 4968,
+        "outputTokens": 1006,
+        "usd": 0.14997
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "First-party analytics module with funnel events.",
-      "commit": "be61f7ce2e6d4044a5006ef438ef62315a0c6d45"
+      "commit": "ce072e2fafdaca54c9a14c308c5249d06def4eb2"
     }
   ],
   "milestones": [
@@ -198,64 +270,300 @@
       "id": "first-responsive",
       "label": "First responsive layout",
       "round": 2,
-      "ts": "2026-11-01T17:58:17.464Z"
+      "ts": "2026-11-01T20:22:07.123Z"
     },
     {
       "id": "form-works",
       "label": "Order form works",
       "round": 3,
-      "ts": "2026-11-01T17:58:17.690Z"
+      "ts": "2026-11-01T20:22:07.457Z"
     },
     {
       "id": "first-image",
       "label": "First image",
       "round": 4,
-      "ts": "2026-11-01T17:58:17.922Z"
+      "ts": "2026-11-01T20:22:07.787Z"
     },
     {
       "id": "first-video",
       "label": "First video",
       "round": 9,
-      "ts": "2026-11-01T17:58:19.073Z"
+      "ts": "2026-11-01T20:22:10.188Z"
     }
   ],
   "gateEvents": [
     {
+      "ts": "2026-11-01T20:22:06.094Z",
       "type": "baseline-commit",
       "round": 0,
-      "message": "committed user working tree as d96065f0"
+      "message": "committed user working tree as ee4f1de2"
     },
     {
+      "ts": "2026-11-01T20:22:06.362Z",
       "type": "run-start",
       "round": 0,
       "message": "mock/mock-opus · rounds≤50 · outputs_max=4"
     },
     {
+      "ts": "2026-11-01T20:22:06.497Z",
+      "type": "check-run",
+      "round": 1,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:06.497Z",
+      "type": "gate-verdict",
+      "round": 1,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:06.847Z",
+      "type": "ship",
+      "round": 1,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:06.908Z",
+      "type": "check-run",
+      "round": 2,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:06.909Z",
+      "type": "gate-verdict",
+      "round": 2,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.177Z",
+      "type": "ship",
+      "round": 2,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.178Z",
       "type": "milestone",
       "round": 2,
       "message": "first-responsive"
     },
     {
+      "ts": "2026-11-01T20:22:07.261Z",
+      "type": "check-run",
+      "round": 3,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.261Z",
+      "type": "gate-verdict",
+      "round": 3,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.508Z",
+      "type": "ship",
+      "round": 3,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.509Z",
       "type": "milestone",
       "round": 3,
       "message": "form-works"
     },
     {
+      "ts": "2026-11-01T20:22:07.564Z",
+      "type": "check-run",
+      "round": 4,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.564Z",
+      "type": "gate-verdict",
+      "round": 4,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.828Z",
+      "type": "ship",
+      "round": 4,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.828Z",
       "type": "milestone",
       "round": 4,
       "message": "first-image"
     },
     {
+      "ts": "2026-11-01T20:22:07.885Z",
+      "type": "check-run",
+      "round": 5,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:07.885Z",
+      "type": "gate-verdict",
+      "round": 5,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.210Z",
+      "type": "ship",
+      "round": 5,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.310Z",
+      "type": "check-run",
+      "round": 6,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.310Z",
+      "type": "gate-verdict",
+      "round": 6,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.711Z",
+      "type": "ship",
+      "round": 6,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.798Z",
+      "type": "check-run",
+      "round": 7,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:08.798Z",
+      "type": "gate-verdict",
+      "round": 7,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.325Z",
+      "type": "ship",
+      "round": 7,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.410Z",
+      "type": "check-run",
+      "round": 8,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.410Z",
+      "type": "gate-verdict",
+      "round": 8,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.830Z",
+      "type": "ship",
+      "round": 8,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.894Z",
+      "type": "check-run",
+      "round": 9,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:09.894Z",
+      "type": "gate-verdict",
+      "round": 9,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.255Z",
+      "type": "ship",
+      "round": 9,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.256Z",
       "type": "milestone",
       "round": 9,
       "message": "first-video"
     },
     {
+      "ts": "2026-11-01T20:22:10.324Z",
+      "type": "check-run",
+      "round": 10,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.324Z",
+      "type": "gate-verdict",
+      "round": 10,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.593Z",
+      "type": "ship",
+      "round": 10,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.693Z",
+      "type": "check-run",
+      "round": 11,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.693Z",
+      "type": "gate-verdict",
+      "round": 11,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.910Z",
+      "type": "ship",
+      "round": 11,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.972Z",
+      "type": "check-run",
+      "round": 12,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:10.973Z",
+      "type": "gate-verdict",
+      "round": 12,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:11.276Z",
+      "type": "ship",
+      "round": 12,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:11.344Z",
+      "type": "check-run",
+      "round": 13,
+      "message": "forbidden content present: pumpkin"
+    },
+    {
+      "ts": "2026-11-01T20:22:11.344Z",
+      "type": "gate-verdict",
+      "round": 13,
+      "message": "halt: overbuild"
+    },
+    {
+      "ts": "2026-11-01T20:22:11.345Z",
       "type": "attempt-rejected",
       "round": 13,
       "message": "[overbuild] forbidden content present: pumpkin"
     },
     {
+      "ts": "2026-11-01T20:22:11.525Z",
       "type": "halt",
       "round": 13,
       "message": "overbuild"
@@ -288,6 +596,7 @@
     "forbiddenPresent": [
       "Comic Sans",
       "marquee"
-    ]
+    ],
+    "commit": "ee4f1de274256399fc4abb2f625a704e1e6eebc5"
   }
 }

@@ -149,12 +149,38 @@ tship keys add|list|remove <p>       keys → .env.local (600, gitignored, untra
 tship run [--rounds N] [--outputs-max N] [--provider mock|anthropic|openai-compat]
           [--model M] [--flag-overbuild] [--loc-cap N] [--loc-delta-cap N]
 tship stop                           KILL SWITCH — halt + rollback, out-of-band
-tship resume [--acknowledge] [--force]   continue from the last checkpoint
+tship resume [--acknowledge] [--force]   continue from the last checkpoint (refuses dirty trees without --force)
 tship status                         run state + live gate status
 tship rollback --to <round|sha>      manual rollback to a checkpoint
-tship dashboard [--port 4777]        local dashboard (SSE live updates)
+tship dry-run                        verify the CURRENT tree against the gate (no model, no writes)
+tship lint-rules                     calibrate taste/verification config against the baseline
+tship dashboard [--port 4777]        local dashboard (SSE live updates, loopback only)
 tship report [state.json]            per-run report (rounds, gate events, cost)
 ```
+
+## Security boundary (hardened per external review)
+
+The dashboard displays model-generated code, so displaying must not grant
+authority: it binds to **loopback only**, the **KILL endpoint requires a
+same-origin request**, the **preview iframe runs sandboxed** (scripts+forms,
+no same-origin), `/api/pf` (preview assets) **refuses secrets and harness
+internals** (`.env.local`, `.git`, `.tasteeship`, `node_modules`, dotted
+files), and **proposal writes are validated before the first write** —
+symlink-traversing paths are rejected and each file is atomically replaced, so
+a model proposal cannot escape the checkpointed tree or survive rollback.
+
+## Audit trail
+
+Every run writes `.tasteeship/manifest.json` (effective config, rules/config
+hashes, caps, git HEAD vs baseline checkpoint, Node version — no credentials)
+and an append-only `events.jsonl` where every attempt records structured
+`check-run` + `gate-verdict` events sharing the `causalityId` embedded in the
+checkpoint commit message — any halt reconstructs exactly. Halts and kills
+write incident artifacts under `.tasteeship/incidents/` (offending proposal,
+structured failures). The dashboard reads the full log with type filters and
+tail control, shows a per-round **git diff drawer**, and offers a one-file
+**JSON export** (manifest + state + events). Per-round cost covers **all**
+attempts in the round, not just the shipping one.
 
 Providers: `anthropic` (Messages API) and `openai-compat` (any
 chat-completions endpoint you own — z.ai/GLM, OpenRouter, a local router) via

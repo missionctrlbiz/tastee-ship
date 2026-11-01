@@ -20,8 +20,9 @@
         project
         <input id="project" placeholder="." spellcheck="false" />
       </label>
-      <div id="gate-chip" class="chip idle">IDLE</div>
-      <button id="kill" class="kill" title="Halt the run and roll back to the last good checkpoint">⏻ KILL</button>
+      <div id="gate-chip" class="chip idle" role="status" aria-live="polite">IDLE</div>
+      <button id="kill" class="kill" title="Halt the run and roll back to the last good checkpoint"
+              aria-label="Kill the run: abort in-flight agent calls and roll the repository back to the last good checkpoint">⏻ KILL</button>
     </div>
   </header>
 
@@ -34,6 +35,7 @@
     <div class="stat"><span class="k">loc</span><span id="st-loc" class="v">—</span></div>
     <div class="stat"><span class="k">cost</span><span id="st-cost" class="v">—</span></div>
     <div class="stat"><span class="k">calls</span><span id="st-calls" class="v">—</span></div>
+    <div class="stat"><span class="k">updated</span><span id="st-updated" class="v">—</span></div>
   </section>
 
   <main>
@@ -43,32 +45,52 @@
     </section>
 
     <section class="panel" id="panel-trends">
-      <h2>Trends <span class="hint">LOC per round · cumulative cost</span></h2>
+      <h2>Trends <span class="hint">LOC per round · cumulative cost · ⛔ = halt</span></h2>
       <div class="charts">
         <figure><figcaption>LOC per round</figcaption><svg id="chart-loc" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
         <figure><figcaption>Cumulative spend (USD)</figcaption><svg id="chart-cost" viewBox="0 0 600 160" preserveAspectRatio="none"></svg></figure>
       </div>
+      <div id="chart-tip" class="chart-tip" hidden></div>
     </section>
 
     <section class="panel" id="panel-scrub">
-      <h2>Site preview <span class="hint">scrub through every shipped round</span></h2>
+      <h2>Site preview <span class="hint">scrub through every shipped round (sandboxed)</span></h2>
       <div class="scrub-controls">
         <input id="scrub" type="range" min="0" max="0" value="0" />
-        <span id="scrub-label" class="scrub-label">—</span>
+        <span id="scrub-label" class="scrub-label" aria-live="polite">—</span>
       </div>
-      <div class="frame-wrap"><iframe id="preview" title="site preview at round"></iframe></div>
+      <div class="frame-wrap"><iframe id="preview" title="site preview at round" sandbox="allow-scripts allow-forms"></iframe></div>
     </section>
 
     <section class="panel" id="panel-rounds">
-      <h2>Rounds</h2>
-      <table id="rounds">
-        <thead><tr><th>#</th><th>att</th><th>loc</th><th>Δ</th><th>$</th><th>verdict</th><th>summary</th></tr></thead>
-        <tbody></tbody>
-      </table>
+      <h2>Rounds <span class="hint">click a row for its git diff</span></h2>
+      <div class="table-scroll">
+        <table id="rounds">
+          <thead><tr><th>#</th><th>att</th><th>loc</th><th>Δ</th><th>$</th><th>verdict</th><th>summary</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="diff-drawer" class="diff-drawer" hidden>
+        <div class="diff-head">
+          <strong id="diff-title">diff</strong>
+          <button id="diff-close" aria-label="Close diff drawer">✕</button>
+        </div>
+        <table id="diff-stat" class="diff-stat"></table>
+        <pre id="diff-patch"></pre>
+      </div>
     </section>
 
     <section class="panel" id="panel-log">
-      <h2>Gate log <span class="hint">decisions the model never sees</span></h2>
+      <h2>Gate log <span class="hint">from the append-only event log — decisions the model never sees</span></h2>
+      <fieldset id="log-filters" aria-label="Filter gate log by event type">
+        <span id="log-type-chips"></span>
+        <label class="tail-pick">tail
+          <select id="log-tail" aria-label="Number of events shown">
+            <option>50</option><option selected>150</option><option>500</option><option value="all">all</option>
+          </select>
+        </label>
+        <a id="export-link" href="#" download>export ⭳</a>
+      </fieldset>
       <ul id="log"></ul>
     </section>
   </main>

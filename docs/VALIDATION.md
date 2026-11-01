@@ -99,7 +99,7 @@ figures. With live keys the same accounting uses real provider usage data.
 
 # Full test on the owner's own AI models (live)
 
-`npm run validate:live` reruns the case study on **the owner's own models**
+`npm run live` reruns the case study on **the owner's own models**
 (attached with their own keys through the standard `.env.local` injection):
 
 | slot | model | provider |

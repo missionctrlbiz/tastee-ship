@@ -1,27 +1,27 @@
 {
   "version": 1,
-  "createdAt": "2026-11-01T17:58:36.182Z",
-  "updatedAt": "2026-11-01T17:58:42.254Z",
+  "createdAt": "2026-11-01T20:22:33.598Z",
+  "updatedAt": "2026-11-01T20:22:41.097Z",
   "project": "proj",
   "status": "killed",
   "haltReason": "user-rejection",
   "run": {
-    "id": "run-mvy4vtzr-18j2qi",
+    "id": "run-mvya0yo0-jty41s",
     "provider": "mock",
     "model": "mock-sonnet",
     "outputsMax": 4,
     "roundsMax": 50,
-    "roundIndex": 21,
-    "attemptsThisRound": 0,
-    "lastGoodCommit": "cd0ee5ff7433c45f7589ac5f6ebb3c3530df8d93",
+    "roundIndex": 20,
+    "attemptsThisRound": 1,
+    "lastGoodCommit": "72dcd836eacada6b5ba92653c9f3b7e98af8b854",
     "overbuildAction": "halt",
-    "startedAt": "2026-11-01T17:58:36.183Z"
+    "startedAt": "2026-11-01T20:22:33.600Z"
   },
   "usage": {
-    "calls": 22,
-    "inputTokens": 72816,
-    "outputTokens": 13324,
-    "usd": 0.41830800000000007
+    "calls": 21,
+    "inputTokens": 69048,
+    "outputTokens": 12642,
+    "usd": 0.39677400000000007
   },
   "rounds": [
     {
@@ -32,11 +32,17 @@
       "locDelta": 23,
       "tokens": 3790,
       "usd": 0.018354,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3208,
+        "outputTokens": 582,
+        "usd": 0.018354
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Drop Comic Sans for a proper type stack and add color tokens.",
-      "commit": "a9b03001f3335db4cd1e0f5c3f91a7fde8c8303e"
+      "commit": "ba6f3fc586225c63d33bc293555e3f18db182711"
     },
     {
       "round": 2,
@@ -46,11 +52,17 @@
       "locDelta": 12,
       "tokens": 3800,
       "usd": 0.018408,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3216,
+        "outputTokens": 584,
+        "usd": 0.018408
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Mobile-first breakpoints so the site stops breaking on phones.",
-      "commit": "1eb5daf3313fb2d4fe4421cf9b27f1bcb0cd984c"
+      "commit": "d1e57fdc14968963f14a0918e7006d4ffeb52d03"
     },
     {
       "round": 3,
@@ -60,11 +72,17 @@
       "locDelta": 15,
       "tokens": 3810,
       "usd": 0.018462,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3224,
+        "outputTokens": 586,
+        "usd": 0.018462
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Fix the order form: correct DOM ids and a working submit handler.",
-      "commit": "e746abdf7c1f47be9f15fe931b458256e7e3d032"
+      "commit": "cd23f51a82653c8fe8d0f2ff39dcec1703170e2a"
     },
     {
       "round": 4,
@@ -74,11 +92,17 @@
       "locDelta": 26,
       "tokens": 3820,
       "usd": 0.018516,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3232,
+        "outputTokens": 588,
+        "usd": 0.018516
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Conversion-focused button styles with visible focus states.",
-      "commit": "d7f368d4441c0d0a29d3cdb6c73eb5fb04ffca4f"
+      "commit": "9030e1852faabac5170740d9f8cd7309d4248c8e"
     },
     {
       "round": 5,
@@ -88,11 +112,17 @@
       "locDelta": 4,
       "tokens": 3830,
       "usd": 0.01857,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3240,
+        "outputTokens": 590,
+        "usd": 0.01857
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Add a hero image above the fold — the strongest visual anchor we have.",
-      "commit": "7db8db517e66e7c0c7ec444cbbe8c507657c23b8"
+      "commit": "68466da07f7185fa3a72fea0cca281cc3e629f1a"
     },
     {
       "round": 6,
@@ -102,11 +132,17 @@
       "locDelta": 27,
       "tokens": 3840,
       "usd": 0.018624,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3248,
+        "outputTokens": 592,
+        "usd": 0.018624
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Menu as a scannable grid — the page customers actually came for.",
-      "commit": "d5f9ac4ff4e7a461472a3af0852345ba51cff031"
+      "commit": "68c5d87f030ba3ce6a36e9d89be104949daf42bd"
     },
     {
       "round": 7,
@@ -116,11 +152,17 @@
       "locDelta": 6,
       "tokens": 3850,
       "usd": 0.018678,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3256,
+        "outputTokens": 594,
+        "usd": 0.018678
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Social proof: testimonials section near the order form.",
-      "commit": "52ea6fca52927b7e186997714446835a21f314f2"
+      "commit": "0e17efefed9eca8f75690f379fceb3b4fa3858eb"
     },
     {
       "round": 8,
@@ -130,11 +172,17 @@
       "locDelta": -2,
       "tokens": 3860,
       "usd": 0.018732,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3264,
+        "outputTokens": 596,
+        "usd": 0.018732
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Order form UX: labels, hints, and an inline status region.",
-      "commit": "4e4ed4580502665fe12f0a75f515e4990cd6203f"
+      "commit": "d58de97b33c004c8caaa73994bede09b2f7583d4"
     },
     {
       "round": 9,
@@ -144,11 +192,17 @@
       "locDelta": 5,
       "tokens": 3870,
       "usd": 0.018786,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3272,
+        "outputTokens": 598,
+        "usd": 0.018786
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Hours and location in the footer — removes pre-visit friction.",
-      "commit": "6cd7a092edcdbc327d7f73500703da2b7e779076"
+      "commit": "ca567ca6c35ad870a4d078fd5a1050a6e5fd6c2e"
     },
     {
       "round": 10,
@@ -158,11 +212,17 @@
       "locDelta": 19,
       "tokens": 3880,
       "usd": 0.01884,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3280,
+        "outputTokens": 600,
+        "usd": 0.01884
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Sticky nav so the order button is always one tap away.",
-      "commit": "5c606c2938ed0227bcabbcd74b10eb72e784c850"
+      "commit": "b7da44961fedf3c0fbc15d8983177eabe572cc8d"
     },
     {
       "round": 11,
@@ -172,11 +232,17 @@
       "locDelta": 5,
       "tokens": 3890,
       "usd": 0.018894,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3288,
+        "outputTokens": 602,
+        "usd": 0.018894
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Gallery with three drink photos (local SVGs, zero external requests).",
-      "commit": "92f8c202084ae704776406b49d7a6df8fbf1e61f"
+      "commit": "0b8a772d3a796a86cdc28faea2ca8e7db1085952"
     },
     {
       "round": 12,
@@ -186,11 +252,17 @@
       "locDelta": 6,
       "tokens": 3900,
       "usd": 0.018948,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3296,
+        "outputTokens": 604,
+        "usd": 0.018948
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Autoplay-free teaser video with poster — motion without annoyance.",
-      "commit": "907bb393a1e3cdcc78d055fa46bc4ce0a1c072eb"
+      "commit": "da9d63f2974daf1a73f57784a5420ba7043f6360"
     },
     {
       "round": 13,
@@ -200,11 +272,17 @@
       "locDelta": 9,
       "tokens": 3910,
       "usd": 0.019002,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3304,
+        "outputTokens": 606,
+        "usd": 0.019002
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Prices table with sizes so customers stop guessing.",
-      "commit": "39f89efcf7d66f18e22227489d709b168f975521"
+      "commit": "b8f2454fc67e5180cfee12a96bdb5429ea1cd337"
     },
     {
       "round": 14,
@@ -214,11 +292,17 @@
       "locDelta": 0,
       "tokens": 3920,
       "usd": 0.019056,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3312,
+        "outputTokens": 608,
+        "usd": 0.019056
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Rewrite the hero copy around the first order, not the building.",
-      "commit": "174ff2e7aee35905c405b44e618553258eaf7c18"
+      "commit": "8285b8bf9137fa3ada4b6a8ef37877da416aeab3"
     },
     {
       "round": 15,
@@ -228,11 +312,17 @@
       "locDelta": 6,
       "tokens": 3930,
       "usd": 0.01911,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3320,
+        "outputTokens": 610,
+        "usd": 0.01911
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Loyalty signup form — the second conversion path.",
-      "commit": "0acab245da544485986bc855a96365fc49ebb48b"
+      "commit": "2ee36bf9c6dc2dd005cb27aa5442847c704fd89c"
     },
     {
       "round": 16,
@@ -242,11 +332,17 @@
       "locDelta": 18,
       "tokens": 3940,
       "usd": 0.019164,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3328,
+        "outputTokens": 612,
+        "usd": 0.019164
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Accessibility pass: skip link and reduced-motion guard.",
-      "commit": "88740e97ce6e605d9cd9c2e6ac752a106782aeb9"
+      "commit": "da4ee6b3ccb0dab7ecf273448b198261af86918f"
     },
     {
       "round": 17,
@@ -256,11 +352,17 @@
       "locDelta": 1,
       "tokens": 3950,
       "usd": 0.019218,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3336,
+        "outputTokens": 614,
+        "usd": 0.019218
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Preload the hero image — faster first paint, more scrolls.",
-      "commit": "006d53204e2af78c13614068b28096d5e851a18d"
+      "commit": "8ae9aab7b9b71640ddf6b5d96bbb8c7003831804"
     },
     {
       "round": 18,
@@ -270,11 +372,17 @@
       "locDelta": 24,
       "tokens": 3960,
       "usd": 0.019272,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3344,
+        "outputTokens": 616,
+        "usd": 0.019272
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Interactive brew-ratio canvas — engagement for the coffee-curious.",
-      "commit": "4eba5af4b32ebe3c20c98f64184ebb6394301577"
+      "commit": "5cb67e51e3f1e2677c1879f48d4e5d73acf860b3"
     },
     {
       "round": 19,
@@ -284,11 +392,17 @@
       "locDelta": 9,
       "tokens": 3970,
       "usd": 0.019326,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3352,
+        "outputTokens": 618,
+        "usd": 0.019326
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Seasonal banner driven by one CSS variable — easy to retire.",
-      "commit": "e589f3b983e54199026438b019754dddbb3a97de"
+      "commit": "0cc9d264f5b1a2ab26cd896cbc589695d6e64c81"
     },
     {
       "round": 20,
@@ -298,25 +412,17 @@
       "locDelta": 4,
       "tokens": 3980,
       "usd": 0.01938,
+      "usage": {
+        "calls": 1,
+        "inputTokens": 3360,
+        "outputTokens": 620,
+        "usd": 0.01938
+      },
       "verdict": "shipped",
       "flags": [],
       "failures": [],
       "summary": "Spacing rhythm pass — consistent gaps lift scan-reading.",
-      "commit": "250885ef6b1dd7c07a711473b11ec12b08eb160f"
-    },
-    {
-      "round": 21,
-      "attempts": 2,
-      "shipped": true,
-      "loc": 380,
-      "locDelta": 2,
-      "tokens": 4450,
-      "usd": 0.021534,
-      "verdict": "shipped",
-      "flags": [],
-      "failures": [],
-      "summary": "Tighten the footer into two columns, landmarks intact.",
-      "commit": "cd0ee5ff7433c45f7589ac5f6ebb3c3530df8d93"
+      "commit": "72dcd836eacada6b5ba92653c9f3b7e98af8b854"
     }
   ],
   "milestones": [
@@ -324,89 +430,471 @@
       "id": "comic-sans-gone",
       "label": "Comic Sans removed",
       "round": 1,
-      "ts": "2026-11-01T17:58:36.938Z"
+      "ts": "2026-11-01T20:22:34.732Z"
     },
     {
       "id": "first-responsive",
       "label": "First responsive layout",
       "round": 2,
-      "ts": "2026-11-01T17:58:37.189Z"
+      "ts": "2026-11-01T20:22:35.083Z"
     },
     {
       "id": "form-works",
       "label": "Order form works",
       "round": 3,
-      "ts": "2026-11-01T17:58:37.441Z"
+      "ts": "2026-11-01T20:22:35.513Z"
     },
     {
       "id": "first-image",
       "label": "First image",
       "round": 5,
-      "ts": "2026-11-01T17:58:38.054Z"
+      "ts": "2026-11-01T20:22:36.107Z"
     },
     {
       "id": "first-video",
       "label": "First video",
       "round": 12,
-      "ts": "2026-11-01T17:58:39.700Z"
+      "ts": "2026-11-01T20:22:38.451Z"
     },
     {
       "id": "first-canvas",
       "label": "First canvas",
       "round": 18,
-      "ts": "2026-11-01T17:58:41.340Z"
+      "ts": "2026-11-01T20:22:40.111Z"
     }
   ],
   "gateEvents": [
     {
+      "ts": "2026-11-01T20:22:34.306Z",
       "type": "baseline-commit",
       "round": 0,
-      "message": "committed user working tree as bff49b9e"
+      "message": "committed user working tree as 34a5cf1b"
     },
     {
+      "ts": "2026-11-01T20:22:34.440Z",
       "type": "run-start",
       "round": 0,
       "message": "mock/mock-sonnet · rounds≤50 · outputs_max=4"
     },
     {
+      "ts": "2026-11-01T20:22:34.523Z",
+      "type": "check-run",
+      "round": 1,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:34.523Z",
+      "type": "gate-verdict",
+      "round": 1,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:34.775Z",
+      "type": "ship",
+      "round": 1,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:34.776Z",
       "type": "milestone",
       "round": 1,
       "message": "comic-sans-gone"
     },
     {
+      "ts": "2026-11-01T20:22:34.830Z",
+      "type": "check-run",
+      "round": 2,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:34.831Z",
+      "type": "gate-verdict",
+      "round": 2,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.154Z",
+      "type": "ship",
+      "round": 2,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.155Z",
       "type": "milestone",
       "round": 2,
       "message": "first-responsive"
     },
     {
+      "ts": "2026-11-01T20:22:35.225Z",
+      "type": "check-run",
+      "round": 3,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.226Z",
+      "type": "gate-verdict",
+      "round": 3,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.572Z",
+      "type": "ship",
+      "round": 3,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.572Z",
       "type": "milestone",
       "round": 3,
       "message": "form-works"
     },
     {
+      "ts": "2026-11-01T20:22:35.643Z",
+      "type": "check-run",
+      "round": 4,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.644Z",
+      "type": "gate-verdict",
+      "round": 4,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.876Z",
+      "type": "ship",
+      "round": 4,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.928Z",
+      "type": "check-run",
+      "round": 5,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:35.928Z",
+      "type": "gate-verdict",
+      "round": 5,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.177Z",
+      "type": "ship",
+      "round": 5,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.177Z",
       "type": "milestone",
       "round": 5,
       "message": "first-image"
     },
     {
+      "ts": "2026-11-01T20:22:36.248Z",
+      "type": "check-run",
+      "round": 6,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.248Z",
+      "type": "gate-verdict",
+      "round": 6,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.462Z",
+      "type": "ship",
+      "round": 6,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.516Z",
+      "type": "check-run",
+      "round": 7,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.516Z",
+      "type": "gate-verdict",
+      "round": 7,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.788Z",
+      "type": "ship",
+      "round": 7,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.847Z",
+      "type": "check-run",
+      "round": 8,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:36.848Z",
+      "type": "gate-verdict",
+      "round": 8,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.075Z",
+      "type": "ship",
+      "round": 8,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.143Z",
+      "type": "check-run",
+      "round": 9,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.143Z",
+      "type": "gate-verdict",
+      "round": 9,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.397Z",
+      "type": "ship",
+      "round": 9,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.478Z",
+      "type": "check-run",
+      "round": 10,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.479Z",
+      "type": "gate-verdict",
+      "round": 10,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.760Z",
+      "type": "ship",
+      "round": 10,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.829Z",
+      "type": "check-run",
+      "round": 11,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:37.829Z",
+      "type": "gate-verdict",
+      "round": 11,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.100Z",
+      "type": "ship",
+      "round": 11,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.226Z",
+      "type": "check-run",
+      "round": 12,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.227Z",
+      "type": "gate-verdict",
+      "round": 12,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.501Z",
+      "type": "ship",
+      "round": 12,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.501Z",
       "type": "milestone",
       "round": 12,
       "message": "first-video"
     },
     {
+      "ts": "2026-11-01T20:22:38.561Z",
+      "type": "check-run",
+      "round": 13,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.561Z",
+      "type": "gate-verdict",
+      "round": 13,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.795Z",
+      "type": "ship",
+      "round": 13,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.844Z",
+      "type": "check-run",
+      "round": 14,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:38.844Z",
+      "type": "gate-verdict",
+      "round": 14,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.057Z",
+      "type": "ship",
+      "round": 14,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.112Z",
+      "type": "check-run",
+      "round": 15,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.113Z",
+      "type": "gate-verdict",
+      "round": 15,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.363Z",
+      "type": "ship",
+      "round": 15,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.413Z",
+      "type": "check-run",
+      "round": 16,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.413Z",
+      "type": "gate-verdict",
+      "round": 16,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.622Z",
+      "type": "ship",
+      "round": 16,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.690Z",
+      "type": "check-run",
+      "round": 17,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.690Z",
+      "type": "gate-verdict",
+      "round": 17,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.882Z",
+      "type": "ship",
+      "round": 17,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.931Z",
+      "type": "check-run",
+      "round": 18,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:39.931Z",
+      "type": "gate-verdict",
+      "round": 18,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.180Z",
+      "type": "ship",
+      "round": 18,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.181Z",
       "type": "milestone",
       "round": 18,
       "message": "first-canvas"
     },
     {
+      "ts": "2026-11-01T20:22:40.267Z",
+      "type": "check-run",
+      "round": 19,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.270Z",
+      "type": "gate-verdict",
+      "round": 19,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.475Z",
+      "type": "ship",
+      "round": 19,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.525Z",
+      "type": "check-run",
+      "round": 20,
+      "message": "all checks green"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.525Z",
+      "type": "gate-verdict",
+      "round": 20,
+      "message": "ship"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.768Z",
+      "type": "ship",
+      "round": 20,
+      "message": "shipped clean"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.831Z",
+      "type": "check-run",
+      "round": 21,
+      "message": "missing required selectors: footer"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.831Z",
+      "type": "gate-verdict",
+      "round": 21,
+      "message": "retry"
+    },
+    {
+      "ts": "2026-11-01T20:22:40.832Z",
       "type": "attempt-rejected",
       "round": 21,
       "message": "[regression] missing required selectors: footer"
     },
     {
+      "ts": "2026-11-01T20:22:41.096Z",
       "type": "killed",
-      "round": 22,
-      "message": "kill switch engaged — rolled back to cd0ee5ff"
+      "round": 21,
+      "message": "kill switch engaged — rolled back to 72dcd836"
     }
   ],
   "latched": {
@@ -437,6 +925,7 @@
     "forbiddenPresent": [
       "Comic Sans",
       "marquee"
-    ]
+    ],
+    "commit": "34a5cf1b741bcd8549e55daf559223139cb14afd"
   }
 }

@@ -8,8 +8,8 @@ import { makeProject, tship, readState, ok, done, section, CLI, REPO } from './h
 
 // FULL test on the user's OWN models (their own keys, their own plans).
 //
-//   light "sonnet" analog:  RIVER  zai-org/GLM-5.3-Flash
-//   heavy "opus" analog:    IFM    IFM/K2-Horizon-375B-A23B (375B MoE)
+//   light "sonnet" analog:  RIVER  deepseek-ai/DeepSeek-V4.1-Flash-1017
+//   heavy "opus" analog:    AGNES  agnes-3.0-flash
 //
 // Keys are read from the host's ZCode provider config and injected into each
 // temp project's .env.local — exactly the `tship keys add` path. They are
@@ -37,24 +37,24 @@ function hostKey(providerName) {
 
 const MODELS = {
   light: {
-    label: 'glm-5.3-flash',
+    label: 'deepseek-1017',
     role: 'light (sonnet-slot)',
     baseUrl: 'https://api.river.ai/v1',
-    model: 'zai-org/GLM-5.3-Flash',
+    model: 'deepseek-ai/DeepSeek-V4.1-Flash-1017',
     keyEnv: 'RIVER_API_KEY',
     keyProvider: 'RIVER',
-    extraBody: { thinking: { type: 'disabled' } }, // z.ai-style param, passed through by RIVER
-    cost: { in: 0.15, out: 0.55 }, // placeholder estimate — plan-included for the owner
+    extraBody: {},
+    cost: { in: 0.3, out: 1.2 }, // placeholder estimate — plan-included for the owner
   },
   heavy: {
-    label: 'k2-horizon-375b',
+    label: 'agnes-3.0-flash',
     role: 'heavy (opus-slot)',
-    baseUrl: 'https://api.ifm.ai/v1',
-    model: 'IFM/K2-Horizon-375B-A23B',
-    keyEnv: 'IFM_API_KEY',
-    keyProvider: 'IFM',
+    baseUrl: 'https://apihub.agnes-ai.com/v1',
+    model: 'agnes-3.0-flash',
+    keyEnv: 'AGNES_API_KEY',
+    keyProvider: 'AGNES',
     extraBody: {},
-    cost: { in: 1.0, out: 5.0 }, // placeholder estimate — plan-included for the owner
+    cost: { in: 0.25, out: 1.0 }, // placeholder estimate — plan-included for the owner
   },
 };
 
