@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bean Street Coffee — The Pumpkin Patch</title>
+<meta name="description" content="Bean Street Coffee's seasonal pumpkin patch: carve your own jack-o'-lantern, order patch drinks, and pick up along with your usual.">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctext y='36' font-size='36'%3E🎃%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="topbar">
+  <div class="wrap topbar-in">
+    <a class="wordmark" href="#top" aria-label="Bean Street Coffee home">
+      <svg class="cup" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M10 20h24v10a12 12 0 0 1-12 12h0A12 12 0 0 1 10 30V20Z" stroke="currentColor" stroke-width="3.5"/>
+        <path d="M34 22h4a5 5 0 0 1 0 10h-4" stroke="currentColor" stroke-width="3.5"/>
+        <path d="M17 12c0-3 3-3 3-6M25 12c0-3 3-3 3-6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span>Bean Street <b>Patch</b></span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#patch">The Patch</a>
+      <a href="#carve">Carve a pumpkin</a>
+      <a href="#menu">Patch menu</a>
+      <a href="#order-form" class="nav-cta">Order <span id="cart-count" class="cart-dot" data-testid="cart-count">0</span></a>
+    </nav>
+  </div>
+</div>
+
+<main id="main" class="wrap">
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="hero-copy">
+      <p class="kicker">Bean Street Coffee · harvest season</p>
+      <h1 id="hero-h">The patch is <span class="grad">open</span>.</h1>
+      <p class="lede">Same bar, same beans — plus a full pumpkin patch out back. Carve your own jack-o'-lantern in the browser, stack patch drinks on your usual order, and pick everything up in one run.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="#carve">Carve a pumpkin</a>
+        <a class="btn btn-lg" href="#menu">See patch menu</a>
+      </div>
+      <dl class="patch-meta">
+        <div><dt>Open</dt><dd>Nov 1 – 30</dd></div>
+        <div><dt>Carve slot</dt><dd>~4 min</dd></div>
+        <div><dt>Pickup</dt><dd>same day</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-art" aria-label="Illustration of a pumpkin patch at dusk with hanging string lights and a steaming mug">
+      <svg viewBox="0 0 640 420" role="img" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#1d140e"/><stop offset=".55" stop-color="#4a2410"/>
+            <stop offset=".8" stop-color="#8a4416"/><stop offset="1" stop-color="#c47724"/>
+          </linearGradient>
+          <radialGradient id="moonglow" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#ffd9a0" stop-opacity=".9"/><stop offset="1" stop-color="#ffd9a0" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="pumpA" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e8763a"/><stop offset="1" stop-color="#a63c12"/>
+          </linearGradient>
+          <linearGradient id="pumpB" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d96a2e"/><stop offset="1" stop-color="#7d2f0e"/>
+          </linearGradient>
+        </defs>
+        <rect width="640" height="420" fill="url(#sky)"/>
+        <circle cx="520" cy="86" r="120" fill="url(#moonglow)"/>
+        <circle cx="520" cy="86" r="34" fill="#ffe7bd"/>
+        <circle cx="508" cy="78" r="30" fill="#4a2410" opacity=".18"/>
+        <g id="stars">
+          <circle cx="60" cy="40" r="1.6" fill="#ffe7bd" opacity=".8"/>
+          <circle cx="150" cy="70" r="1.2" fill="#ffe7bd" opacity=".6"/>
+          <circle cx="240" cy="30" r="1.4" fill="#ffe7bd" opacity=".7"/>
+          <circle cx="330" cy="90" r="1.1" fill="#ffe7bd" opacity=".5"/>
+          <circle cx="420" cy="46" r="1.5" fill="#ffe7bd" opacity=".8"/>
+          <circle cx="600" cy="150" r="1.2" fill="#ffe7bd" opacity=".6"/>
+        </g>
+        <!-- string lights -->
+        <path d="M0 60 Q 320 130 640 55" stroke="#2a1708" stroke-width="2.5" fill="none"/>
+        <g>
+          <circle cx="80" cy="92" r="6" fill="#ffcf7a"/><circle cx="200" cy="113" r="6" fill="#ff9e57"/>
+          <circle cx="320" cy="113" r="6" fill="#ffcf7a"/><circle cx="440" cy="100" r="6" fill="#ff9e57"/>
+          <circle cx="560" cy="72" r="6" fill="#ffcf7a"/>
+        </g>
+        <!-- hills -->
+        <path d="M0 300 Q 170 250 340 296 T 640 286 V 420 H 0 Z" fill="#33200d"/>
+        <path d="M0 340 Q 200 306 400 336 T 640 330 V 420 H 0 Z" fill="#241609"/>
+        <!-- vine rows -->
+        <g stroke="#57380f" stroke-width="3" fill="none" opacity=".9">
+          <path d="M20 368 q 60 -14 120 0 t 120 0 t 120 0 t 120 0 t 120 0"/>
+          <path d="M0 396 q 70 -12 140 0 t 140 0 t 140 0 t 140 0"/>
+        </g>
+        <!-- pumpkin cluster helper reused -->
+        <g id="pkA"><ellipse cx="0" cy="0" rx="34" ry="27" fill="url(#pumpA)"/><path d="M0 -26 q -14 12 -14 26 M0 -26 q 14 12 14 26" stroke="#7d2f0e" stroke-width="2.4" fill="none" opacity=".65"/><rect x="-4" y="-36" width="8" height="12" rx="3" fill="#3f6b2a"/></g>
+        <g id="pkB"><ellipse cx="0" cy="0" rx="24" ry="19" fill="url(#pumpB)"/><path d="M0 -18 q -10 9 -10 19 M0 -18 q 10 9 10 19" stroke="#6a270c" stroke-width="2.2" fill="none" opacity=".65"/><rect x="-3" y="-27" width="6" height="10" rx="3" fill="#3f6b2a"/></g>
+        <use href="#pkA" x="90"  y="352"/><use href="#pkB" x="150" y="366"/>
+        <use href="#pkB" x="300" y="358"/><use href="#pkA" x="368" y="374"/>
+        <use href="#pkA" x="470" y="356"/><use href="#pkB" x="540" y="372"/>
+        <use href="#pkB" x="240" y="388"/><use href="#pkA" x="600" y="390"/>
+        <!-- the hero mug -->
+        <g transform="translate(258 236)">
+          <path d="M14 26h44v18a22 22 0 0 1-22 22h0a22 22 0 0 1-22-22V26Z" fill="#f7ead8" stroke="#33200d" stroke-width="3"/>
+          <path d="M58 30h8a9 9 0 0 1 0 18h-8" fill="none" stroke="#f7ead8" stroke-width="5"/>
+          <path d="M26 20c0-5 6-5 6-11M40 20c0-5 6-5 6-11" stroke="#ffe7bd" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+        </g>
+      </svg>
+      <figcaption class="sr-only">A pumpkin patch at dusk: string lights, vine rows, lantern-glow pumpkins and a steaming mug of the harvest brew.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============================ THE PATCH ============================ -->
+  <section id="patch" aria-labelledby="patch-h">
+    <header class="sec-head">
+      <p class="kicker">out back, past the roastery</p>
+      <h2 id="patch-h">A real patch, not a sticker</h2>
+      <p class="sec-sub">Three heirloom rows, harvested each morning from the bundle we roast against. Everything below is in season right now — and everything makes it onto your ticket.</p>
+    </header>
+    <div class="grid-three">
+      <article class="card patch-card">
+        <div class="patch-emoji" aria-hidden="true">🎃</div>
+        <h3>Sugar Row</h3>
+        <p class="muted">Small, dense, built for flavour. These are the ones we roast for the winter menu — and the ones you can carve in the studio below.</p>
+        <p class="card-note">Carving weight · 2–4 kg</p>
+      </article>
+      <article class="card patch-card">
+        <div class="patch-emoji" aria-hidden="true">🫧</div>
+        <h3>Ghost Row</h3>
+        <p class="muted">Paler skins, custard flesh. We cube them for the harvest flat white's roasted pumpkin cold foam.</p>
+        <p class="card-note">Kitchen stock · daily</p>
+      </article>
+      <article class="card patch-card">
+        <div class="patch-emoji" aria-hidden="true">✨</div>
+        <h3>Lantern Row</h3>
+        <p class="muted">The big faces. Pick one on the counter, or design yours in the carving studio and we'll hand it to you carved.</p>
+        <p class="card-note">Heirloom seeds · limited</p>
+      </article>
+    </div>
+    <ul class="patch-facts" aria-label="Patch notes">
+      <li><b>温室-free</b> — grown two towns over, no greenhouse heat</li>
+      <li><b>Seeds to stay</b> — every carve saves a seed packet for spring</li>
+      <li><b>Compost back</b> — returns get you a free filter refill</li>
+    </ul>
+  </section>
+
+  <!-- ==================== CARVING STUDIO (the star) ==================== -->
+  <section id="carve" aria-labelledby="carve-h">
+    <header class="sec-head">
+      <p class="kicker">the star of the season — fully working</p>
+      <h2 id="carve-h">The carving studio</h2>
+      <p class="sec-sub">Design it here, we carve it there. Every control is live: the canvas redraws as you drag, the candle actually lights, and your design can ride along on your order as a carved pumpkin on pickup.</p>
+    </header>
+
+    <div class="studio card">
+      <div class="studio-stage">
+        <canvas id="carve-canvas" width="640" height="560" role="img"
+          aria-label="Live preview of your carved pumpkin. Controls below change the shape, face and glow."></canvas>
+        <div class="stage-hud">
+          <span class="hud-chip" id="hud-variety">Sugar · 3.2 kg</span>
+          <span class="hud-chip" id="hud-sku">SKU loading…</span>
+        </div>
+      </div>
+
+      <div class="studio-controls">
+        <fieldset class="ctl-group">
+          <legend>Body</legend>
+          <label class="ctl">Shape
+            <select id="c-shape">
+              <option value="round">Round</option>
+              <option value="tall">Tall</option>
+              <option value="wide">Squash-wide</option>
+            </select>
+          </label>
+          <label class="ctl">Ribs <output id="o-ribs">9</output>
+            <input id="c-ribs" type="range" min="5" max="16" value="9" />
+          </label>
+          <label class="ctl">Stem curl <output id="o-stem">6</output>
+            <input id="c-stem" type="range" min="0" max="10" value="6" />
+          </label>
+          <label class="ctl">Variety
+            <select id="c-variety">
+              <option value="Sugar">Sugar · 3.2 kg</option>
+              <option value="Lantern">Lantern · 5.8 kg</option>
+              <option value="Ghost">Ghost · 2.6 kg</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="ctl-group">
+          <legend>Face</legend>
+          <label class="ctl">Eyes
+            <select id="c-eyes">
+              <option value="classy">Classy triangles</option>
+              <option value="round">Round &amp; friendly</option>
+              <option value="sly">Sly crescents</option>
+              <option value="stars">Stars</option>
+            </select>
+          </label>
+          <label class="ctl">Mouth
+            <select id="c-mouth">
+              <option value="grin">Toothy grin</option>
+              <option value="smile">Soft smile</option>
+              <option value="fangs">Fangs</option>
+              <option value="oh">Little “oh”</option>
+            </select>
+          </label>
+          <label class="ctl">Squash factor <output id="o-face">50</output>
+            <input id="c-face" type="range" min="0" max="100" value="50" />
+          </label>
+          <label class="ctl ctl-check">
+            <input id="c-candle" type="checkbox" checked /> Candle lit
+          </label>
+        </fieldset>
+
+        <fieldset class="ctl-group">
+          <legend>Make it yours</legend>
+          <label class="ctl">Your name on the tag
+            <input id="c-name" class="text-in" type="text" maxlength="18" placeholder="e.g. Maya" autocomplete="given-name" />
+          </label>
+          <div class="btn-row">
+            <button id="c-random" class="btn" type="button">Surprise me 🎲</button>
+            <button id="c-download" class="btn" type="button">Save PNG ⤓</button>
+          </div>
+          <button id="c-add" class="btn btn-primary btn-lg btn-block" type="button">Add carved pumpkin to order — $9.50</button>
+          <p class="studio-hint" id="carve-status" role="status" aria-live="polite">Canvas is live — drag any control.</p>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PATCH MENU =========================== -->
+  <section id="menu" aria-labelledby="menu-h">
+    <header class="sec-head">
+      <p class="kicker">harvest specials, brewed on the usual bar</p>
+      <h2 id="menu-h">The patch menu</h2>
+      <p class="sec-sub">Roasted pumpkin is prepped every morning at 6. When the row runs out, the row runs out.</p>
+    </header>
+    <div class="grid-three menu-grid">
+      <article class="card menu-card">
+        <div class="menu-top"><h3>Harvest Flat White</h3><data value="4.75">$4.75</data></div>
+        <p class="muted">Double shot, ghost-pumpkin velvet cold foam, cinnamon bark dust.</p>
+        <button class="btn btn-sm add-drink" type="button" data-drink="Harvest Flat White" data-price="4.75">Add to order</button>
+      </article>
+      <article class="card menu-card">
+        <div class="menu-top"><h3>Roast-Pumpkin Cold Brew</h3><data value="5.25">$5.25</data></div>
+        <p class="muted">18-hour cold brew over cubed Sugar-Row pumpkin, maple mist, orange peel.</p>
+        <button class="btn btn-sm add-drink" type="button" data-drink="Roast-Pumpkin Cold Brew" data-price="5.25">Add to order</button>
+      </article>
+      <article class="card menu-card">
+        <div class="menu-top"><h3>Seed-Praline Latte</h3><data value="5.50">$5.50</data></div>
+        <p class="muted">Toasted seed praline, oat milk, a shard of pumpkin brittle on the saucer.</p>
+        <button class="btn btn-sm add-drink" type="button" data-drink="Seed-Praline Latte" data-price="5.5">Add to order</button>
+      </article>
+    </div>
+    <p class="menu-foot">Everything is orderable without the pumpkin — the patch rides along with your usual.</p>
+  </section>
+
+  <!-- ============================== ORDER ============================== -->
+  <section id="order" aria-labelledby="order-h">
+    <header class="sec-head">
+      <p class="kicker">one ticket, usual plus patch</p>
+      <h2 id="order-h">Order &amp; pickup</h2>
+    </header>
+    <form id="order-form" class="order card" novalidate>
+      <fieldset>
+        <legend>Your order</legend>
+        <ul id="order-items" class="order-items">
+          <li class="order-empty" data-testid="order-empty">Nothing yet — add a drink or a carved pumpkin above.</li>
+        </ul>
+        <p class="order-total">Total <span id="order-total" class="tabular" data-testid="order-total" data-price="0">$0.00</span></p>
+      </fieldset>
+      <fieldset class="order-fields">
+        <legend>Pickup</legend>
+        <div class="field-row">
+          <label class="ctl">Name <input id="o-name" class="text-in" type="text" required autocomplete="given-name" placeholder="Who's it for?"></label>
+          <label class="ctl">Pickup
+            <select id="o-time">
+              <option>Today · next batch (25 min)</option>
+              <option>Today · this evening</option>
+              <option>Tomorrow · morning</option>
+              <option>Tomorrow · evening</option>
+            </select>
+          </label>
+        </div>
+        <p id="order-status" class="form-status" role="status" aria-live="polite"></p>
+        <button class="btn btn-primary btn-lg" type="submit">Send the ticket</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- ============================== VISIT ============================== -->
+  <section id="visit" aria-labelledby="visit-h">
+    <div class="visit card">
+      <div>
+        <h2 id="visit-h">Twelve Bean Street</h2>
+        <p class="muted">Patch out back, roastery out front. String lights on at dusk; the lanterns queue at the counter like everyone else.</p>
+        <dl class="hours">
+          <div><dt>Mon – Fri</dt><dd>7:00 – 18:00</dd></div>
+          <div><dt>Sat</dt><dd>8:00 – 18:00</dd></div>
+          <div><dt>Sun</dt><dd>8:00 – 16:00 · lantern hour 17:00</dd></div>
+        </dl>
+      </div>
+      <p class="visit-note">Carved pumpkins keep three days. Candle included, obviously.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© <span id="yr">2026</span> Bean Street Coffee — the patch is seasonal; the gate is permanent.</p>
+    <p class="foot-dim">grown slow · carved by you · <a href="#top">back to the top</a></p>
+  </div>
+</footer>
+
+<script src="js/carve.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
