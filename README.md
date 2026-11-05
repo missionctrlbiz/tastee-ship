@@ -4,6 +4,9 @@
 
 # tasteeship ☕🚢
 
+
+![tasteeship — agents ship. taste decides.](site/assets/banner-motion-noir.gif)
+
 **A local Node CLI harness that runs a recurring "make it better" code-change
 loop — with your taste, a hard stop condition, and a dashboard with the kill
 button the reference video didn't have.**

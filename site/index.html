@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tasteeship — make it better, harnessed</title>
+<meta name="description" content="tasteeship (tship): a local Node CLI harness that runs the 'make it better' loop on your repo — taste rules, a hard outputs_max gate, out-of-band kill/rollback, and a live dashboard.">
+<meta property="og:title" content="tasteeship — agents ship. taste decides.">
+<meta property="og:description" content="Local 'make it better' loop with a hard stop: taste rules in, verified rounds out, automatic rollback, and a kill switch the model can't see.">
+<meta property="og:image" content="assets/banner-og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ctext y='36' font-size='36'%3E🚢%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --void:#06050d;--panel:#14112a;--panel2:#1f1a3d;--line:#2e2650;
+  --purple:#5f0095;--violet:#9f7aff;--signal:#f30046;--amber:#ffa507;--teal:#5fffd0;
+  --ink:#efeaff;--dim:#a79fc7;
+  --mono:"JetBrains Mono","SF Mono",ui-monospace,Menlo,monospace;
+  --sans:"Avenir Next",-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1000px 480px at 78% -8%,rgba(95,0,149,.32),transparent 60%),var(--void);color:var(--ink);font:17px/1.6 var(--sans)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+nav.top{display:flex;align-items:center;gap:14px;height:64px}
+nav.top .mark{font:800 1.1rem var(--mono);text-decoration:none;color:var(--ink)}
+nav.top .mark b{color:var(--violet)}
+nav.top a.gh{margin-left:auto;color:var(--teal);text-decoration:none;font:600 .9rem var(--mono)}
+header.hero{padding:34px 0 10px}
+header.hero img.banner,header.hero video.banner{width:100%;height:auto;border-radius:32px;display:block;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+section{padding:34px 0}
+.kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin:0 0 8px}
+h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.03em;margin:.1em 0 .3em}
+h1 b{color:var(--amber)}
+h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 14px}
+p.lede{color:var(--dim);font-size:1.13rem;max-width:44rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px 24px;margin:14px 0}
+pre{background:#0b0a16;border:1px solid var(--line);border-radius:14px;padding:16px 20px;overflow-x:auto;font:600 .95rem/1.65 var(--mono)}
+pre b{color:var(--teal)}.pre .p{color:var(--amber)}
+code.inline{font-family:var(--mono);font-size:.92em;background:var(--panel2);border-radius:6px;padding:2px 8px;color:var(--amber)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.grid h3{margin:0 0 8px;font-size:1.02rem}
+.grid h3 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
+.grid p{margin:0;color:var(--dim);font-size:.95rem}
+a{color:var(--violet)}
+footer{border-top:1px solid var(--line);margin-top:44px;padding:24px 0 44px;color:var(--dim);font-size:.9rem}
+.vid{border-radius:16px;border:1px solid var(--line)}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.summary .stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.summary .stat b{display:block;font:800 1.3rem var(--mono);color:var(--teal)}
+.summary .stat span{color:var(--dim);font-size:.85rem}
+@media (max-width:640px){h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top">
+    <a class="mark" href="#top">tastee<b>ship</b></a>
+    <a class="gh" href="https://github.com/missionctrlbiz/tastee-ship">github ↗</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <video class="banner" autoplay muted loop playsinline poster="assets/banner-readme.png" aria-label="tasteeship — agents ship. taste decides. animated banner with the tship CLI commands and repo link.">
+  <source src="assets/banner-motion-noir.webm" type="video/webm">
+  <img src="assets/banner-readme.png" alt="tasteeship banner (static)">
+</video>
+    <h1>Agents ship. <b>Taste decides.</b></h1>
+    <p class="lede"><code class="inline">tship</code> is a local CLI harness that runs the “make it better” loop against your own repo: your taste in a rules file, a verification gate the model never sees, a checkpoint per round, an out-of-band kill switch, and a live dashboard — zero runtime dependencies, Node ≥ 18.</p>
+  </header>
+
+  <section id="why">
+    <p class="kicker">
+why</p>
+    <h2>The loop works. The stopping doesn't.</h2>
+    <p class="lede">Tell a coding agent “make it better” on repeat and it over-builds — the reference run shipped a pumpkin-carving feature nobody asked for. <a href="https://www.youtube.com/watch?v=DByAR5Su1Yw">tasteeship's origin story</a> is that experiment turned into a product: halting on <b>regression, over-build, or user rejection</b> instead of forcing another change.</p>
+    <div class="summary">
+      <div class="stat"><b>50/50</b><span>rounds — sonnet-class, gate never needed</span></div>
+      <div class="stat"><b>r12/13</b><span>opus-class halted: over-build</span></div>
+      <div class="stat"><b>18%</b><span>of the unbounded run’s LOC (gate-halted r13)</span></div>
+      <div class="stat"><b>0</b><span>model-visible stop instructions</span></div>
+    </div>
+  </section>
+
+  <section id="gate">
+    <p class="kicker">the gate</p>
+    <h2>outputs_max — then it halts and reports</h2>
+    <div class="grid">
+      <div class="card"><h3><span class="dot" style="background:#7fc06a"></span>SHIP</h3><p>Every round passes the verification layer: required selectors still present, JS refs resolve, taste strings absent, LOC budgets intact. Ships as a git checkpoint.</p></div>
+      <div class="card"><h3><span class="dot" style="background:#ffa507"></span>RETRY</h3><p>A rejected proposal burns one of the round's outputs. The harness reports exactly which check tripped — the model never sees the verdict logic.</p></div>
+      <div class="card"><h3><span class="dot" style="background:#f30046"></span>HALT</h3><p>Over-build halts on taste/budget, regression on green→red checks, outputs-max on an exhausted budget. The repo rolls back; the report explains.</p></div>
+    </div>
+  </section>
+
+  <section id="quickstart">
+    <p class="kicker">quickstart</p>
+    <h2>Local-first, no dependencies</h2>
+<pre>$ git clone https://github.com/missionctrlbiz/tastee-ship && cd tastee-ship
+$ npm link
+$ <b>tship init</b>                    # detect framework, scaffold config + rules.md
+$ <b>tship keys add</b> anthropic     # your key → .env.local (0600, never committed)
+$ <b>tship run</b> --rounds 50        # the loop (mock provider needs no key)
+$ <b>tship dashboard</b>              # rounds, trends, scrubber, kill button
+$ <b>tship stop</b>                   # halt + rollback, out-of-band</pre>
+    <div class="grid" style="margin-top:14px">
+      <div class="card"><h3>Providers</h3><p>Anthropic, any OpenAI-compatible endpoint you own (GLM, DeepSeek, OpenRouter), or the deterministic mock for gate testing with zero keys.</p></div>
+      <div class="card"><h3>Providers can't rush the gate</h3><p>Proposals are validated in Node — selectors, JS→DOM references, taste strings, LOC/file budgets — before anything is committed. Checkpoints make every step idempotent.</p></div>
+      <div class="card"><h3>Kill is out-of-band</h3><p><code class="inline">tship stop</code> (or the dashboard's red button) aborts in-flight calls, rolls the repo back to the last good checkpoint, and marks the run killed. Resuming verifies the checkpoint first.</p></div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <p class="kicker">validated live</p>
+    <h2>Two models, one gate, 100 real rounds</h2>
+    <p class="lede">Coffee-shop case study, your own models, lives in <a href="https://github.com/missionctrlbiz/tastee-ship/tree/main/docs/VALIDATION.md">docs/VALIDATION.md</a>: DeepSeek-V4.1-Flash vs GLM-5.3-Flash, 50/50 rounds each, the gate rejecting footer removals and phantom DOM ids mid-run, and a kill-switch drill that rolled back mid-round and resumed to completion.</p>
+    <div class="summary">
+      <div class="stat"><b>14</b><span>gate rejections — agnes-3.0 (bolder)</span></div>
+      <div class="stat"><b>7</b><span>gate rejections — deepseek-1017</span></div>
+      <div class="stat"><b>100/100</b><span>rounds shipped across both live runs</span></div>
+      <div class="stat"><b>14%</b><span>tokens vs the unbounded run (44k vs 324k)</span></div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <p class="kicker">watch it</p>
+    <h2>Launch film</h2>
+    <p class="lede">The 30-second story — why a harness needs to exist for a loop that never asks to stop — lives in the <a href="https://github.com/missionctrlbiz/tastee-ship#readme">repo README</a>. Reference inspiration: <a href="https://www.youtube.com/watch?v=DByAR5Su1Yw">“I Told Claude to ‘Make it better’ 100 Times”</a>.</p>
+  </section>
+
+  <footer>
+    <div>MIT · missionctrlbiz/tastee-ship · <a href="https://github.com/missionctrlbiz/tastee-ship">source</a> · built with the harness it ships 🚢</div>
+  </footer>
+</div>
+</body>
+</html>

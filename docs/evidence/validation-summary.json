@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T21:50:03.884Z",
+  "generatedAt": "2026-11-05T12:49:12.075Z",
   "provider": "mock (deterministic; no API keys in environment)",
   "sonnet": {
     "status": "completed",
@@ -14,37 +14,37 @@
         "id": "comic-sans-gone",
         "label": "Comic Sans removed",
         "round": 1,
-        "ts": "2026-11-01T21:49:04.919Z"
+        "ts": "2026-11-05T12:47:57.527Z"
       },
       {
         "id": "first-responsive",
         "label": "First responsive layout",
         "round": 2,
-        "ts": "2026-11-01T21:49:05.223Z"
+        "ts": "2026-11-05T12:47:58.031Z"
       },
       {
         "id": "form-works",
         "label": "Order form works",
         "round": 3,
-        "ts": "2026-11-01T21:49:05.537Z"
+        "ts": "2026-11-05T12:47:58.354Z"
       },
       {
         "id": "first-image",
         "label": "First image",
         "round": 5,
-        "ts": "2026-11-01T21:49:06.469Z"
+        "ts": "2026-11-05T12:47:59.084Z"
       },
       {
         "id": "first-video",
         "label": "First video",
         "round": 12,
-        "ts": "2026-11-01T21:49:08.952Z"
+        "ts": "2026-11-05T12:48:01.951Z"
       },
       {
         "id": "first-canvas",
         "label": "First canvas",
         "round": 18,
-        "ts": "2026-11-01T21:49:10.526Z"
+        "ts": "2026-11-05T12:48:04.368Z"
       }
     ],
     "rejectedAttempts": 1
@@ -61,25 +61,25 @@
         "id": "first-responsive",
         "label": "First responsive layout",
         "round": 2,
-        "ts": "2026-11-01T21:49:22.064Z"
+        "ts": "2026-11-05T12:48:19.113Z"
       },
       {
         "id": "form-works",
         "label": "Order form works",
         "round": 3,
-        "ts": "2026-11-01T21:49:22.334Z"
+        "ts": "2026-11-05T12:48:19.413Z"
       },
       {
         "id": "first-image",
         "label": "First image",
         "round": 4,
-        "ts": "2026-11-01T21:49:22.653Z"
+        "ts": "2026-11-05T12:48:19.820Z"
       },
       {
         "id": "first-video",
         "label": "First video",
         "round": 9,
-        "ts": "2026-11-01T21:49:24.252Z"
+        "ts": "2026-11-05T12:48:21.971Z"
       }
     ]
   },
@@ -96,31 +96,31 @@
         "id": "first-responsive",
         "label": "First responsive layout",
         "round": 2,
-        "ts": "2026-11-01T21:49:27.212Z"
+        "ts": "2026-11-05T12:48:25.563Z"
       },
       {
         "id": "form-works",
         "label": "Order form works",
         "round": 3,
-        "ts": "2026-11-01T21:49:27.501Z"
+        "ts": "2026-11-05T12:48:25.963Z"
       },
       {
         "id": "first-image",
         "label": "First image",
         "round": 4,
-        "ts": "2026-11-01T21:49:27.763Z"
+        "ts": "2026-11-05T12:48:26.369Z"
       },
       {
         "id": "first-video",
         "label": "First video",
         "round": 9,
-        "ts": "2026-11-01T21:49:29.443Z"
+        "ts": "2026-11-05T12:48:28.729Z"
       },
       {
         "id": "first-canvas",
         "label": "First canvas",
         "round": 16,
-        "ts": "2026-11-01T21:49:31.731Z"
+        "ts": "2026-11-05T12:48:31.828Z"
       }
     ],
     "rejectedAttempts": 2
